@@ -611,8 +611,6 @@
 \AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}} % Pour obtenir une liste de publication à puces ?
 \setlength{\bibitemsep}{0.25\baselineskip}
 
-
-
 % v1.1.2: make it easier to add a sidebar aligned with top of next page
 \RequirePackage{afterpage}
 % afterpage – Execute command after the next page break
