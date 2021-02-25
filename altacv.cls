@@ -15,10 +15,88 @@
 % - https://github.com/akreuzer Added ragged2e option (5 Nov 2018)
 % - https://github.com/stefanogermano Fixed bad boxes and undefined font shape (July 2018)
 % - https://github.com/foohyfooh Fixed blank spaces in \cvevent and bad link in README.md (June 2018)
-
 %%%%%%%%%%%%%%%%
+
+%%%%% Identification 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{altacv}[2020/05/17 AltaCV v1.3.3, yet another alternative class for a resume/curriculum vitae.]
+
+%%%%% External packages
+
+%% v1.3.2 Hopefully this helps make the PDF
+%% file more 'friendly' with copy-paste etc
+\RequirePackage[a-1b]{pdfx}
+
+\RequirePackage[margin=2cm]{geometry}
+% geometry – Flexible and complete interface to document dimensions : https://www.ctan.org/pkg/geometry
+
+\RequirePackage[fixed]{fontawesome5}
+% fontawesome5 – Font Awesome 5 with LaTeX support : https://www.ctan.org/pkg/fontawesome5
+
+\RequirePackage{ifxetex,ifluatex}
+% ifluatex – Provides the \ifluatex switch : https://www.ctan.org/pkg/ifluatex
+% ifxetex – Am I running under XeTeX? : https://www.ctan.org/pkg/ifxetex
+
+\RequirePackage{scrlfile}
+% scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
+% The package provides hooks for the execution of commands before or after loading files, classes or packages.
+
+\RequirePackage{xparse}
+% xparse – A generic document command parser : https://www.ctan.org/pkg/xparse
+% The package provides a high-level interface for producing document-level commands. In that way, it offers a replacement for LaTeX2ε’s \newcommand macro, with significantly improved functionality. 
+
+\RequirePackage{xcolor}
+% xcolor – Driver-independent color extensions for LaTeX and pdfLaTeX
+% https://www.ctan.org/pkg/xcolor
+
+\RequirePackage{pgf}
+% OLD : \RequirePackage{tikz}
+% pgf – Create PostScript and PDF graphics in TeX
+% https://www.ctan.org/pkg/pgf
+\usetikzlibrary{arrows}
+
+\RequirePackage[skins]{tcolorbox}
+% tcolorbox – Coloured boxes, for LaTeX examples and theorems, etc
+% https://www.ctan.org/pkg/tcolorbox
+
+\RequirePackage[inline]{enumitem}
+% enumitem – Control layout of itemize, enumerate, description
+% https://www.ctan.org/pkg/enumitem
+
+\RequirePackage{graphicx}
+% graphicx – Enhanced support for graphics
+% https://www.ctan.org/pkg/graphicx
+
+\RequirePackage{etoolbox}
+% etoolbox – e-TeX tools for LaTeX
+% https://www.ctan.org/pkg/etoolbox
+
+\RequirePackage{dashrule}
+% dashrule – Draw dashed rules
+% https://www.ctan.org/pkg/dashrule
+
+\RequirePackage{multirow,tabularx}
+% multirow – Create tabular cells spanning multiple rows
+% https://www.ctan.org/pkg/multirow
+%
+% tabularx – Tabulars with adjustable-width columns
+% https://www.ctan.org/pkg/tabularx
+
+\RequirePackage{changepage}
+% changepage – Margin adjustment and detection of odd/even pages
+% https://www.ctan.org/pkg/changepage
+
+% \RequirePackage{marginfix}
+
+\RequirePackage[backend=biber,style=authoryear,sorting=ydnt]{biblatex}
+% BibLaTeX – Sophisticated Bibliographies in LaTeX
+% https://www.ctan.org/pkg/biblatex
+
+\RequirePackage{afterpage}
+% afterpage – Execute command after the next page break
+% https://www.ctan.org/pkg/afterpage
+
+%%%%% Options
 
 %% v1.1: Optionally load academicons
 \newif\if@academicons 
@@ -44,29 +122,29 @@
 %% v1.1.3: Choice of round/square photo
 \newif\if@normalphoto
 \DeclareOption{normalphoto}{\@normalphototrue}
+
+%% Choice to call or not the package "ragged2e".
+% The package essentially defines new commands \Centering, \RaggedLeft, and \RaggedRight and new environments Center, FlushLeft, and FlushRight.
+\newif\if@raggedtwoe
+
+\DeclareOption{ragged2e}{\@raggedtwoetrue}
+
+%% Les options non explicitement déclarées sont passée à la classe "extarticle".
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 % Toute option supplémentaire inconnue car non déclarée par un élément \DeclareOption est passé à la classe "extarticle" pour être géré par cette dernière.
 % La classe "extarticle" est-elle incluse par défaut dans LaTeX ?
 % Ne faut-il pas inclure à un moment donné le paquet "extsizes" ? :
 % https://www.ctan.org/pkg/extsizes
 
-%% Choice to call or not the package "ragged2e".
-% The package essentially defines new commands \Centering, \RaggedLeft, and \RaggedRight and new environments Center, FlushLeft, and FlushRight.
-
-\newif\if@raggedtwoe
-\DeclareOption{ragged2e}{\@raggedtwoetrue}
-
 %% v1.3: load hyperref for clickable hyperlinks
 \newif\if@withhyper
 \DeclareOption{withhyper}{\@withhypertrue}
 \ProcessOptions\relax
 
+%%%%% External classes loading
 \LoadClass{article}
 % Convenient command to build classes from existing ones
  
-%% v1.3.2 Hopefully this helps make the PDF
-%% file more 'friendly' with copy-paste etc
-\RequirePackage[a-1b]{pdfx}
 
 %% v1.3.3 Temporary fix for pdfx and biblatex incompatibility
 %% (Thanks to @badetitou for highlighting this issue)
@@ -74,23 +152,7 @@
 %% Will be removed when fix is released in biblatex 3.16
 \catcode30=12
 
-\RequirePackage[margin=2cm]{geometry}
-% geometry – Flexible and complete interface to document dimensions : https://www.ctan.org/pkg/geometry
-
-\RequirePackage[fixed]{fontawesome5}
-% fontawesome5 – Font Awesome 5 with LaTeX support : https://www.ctan.org/pkg/fontawesome5
-
-\RequirePackage{ifxetex,ifluatex}
-% ifluatex – Provides the \ifluatex switch : https://www.ctan.org/pkg/ifluatex
-% ifxetex – Am I running under XeTeX? : https://www.ctan.org/pkg/ifxetex
-
-\RequirePackage{scrlfile}
-% scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
-% The package provides hooks for the execution of commands before or after loading files, classes or packages.
-
-\RequirePackage{xparse}
-% xparse – A generic document command parser : https://www.ctan.org/pkg/xparse
-% The package provides a high-level interface for producing document-level commands. In that way, it offers a replacement for LaTeX2ε’s \newcommand macro, with significantly improved functionality. 
+%%%%% Declarations depending on selected options.
 
 %% v1.1.5: added for convenience
 \newif\ifxetexorluatex
@@ -177,8 +239,7 @@
   }
 \fi
 
-% xcolor – Driver-independent color extensions for LaTeX and pdfLaTeX
-\RequirePackage{xcolor}
+%%%%% Configurations and new commands declaration
 
 \colorlet{accent}{blue!70!black}
 \colorlet{emphasis}{black}
@@ -191,46 +252,10 @@
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
-\RequirePackage{pgf}
-% OLD : \RequirePackage{tikz}
-% pgf – Create PostScript and PDF graphics in TeX : https://www.ctan.org/pkg/pgf
-\usetikzlibrary{arrows}
-
-\RequirePackage[skins]{tcolorbox}
-% tcolorbox – Coloured boxes, for LaTeX examples and theorems, etc
-% https://www.ctan.org/pkg/tcolorbox
-
-\RequirePackage[inline]{enumitem}
-% enumitem – Control layout of itemize, enumerate, description
-% https://www.ctan.org/pkg/enumitem
-
 \setlist{leftmargin=*,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vspace{0.25\baselineskip}}
 \setlist[itemize]{label=\itemmarker}
-
-\RequirePackage{graphicx}
-% graphicx – Enhanced support for graphics
-% https://www.ctan.org/pkg/graphicx
-
-\RequirePackage{etoolbox}
-% etoolbox – e-TeX tools for LaTeX
-% https://www.ctan.org/pkg/etoolbox
-
-\RequirePackage{dashrule}
-% dashrule – Draw dashed rules
-% https://www.ctan.org/pkg/dashrule
-
-\RequirePackage{multirow,tabularx}
-% multirow – Create tabular cells spanning multiple rows
-% https://www.ctan.org/pkg/multirow
-%
-% tabularx – Tabulars with adjustable-width columns
-% https://www.ctan.org/pkg/tabularx
-
-\RequirePackage{changepage}
-% changepage – Margin adjustment and detection of odd/even pages
-% https://www.ctan.org/pkg/changepage
-
-% \RequirePackage{marginfix}
+% > \setlist
+% Command of the "enumitem" package. 
 
 \setlength{\parindent}{0pt}
 % CypBLA : Supression de l'indentation ?
@@ -594,10 +619,10 @@
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
 
-%% Gestion bibliographie
+%% Gestion bibliographie à l'aide du paquet biblatex
 
 % Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
-\RequirePackage[backend=biber,style=authoryear,sorting=ydnt]{biblatex}
+
 %% For removing numbering entirely when using a numeric style
 % \setlength{\bibhang}{1em}
 % \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
@@ -612,9 +637,6 @@
 \setlength{\bibitemsep}{0.25\baselineskip}
 
 % v1.1.2: make it easier to add a sidebar aligned with top of next page
-\RequirePackage{afterpage}
-% afterpage – Execute command after the next page break
-% https://www.ctan.org/pkg/afterpage
 
 % Quel utilité pour ces commandes dans ce document ?
 % \addsidebar{<dimen>}{<}
@@ -625,6 +647,8 @@
   \input{#2}}%
 }
 \newcommand{\addnextpagesidebar}[2][]{\afterpage{\addsidebar[#1]{#2}}}
+% > \afterpage
+% Command from the "afterpage" package.
 
 \AtBeginDocument{%
   \pagestyle{empty}
