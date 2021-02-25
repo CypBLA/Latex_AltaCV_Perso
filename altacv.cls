@@ -459,7 +459,6 @@
 
 % \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
 % Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
-% 
 
 % Rappel : Fonctionnement de \newcommand
 % Exemple avec écriture d'une expression binomiale :
