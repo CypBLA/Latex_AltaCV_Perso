@@ -131,7 +131,9 @@
 
 %% Les options non explicitement déclarées sont passée à la classe "extarticle".
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-% Toute option supplémentaire inconnue car non déclarée par un élément \DeclareOption est passé à la classe "extarticle" pour être géré par cette dernière.
+% Toute option supplémentaire inconnue car non déclarée par un élément \DeclareOption est passé à la classe "article" pour être géré par cette dernière.
+
+% OLD : > \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 % La classe "extarticle" est-elle incluse par défaut dans LaTeX ?
 % Ne faut-il pas inclure à un moment donné le paquet "extsizes" ? :
 % https://www.ctan.org/pkg/extsizes
