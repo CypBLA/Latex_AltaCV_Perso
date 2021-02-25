@@ -157,6 +157,8 @@
 
 %%%%% CONTENU
 \begin{document}
+	
+%%%% Bandeau haut
 \name{Cyprien BLANC	}
 \tagline{Jeune ingénieur en automobile et transport}
 %% You can add multiple photos on the left or right
@@ -187,13 +189,67 @@
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 % \AtBeginEnvironment{itemize}{\small}
 
+
+%%%% CONTENU EN COLONNES
+
 %% Set the left/right column width ratio to 6:4.
 \columnratio{0.7}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
-\cvsection{Experience}
+
+%%% FORMATION
+\cvsection{Formation}
+
+\cvevent{Diplôme universitaire - Formation Adaptée Enseignement (FAE) 1^{er} degré}{Institut National Supérieur du Professorat et de l'Education}{2019 - 2020}{Lyon}
+\begin{itemize}
+	\item Formation à mi-temps alternée avec la prise en charge d'une classe de CP.
+\end{itemize}
+
+\divider
+
+\cvevent{Master 1 - Métiers de l'enseignement, de l'Education et de la Formation - Parcours de professeur des écoles}{Institut National Supérieur du Professorat et de l'Education}{2018 - 2019}{Lyon}
+Préparation parallèle du Concours de Recrutement des Professeurs des Ecoles (CRPE)
+
+\divider
+
+\cvevent{Cursus ingénieur complet}{ISAT}{2013 - 2018}{ISAT}
+\begin{itemize}
+	\item Département EPEE (\'{E}nergétique, Propulsion, \'{E}lectronique et Environnement) - Spécialisation VIA (Véhicule Intelligent et Autonome)
+	\item Cursus en cinq ans avec deux stages ingénieur de six mois et un semestre à l'étranger
+\end{itemize}
+
+\divider
+
+\cvevent{Semestre d'études Erasmus - Automation and Control Engineering}{Politecnico di Milano}{03/17 - 07/17}{Milan - Italie}
+\begin{itemize}
+	\item Cours en langue anglaise et quotidien en italien
+	\item
+\end{itemize}
+
+\divider
+
+\cvevent{Terminale Scientifique - Spé. Sciences de l'ingénieur}{Lycée Charlie Chaplin}{2012 - 2013}{Décines-Charpieu}
+\begin{itemize}
+	\item Baccalauréat mention Très Bien (16,55/20)
+	\item Spécialité Sciences de l'Ingénieur
+	\item Option musique
+\end{itemize}
+
+%\cvevent{Titre}{Entreprise}{Année}{Lieu}
+%\begin{itemize}
+%\item
+%\item
+%\end{itemize}
+	
+\medskip
+
+%%% EXPERIENCES
+\cvsection{Expériences}
+
+%% PROFESSIONNELLES
+\cvsubsection{Professionnelles}
 
 %\cvevent{Titre}{Entreprise}{Année}{Lieu}
 %\begin{itemize}
@@ -203,23 +259,27 @@
 
 \cvevent{Professeur des écoles stagiaire}{Education nationale}{2019-2020}{Soucieux-en-Jarrest}
 \begin{itemize}
-\item En charge les lundi et mardi d'une classe de CP à l'école élémentaire "Les Chadrillons" de Soucieu-en-Jarrest
-\item En formation en parallèle à mi-temps à l'Institut National Supérieur du Professorat et de l'Education de Lyon
+	\item En charge les lundi et mardi d'une classe de CP à l'école élémentaire "Les Chadrillons" de Soucieu-en-Jarrest
+	\item En formation en parallèle à mi-temps à l'Institut National Supérieur du Professorat et de l'Education de Lyon
 \end{itemize}
 
 \divider
 
 \cvevent{Adjoint territorial d'animation}{Mairie de Meyzieu}{07/19}{Meyzieu}
 \begin{itemize}
-\item Trois séjours campés de 5 jours sous tente
-\item Encadrement de jeunes de 12 à 16 ans
+	\item Trois séjours campés de 5 jours sous tente
+	\item Encadrement de jeunes de 12 à 16 ans
 \end{itemize}
+
+\divider
 
 \cvevent{Stage ingénieur - Développement Matlab - Logiciel de post-traitement de données d'essais moteurs}{MCE-5}{01/18 - 06/18}{Lyon}
 \begin{itemize}
-\item Intégré au sein de l'équipe calcul
-\item Post-traitement de données d'essais moteurs à architecture innovante (taux de compression variable)
+	\item Intégré au sein de l'équipe calcul
+	\item Post-traitement de données d'essais moteurs à architecture innovante (taux de compression variable)
 \end{itemize}
+
+\divider
 
 \cvevent{Stagé ingénieur - Développement Matlab - Outils d'analyse de données d'essais}{Valéo}{07/16 - 12/16}{Cergy}
 \begin{itemize}
@@ -231,38 +291,53 @@
 	\end{itemize}
 \end{itemize}
 
-%\cvevent{Titre}{Entreprise}{Année}{Lieu}
-%\begin{itemize}
-%\item
-%\item
-%\end{itemize}
-
-\cvsection{Projects}
-
-\cvevent{Project 1}{Funding agency/institution}{}{}
-\begin{itemize}
-\item Details
-\end{itemize}
-
 \divider
 
-\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
-A short abstract would also work.
+\cvevent{Missions ponctuelles d'intérim}{Agence d'intérim}{2014 ~ 2018}{Lyon}
+\begin{itemize}
+	\item Manutentionnaire
+	\item Monteur-câbleur
+	\item Animateur
+\end{itemize}
 
 \medskip
 
-\cvsection{A Day of My Life}
+%% SCOLAIRES
+\cvsubsection{Scolaires}
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{Sleep,\\beautiful sleep},
-  3/8em/accent!40/Hopeful novelist by night,
-  8/8em/accent!60/Daytime job,
-  2/10em/accent/Sports and relaxation,
-  5/6em/accent!20/Spending time with family
-}
+\cvevent{Projets d'ingénierie}{ISAT}{2015 - 2017}{Nevers}
+\begin{itemize}
+	\item ISAT Hydrogen Project\\%
+	Modélisation et simulation d'un véhicule hybride série à pile à combustible sous Matlab/Simulink
+	\item Projet multi-disciplinaire - Défi de parcours semi-autonome\\%
+	Véhicule de modélisme modifié asservi au travers d'une communication distante depuis PC. Aucune action humaine au cours même du parcours.
+	\item Modèle de moteur à combustion interne 0D 1 zone\\%
+	Modèle développé sous Matlab.
+\end{itemize}
+
+%\cvevent{Titre}{Entreprise}{Année}{Lieu}
+%\begin{itemize}
+%	\item
+%	\item
+%\end{itemize}
+
+\medskip
+
+%% Associatives
+\cvsubsection{Associatives et bénévoles}
+
+\cvevent{Encadrement de camp scout}{Scouts et Guides de France}{07/18}{Sembadel Gare}
+\begin{itemize}
+	\item Encadrement de jeunes de 11 à 14 ans
+	\item Coopération entre encadrants sur les actions en amont et en cours de camp
+	\item Planification d'activités, logistique, encadrement, etc.
+\end{itemize}
+
+\cvevent{Association ISATevent}{ISAT}{2016 - 2018)}{Nevers}
+\begin{itemize}
+	\item
+	\item
+\end{itemize}
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
