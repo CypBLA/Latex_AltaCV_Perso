@@ -130,7 +130,7 @@
 \DeclareOption{ragged2e}{\@raggedtwoetrue}
 
 %% Les options non explicitement déclarées sont passée à la classe "extarticle".
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 % Toute option supplémentaire inconnue car non déclarée par un élément \DeclareOption est passé à la classe "extarticle" pour être géré par cette dernière.
 % La classe "extarticle" est-elle incluse par défaut dans LaTeX ?
 % Ne faut-il pas inclure à un moment donné le paquet "extsizes" ? :
