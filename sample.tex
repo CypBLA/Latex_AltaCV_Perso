@@ -26,10 +26,37 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 % Change the page layout if you need to
-\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=1.2cm}
 
 % The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
+
+%% Selection de fonts
+
+
+% Fonts envisagés : 
+
+% - SERIF FONTS -
+% * Roboto Slab
+% https://www.ctan.org/tex-archive/fonts/roboto/
+% > \usepackage[sfdefault]{roboto}
+%
+% - SANS SERIF FONTS -
+% * DejaVu Sans
+% https://www.ctan.org/pkg/dejavu
+% > \usepackage{dejavu}
+% 
+% * Latin Modern Sans
+% https://www.ctan.org/tex-archive/fonts/lm/
+% > \usepackage{lmodern}
+%
+% * Lato
+% https://www.ctan.org/tex-archive/fonts/lato/
+% > \usepackage[default]{lato}
+% 
+% * Clear Sans
+% https://www.ctan.org/tex-archive/fonts/clearsans/
+% > \usepackage[sfdefault]{ClearSans} %% option 'sfdefault' activates Clear Sans as the default text font
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
@@ -66,7 +93,6 @@
 \renewcommand{\personalinfofont}{\footnotesize}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
-
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
