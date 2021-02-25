@@ -155,6 +155,10 @@
 %% sample.bib contains your publications
 \addbibresource{sample.bib}
 
+%%%% DEFINITION DE NOUVELLES COMMANDES
+\newcommand{\emphasis}[1]{\bfseries\textcolor{emphasis}{#1}}
+
+
 %%%%% CONTENU
 \begin{document}
 	
@@ -188,7 +192,6 @@
 \makecvheader
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 % \AtBeginEnvironment{itemize}{\small}
-
 
 %%%% CONTENU EN COLONNES
 
@@ -323,7 +326,7 @@ Préparation parallèle du Concours de Recrutement des Professeurs des Ecoles (C
 
 \medskip
 
-%% Associatives
+%% ASSOCIATIVES ET BENEVOLES
 \cvsubsection{Associatives et bénévoles}
 
 \cvevent{Encadrement de camp scout}{Scouts et Guides de France}{07/18}{Sembadel Gare}
@@ -334,10 +337,54 @@ Préparation parallèle du Concours de Recrutement des Professeurs des Ecoles (C
 \end{itemize}
 
 \cvevent{Association ISATevent}{ISAT}{2016 - 2018)}{Nevers}
+Organisation du gala de l'ISAT : gestion de billetterie, définitions des plans de table, recherche et démarchage de groupes de musique, etc.
+
+\cvevent{Vice-président du Bureau des \'{E}lèves}{ISAT}{2015 - 2016)}{Nevers}
+Organisation d'évènements, gestion d'un local associatif, réalisation de supports graphiques, démarchage, etc.
+
+\cvevent{Représentant étudiant - Conseil d'administration}{ISAT}{2016 - 2018)}{Nevers}
+
+%%% COMPETENCES
+\cvsection{Compétences}
+
+%% LANGAGES MODELISATION ET SIMULATION
+\cvsubsection{Langages de modélisation et simulation}
+\cvtag{Modelica}
+\cvtag{Simulink}$
+
+%% PROGRAMMATION
+\cvsubsection{Programmation}
+\cvtag{Programmation Orientée Objets}
+\cvtag{Matlab}
+\cvtag{Labview}
+\cvtag{VBA (Excel)}
+\cvtag{Langages web (HTML, CSS, PHP, SQL)}
+\cvtag{C}
+\cvtag{Python}
+
+%% SYSTEMES D'EXPLOITATION
+\cvsubsection{Systèmes d'exploitation}
+\cvtag{Windows}
+\cvtag{GNU/Linux}
+
+%% OUTILS BUREAUTIQUES
+\cvsubsection{Outils bureautiques}
 \begin{itemize}
-	\item
-	\item
+	\item Suites office : 
+		\cvtag{Microsoft Office}
+		\cvtag{LibreOffice}
+	\item Edition multimedia (images, vidéo, audio, graphiques, etc.)
 \end{itemize}
+
+%%% COMPETENCES
+\cvsection{Langues}
+
+\begin{tabularx}{\linewidth}{@{}X >{\raggedright\arraybackslash}X@{}}
+	\bfseries\textcolor{emphasis}{
+	& \skillfive{4}
+	\multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
+	& #3
+\end{tabularx}%
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
