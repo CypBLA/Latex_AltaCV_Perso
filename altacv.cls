@@ -412,6 +412,8 @@
 % This command appends arbitrary〈code〉to a〈hook〉.  If the〈code〉contains any pa-rameter characters, they need not be doubled. This command is robust.
 % Part of the "etoolbox" package.
 
+%% Command \altacv@add@photo@left
+% > \altacv@add@photo@left{<photoPath>}
 \newcommand{\altacv@add@photo@left}[1]{%
   \appto{\altacv@left@photos}{%
     \@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}%
@@ -419,6 +421,9 @@
   \addtolength{\altacv@photos@width}{\altacv@photo@diam@left}%
   \addtolength{\altacv@photos@width}{1ex}%
 }
+
+%% Command \altacv@add@photo@right
+% > \altacv@add@photo@right{<photoPath>}
 \newcommand{\altacv@add@photo@right}[1]{%
   \appto{\altacv@right@photos}{%
     \@makeaphoto{\altacv@photo@diam@right}{#1}\hspace{1ex}%
