@@ -144,6 +144,7 @@
 \ProcessOptions\relax
 
 %%%%% External classes loading
+
 \LoadClass{article}
 % Convenient command to build classes from existing ones
  
