@@ -272,6 +272,7 @@
 % > \smallskip
 % > \bigskip
 
+%% Environment \begin{fullwidth}
 \newenvironment{fullwidth}{%
   \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
   {\end{adjustwidth}}
