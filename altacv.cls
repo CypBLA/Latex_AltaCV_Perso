@@ -369,9 +369,12 @@
 % Pourtant, elle doit bien fonctionner puisqu'elle est appelée en dessous.
 \ExplSyntaxOff
 
-\newcommand{\name}[1]{\def\@name{#1}}
-\newcommand{\tagline}[1]{\def\@tagline{#1}}
-\newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
+%% Définition de 3 champs d'information.
+\newcommand{\name}[1]{\def\@name{#1}} % > \name{<nom>}
+\newcommand{\tagline}[1]{\def\@tagline{#1}} % > \tagline{<tag>}
+\newcommand{\personalinfo}[1]{\def\@personalinfo{#1}} % > \personalinfo{<personalinfo>}
+
+%% Champs d'information à symbole.
 \NewInfoField{email}{\faAt}[mailto:] % Adresse mail
 \NewInfoField{mailaddress}{\faEnvelope} % Adresse postale
 \NewInfoField{phone}{\faPhone} % Numéro de téléphone
@@ -382,13 +385,17 @@
 \NewInfoField{orcid}{\aiOrcid}[https://orcid.org/] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
 \NewInfoField{location}{\faMapMarker} % Emplacement (Pas forcément utile si la même que l'adresse déclarée...)
 
+%% Create length fields. Act as global variables.
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}
 \newlength{\altacv@photo@diam@left}
 \newlength{\altacv@photo@diam@right}
+
+%% Macros used to append the macros "\@makeaphoto" as many times as needed.
 \def\altacv@left@photos{}
 \def\altacv@right@photos{}
 
+%% Command \@makeaphoto
 % Crée la commande :
 % \@makeaphoto{<width>}{<cheminVersImage>}
 \newcommand{\@makeaphoto}[2]{%
@@ -426,10 +433,13 @@
 % Ex : \forcsvlist{\listadd\mylist}{item1, item2, item3}
 % La commande est définie par la paquet "etoolbox"
 
+% > \photoL{<width>}{<photoPath1>,<photoPath2>}
 \newcommand{\photoL}[2]{%
   \setlength{\altacv@photo@diam@left}{#1}%
   \forcsvlist{\altacv@add@photo@left}{#2}%
 }
+
+% > \photoR{<width>}{<photoPath1>,<photoPath2>}
 \newcommand{\photoR}[2]{%
   \setlength{\altacv@photo@diam@right}{#1}%
   \forcsvlist{\altacv@add@photo@right}{#2}%
