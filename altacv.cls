@@ -45,7 +45,7 @@
 % xparse – A generic document command parser : https://www.ctan.org/pkg/xparse
 % The package provides a high-level interface for producing document-level commands. In that way, it offers a replacement for LaTeX2ε’s \newcommand macro, with significantly improved functionality. 
 
-\RequirePackage{xcolor}
+\RequirePackage[svgnames]{xcolor}
 % xcolor – Driver-independent color extensions for LaTeX and pdfLaTeX
 % https://www.ctan.org/pkg/xcolor
 
@@ -53,7 +53,9 @@
 % OLD : \RequirePackage{tikz}
 % pgf – Create PostScript and PDF graphics in TeX
 % https://www.ctan.org/pkg/pgf
-\usetikzlibrary{arrows}
+
+% \usetikzlibrary{arrows}
+% CypBLA : Don't seem know by Latex even after pgf package.
 
 \RequirePackage[skins]{tcolorbox}
 % tcolorbox – Coloured boxes, for LaTeX examples and theorems, etc
@@ -236,7 +238,8 @@
 \if@withhyper
   \AtBeginDocument{%
     \RequirePackage{hyperref}
-    \hypersetup{hidelinks}
+    % \hypersetup{hidelinks}
+    % CypBLA : Commented to see where a links in the PDF.
     \urlstyle{same}
   }
 \fi
@@ -598,11 +601,10 @@
   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
 }
 
-\newcommand{\skillfive[1]{%
+\newcommand{\skillfive}[1]{%
 	\hfill
 	\foreach \x in {1,...,5}{%
 		\space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
-	}%
 }
 
 %% Command \wheelchart
