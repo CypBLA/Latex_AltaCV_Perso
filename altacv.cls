@@ -480,6 +480,7 @@
 %% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 \newcommand{\cvsectionfont}{\LARGE\bfseries}
 \newcommand{\cvsubsectionfont}{\large\bfseries}
+\newcommand{\cvsubsectionfont}{\normalsize\bfseries}
 
 %% Command \makecvheader
 \newcommand{\makecvheader}{%
@@ -534,6 +535,9 @@
   {\color{subheading}\cvsubsectionfont{#1}\par}\medskip
 }
 
+%% Command \cvsubsubsection
+% > cvsubsubsection{heading}
+
 % v1.1.4: fixes inconsistent font size
 
 %% Command \cvevent
@@ -583,6 +587,13 @@
 \textcolor{emphasis}{\textbf{#1}}\hfill
 \foreach \x in {1,...,5}{%
   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+}
+
+\newcommand{\skillfive[1]{%
+	\hfill
+	\foreach \x in {1,...,5}{%
+		\space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+	}
 }
 
 %% Command \wheelchart
