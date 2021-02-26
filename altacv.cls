@@ -516,6 +516,7 @@
   {\color{headingrule}\rule{\linewidth}{2pt}\par}\medskip
 }
 
+%% Command \cvsubsection
 % > cvsubsection{heading}
 \newcommand{\cvsubsection}[1]{%
   \smallskip%
@@ -524,6 +525,7 @@
 
 % v1.1.4: fixes inconsistent font size
 
+%% Command \cvevent
 % > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
 \newcommand{\cvevent}[4]{%
   {\large\color{emphasis}#1\par}
@@ -539,6 +541,7 @@
 % tabularx environment (tabularx package)
 % > \begin{tabularx}{<width>}[<pos>]{<preamble>}
 
+%% Command \cvachievement
 % > \cvachievement{<symbole>}{<achievement>}{<details_about_achievement>}
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
@@ -548,6 +551,7 @@
   \smallskip
 }
 
+%% Command \cvtag
 % > \cvtag{<contenuEtiquette>}
 % Crée une étiquette directement au sein du paragraphe avec un mot clé au sein d'un cadre aux bords arrondis.
 \newcommand{\cvtag}[1]{%
@@ -557,6 +561,7 @@
 % \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
 % Vient du paquet "etoolbox".
 
+%% Command \cvskill
 % > \cvskill{<compétence>}{<valeurDe1à5>}
 %
 % Explication :
@@ -569,9 +574,7 @@
   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
 }
 
-
-
-
+%% Command \wheelchart
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
 % \wheelchart[<angle>]{<outer_radius>}{<inner_radius>}{<value>,<text_width>,<color>,<detail>}	% comma-separated list of value/text width/color/detail
 \newcommand{\wheelchart}[4][0]{%
@@ -628,8 +631,9 @@
     \endgroup
 }
 
+%% Command \cvref
 % Description of referees
-% \cvref{<name>}{<email>}{<mail adress>}
+% > \cvref{<name>}{<email>}{<mail adress>}
 \newcommand{\cvref}[3]{%
   \smallskip
   \textcolor{emphasis}{\textbf{#1}}\par
@@ -652,6 +656,7 @@
 % The difference between a minipage and a \parbox is that a \parbox can only contain a single paragraph and you cannot use all commands and environments inside it, while a minipage may contain multiple paragraphs and, in fact, almost anything.
 % > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
 
+%% Environment \begin{cvcolumn}
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
 
