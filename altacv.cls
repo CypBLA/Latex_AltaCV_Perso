@@ -322,7 +322,8 @@
 % \IfNoValueT {<argument>} {<true code>}
 % \IfNoValueF {<argument>} {<false code>}
 
-%% Création d'une commande \printinfo avec :
+%% Command \printinfo
+% Création d'une commande \printinfo avec :
 % > Comme 1e argument obligatoire un symbole
 % > Comme 2e argument obligatoire l'information (illustrée par le symbole)
 % > Comme 3e argument facultatif un URL qui sera superposé à l'information.
@@ -466,11 +467,15 @@
 % Dans l'ordre croissant : 
 % \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
 
+%% Commands to shape the cv header : \taglinefont \personalinfofont \cvsectionfont
 \newcommand{\taglinefont}{\large\bfseries}
 \newcommand{\personalinfofont}{\footnotesize\bfseries}
+
+%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 \newcommand{\cvsectionfont}{\LARGE\bfseries}
 \newcommand{\cvsubsectionfont}{\large\bfseries}
 
+%% Command \makecvheader
 \newcommand{\makecvheader}{%
   \begingroup
     \altacv@left@photos\hfill%
