@@ -243,6 +243,7 @@
 
 %%%%% CONFIGURATIONS AND NEW COMMANDS DECLARATION
 
+%% Definition of color associations
 \colorlet{accent}{blue!70!black}
 \colorlet{emphasis}{black}
 \colorlet{heading}{black}
@@ -251,6 +252,8 @@
 \colorlet{body}{black!80!white}
 \colorlet{name}{heading}
 \colorlet{tagline}{accent}
+
+%% Definition of marker commands : \itemmarker, \ratingmarker
 \newcommand{\itemmarker}{{\small\textbullet}}
 \newcommand{\ratingmarker}{\faCircle}
 
@@ -259,6 +262,7 @@
 % > \setlist
 % Command of the "enumitem" package. 
 
+%% Supression de l'indentation des paragraphes
 \setlength{\parindent}{0pt}
 % CypBLA : Supression de l'indentation ?
 % Aucune indentation de paragraphe n'aura lieu dans le document.
