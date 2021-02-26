@@ -506,7 +506,8 @@
 % Ma lecture de cette commande :
 % Si un premier argument est fourni, exprimé entre crochets, il est inséré dans la marge ?
 % ... je devrais teste la commande pour observer son résultat...
-%
+
+%% Command \cvsection
 % > \cvsection[optional]{heading}
 \newcommand{\cvsection}[2][]{%
   \bigskip%
