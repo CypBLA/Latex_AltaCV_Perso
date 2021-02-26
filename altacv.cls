@@ -41,13 +41,13 @@
 % scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
 % The package provides hooks for the execution of commands before or after loading files, classes or packages.
 
-\RequirePackage{l3packages}
-% l3packages – High-level LaTeX3 concepts : https://www.ctan.org/pkg/l3packages
+%\RequirePackage{l3packages}
+%% l3packages – High-level LaTeX3 concepts : https://www.ctan.org/pkg/l3packages
 
-%% CypBLA : Commented to be replaced by the meta-package "l3packages"
-%\RequirePackage{xparse}
-%% xparse – A generic document command parser : https://www.ctan.org/pkg/xparse
-%% The package provides a high-level interface for producing document-level commands. In that way, it offers a replacement for LaTeX2ε’s \newcommand macro, with significantly improved functionality. 
+% CypBLA : Commented to be replaced by the meta-package "l3packages"
+\RequirePackage{xparse}
+% xparse – A generic document command parser : https://www.ctan.org/pkg/xparse
+% The package provides a high-level interface for producing document-level commands. In that way, it offers a replacement for LaTeX2ε’s \newcommand macro, with significantly improved functionality. 
 
 \RequirePackage{realscripts}
 % realscripts – Access OpenType subscript and superscript glyphs : https://www.ctan.org/pkg/realscripts
