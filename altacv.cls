@@ -480,7 +480,7 @@
 %% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 \newcommand{\cvsectionfont}{\LARGE\bfseries}
 \newcommand{\cvsubsectionfont}{\large\bfseries}
-\newcommand{\cvsubsectionfont}{\normalsize\bfseries}
+\newcommand{\cvsubsubsectionfont}{\normalsize\bfseries}
 
 %% Command \makecvheader
 \newcommand{\makecvheader}{%
@@ -537,6 +537,10 @@
 
 %% Command \cvsubsubsection
 % > cvsubsubsection{heading}
+\newcommand{\cvsubsection}[1]{%
+	\smallskip%
+	{\cvsubsectionfont{#1}\par}
+}	
 
 % v1.1.4: fixes inconsistent font size
 
