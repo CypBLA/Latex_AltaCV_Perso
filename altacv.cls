@@ -486,7 +486,7 @@
   \endgroup\medskip
 }
 
-%% Command \quote
+%% Environment \begin{quote}
 % Adaptation of the quote environment
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
