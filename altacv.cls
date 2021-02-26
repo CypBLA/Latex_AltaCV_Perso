@@ -258,6 +258,11 @@
 \newcommand{\ratingmarker}{\faCircle}
 
 \setlist{leftmargin=*,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vspace{0.25\baselineskip}}
+% leftmargin : marge laissée à gauche du paragraphe de l'item par rapport à la frontière gauche du texte dans lequel l'environnement est inséré.
+% labelsep : espace horizontal entre le label et le paragraphe.
+% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
+% 
+
 \setlist[itemize]{label=\itemmarker}
 % > \setlist
 % Command of the "enumitem" package. 
