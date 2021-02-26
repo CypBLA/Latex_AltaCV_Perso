@@ -22,6 +22,9 @@
 
 %%%%% CONFIGURATIONS INITIALES
 
+\PassOptionsToPackage{svgnames}{xcolor}
+% Sur conseil de : https://tex.stackexchange.com/questions/51488/option-clash-with-xcolor-and-tikz
+
 %%%% Appel à la classe utilisée avec les paramètres désirés.
 \documentclass[10pt,a4paper,ragged2e,withhyper,normalphoto]{altacv}
 %% AltaCV uses the fontawesome5 and academicons fonts
@@ -172,7 +175,7 @@
 \personalinfo{%
   % Not all of these are required!
   \email{cyprien.blanc@zaclys.net}
-  \phone{(+33)6 08 13 97 81}
+  \phone{(+33)6 98 13 97 81}
   \mailaddress{19 allée George Sand 69330 Jonage}
   \location{FRANCE}
 %  \homepage{www.homepage.com} % Pas encore de site pour le moment. => à venir.
@@ -393,9 +396,7 @@ Organisation d'évènements, gestion d'un local associatif, réalisation de supp
 	\end{itemize} \\ 
 	\hline
 	\emphasis{Italien} & \skillfive{2}\par%
-	\begin{itemize}
-		\item Niveau CERCL B1
-	\end{itemize} \\ 
+	Niveau CERCL B1 \\ 
 \end{tabularx}
 
 %%% CENTRES D'INTERETS
