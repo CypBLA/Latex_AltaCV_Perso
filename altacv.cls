@@ -537,7 +537,7 @@
 
 %% Command \cvsubsubsection
 % > cvsubsubsection{heading}
-\newcommand{\cvsubsection}[1]{%
+\newcommand{\cvsubsubsection}[1]{%
 	\smallskip%
 	{\cvsubsectionfont{#1}\par}
 }	
