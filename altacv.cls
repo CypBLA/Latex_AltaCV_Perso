@@ -17,11 +17,11 @@
 % - https://github.com/foohyfooh Fixed blank spaces in \cvevent and bad link in README.md (June 2018)
 %%%%%%%%%%%%%%%%
 
-%%%%% Identification 
+%%%%% IDENTIFICATION 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{altacv}[2020/05/17 AltaCV v1.3.3, yet another alternative class for a resume/curriculum vitae.]
 
-%%%%% External packages
+%%%%% EXTERNAL PACKAGES
 
 %% v1.3.2 Hopefully this helps make the PDF
 %% file more 'friendly' with copy-paste etc
@@ -96,7 +96,7 @@
 % afterpage – Execute command after the next page break
 % https://www.ctan.org/pkg/afterpage
 
-%%%%% Options
+%%%%% OPTIONS
 
 %% v1.1: Optionally load academicons
 \newif\if@academicons 
@@ -154,7 +154,7 @@
 %% Will be removed when fix is released in biblatex 3.16
 \catcode30=12
 
-%%%%% Declarations depending on selected options.
+%%%%% DECLARATIONS DEPENDING ON SELECTED OPTIONS
 
 %% v1.1.5: added for convenience
 \newif\ifxetexorluatex
@@ -241,7 +241,7 @@
   }
 \fi
 
-%%%%% Configurations and new commands declaration
+%%%%% CONFIGURATIONS AND NEW COMMANDS DECLARATION
 
 \colorlet{accent}{blue!70!black}
 \colorlet{emphasis}{black}
@@ -321,11 +321,14 @@
 % \IfNoValueTF {<argument>} {<true code>} {<false code>}
 % \IfNoValueT {<argument>} {<true code>}
 % \IfNoValueF {<argument>} {<false code>}
-%
-% Création d'une commande \printinfo avec :
+
+%% Création d'une commande \printinfo avec :
 % > Comme 1e argument obligatoire un symbole
 % > Comme 2e argument obligatoire l'information (illustrée par le symbole)
 % > Comme 3e argument facultatif un URL qui sera superposé à l'information.
+
+% \printinfo{symbol}{detail}[optional hyperlink prefix]
+
 \NewDocumentCommand{\printinfo}{m m o}{%
   \IfNoValueTF{#3}{%
     \mbox{\textcolor{accent}{\normalfont #1}~\utffriendlydetokenize{#2}\hspace{2em}}%
@@ -340,7 +343,15 @@
   }%
 }%
 
-%% v1.3: Exploring convenient creation of fields
+%% Command \NewInfoField
+% > \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix]
+% 
+% Ex :
+% \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+%
+% \gitlab{your_id}
+
+% v1.3: Exploring convenient creation of fields
 \NewDocumentCommand{\NewInfoField}{m m o}{%
   \IfNoValueF{#3}{\csdef{#1 hyperprefix}{#3}}%
   \csdef{#1 symbol}{#2}%
@@ -536,6 +547,9 @@
 \foreach \x in {1,...,5}{%
   \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
 }
+
+
+
 
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
 % \wheelchart[<angle>]{<outer_radius>}{<inner_radius>}{<value>,<text_width>,<color>,<detail>}	% comma-separated list of value/text width/color/detail
