@@ -659,7 +659,6 @@
 %% Environment \begin{cvcolumn}
 \newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
 
-
 %% Gestion bibliographie à l'aide du paquet biblatex
 
 % Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
@@ -682,15 +681,20 @@
 % Quel utilité pour ces commandes dans ce document ?
 % \addsidebar{<dimen>}{<}
 % \addnextpagesidebar
-%
+
+%% Command \addsidebar
 \newcommand{\addsidebar}[2][]{\marginpar{%
   \ifstrequal{#1}{}{}{\vspace*{#1}}%
   \input{#2}}%
 }
+
+%% Command \addnextpagesidebar
 \newcommand{\addnextpagesidebar}[2][]{\afterpage{\addsidebar[#1]{#2}}}
+
 % > \afterpage
 % Command from the "afterpage" package.
 
+%%% Actions en début de document
 \AtBeginDocument{%
   \pagestyle{empty}
   \color{body}
