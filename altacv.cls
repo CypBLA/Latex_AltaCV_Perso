@@ -456,6 +456,7 @@
 % \let allows you to copy the content of a command into a new command.  
 % \let<new-command>[[<spaces>]=]<original-command>
 
+%% Command \namefont
 \newcommand{\namefont}{\Huge\bfseries}
 % > \bfseries
 % Command for font changing. Passe the text to bold font.
@@ -485,6 +486,7 @@
   \endgroup\medskip
 }
 
+%% Command \quote
 % Adaptation of the quote environment
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
