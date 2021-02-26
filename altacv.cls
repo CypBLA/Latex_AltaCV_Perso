@@ -264,6 +264,7 @@
 % Aucune indentation de paragraphe n'aura lieu dans le document.
 % Même si la commande \indent est utilisée.
 
+%% Command \divider
 \newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
 % Définission d'une commande de barre horizontale de la largeur d'une ligne.
 % Précisions : 
