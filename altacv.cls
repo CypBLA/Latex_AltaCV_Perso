@@ -432,23 +432,26 @@
   \addtolength{\altacv@photos@width}{1ex}%
 }
 
-
 % \forcsvlist{〈handler〉}{〈item, item, ...〉}
 % This command loops over a comma-separated list of items and executes the 〈handler〉specified at invocation time for every item in the list, passing the item as an argument.
 % Ex : \forcsvlist{\listadd\mylist}{item1, item2, item3}
 % La commande est définie par la paquet "etoolbox"
 
+%% Command \photoL
 % > \photoL{<width>}{<photoPath1>,<photoPath2>}
 \newcommand{\photoL}[2]{%
   \setlength{\altacv@photo@diam@left}{#1}%
   \forcsvlist{\altacv@add@photo@left}{#2}%
 }
 
+%% Command \photoR
 % > \photoR{<width>}{<photoPath1>,<photoPath2>}
 \newcommand{\photoR}[2]{%
   \setlength{\altacv@photo@diam@right}{#1}%
   \forcsvlist{\altacv@add@photo@right}{#2}%
 }
+
+%% \photo=\photoR
 \let\photo\photoR % Est-ce que rend la commande \photo équivalente à \photoR ?
 % \let allows you to copy the content of a command into a new command.  
 % \let<new-command>[[<spaces>]=]<original-command>
