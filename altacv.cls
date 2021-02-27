@@ -529,7 +529,7 @@
 %% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 \newcommand{\cvsectionfont}[1]
 {
-	\underline{\LARGE{\titlesfont{#1}}}
+	\color{heading}{\underline{\LARGE{\titlesfont{#1}}}}
 }
 
 \newcommand{\cvsubsectionfont}[1]{
@@ -567,9 +567,7 @@
 
 %% Environment \begin{quote}
 % Adaptation of the quote environment
-\renewenvironment{quote}{
-	\color{accent}\itshape\par
-}
+\renewenvironment{quote}{\color{accent}\itshape}{\par}
 
 % \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
 % Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
@@ -590,17 +588,18 @@
 
 %% Command \cvsection
 % > \cvsection[optional]{heading}
-\newcommand{\cvsection}[2][]{%
+\newcommand{\cvsection}[2][]{
 	\smallskip%
-	\ifstrequal{#1}{}%
-	{}%
-	{
+	\ifstrequal{#1}{}
+	{} % True case
+	{ % False case
 		\marginpar{
 			\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
 		}
 	}
-	{\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]%
-  {\color{headingrule}\rule{\linewidth}{2pt}\par}\smallskip
+	{\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]
+  	{\color{headingrule}\rule{\linewidth}{2pt}\par}
+  	\smallskip
 }
 
 %% Command \cvsubsection
