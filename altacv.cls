@@ -257,14 +257,14 @@
 %%%%% CONFIGURATIONS AND NEW COMMANDS DECLARATION
 
 %% Definition of color associations
-\colorlet{accent}{blue!70!black}
-\colorlet{emphasis}{black}
-\colorlet{heading}{black}
-\colorlet{headingrule}{black}
-\colorlet{subheading}{emphasis}
-\colorlet{body}{black!80!white}
-\colorlet{name}{heading}
-\colorlet{tagline}{accent}
+\colorlet{name}{heading} % Used for : \name
+\colorlet{tagline}{blue!70!black} % Used for : \tagline
+\colorlet{accent}{blue!70!black} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
+\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+\colorlet{heading}{black} % Used for : \cvsection
+\colorlet{headingrule}{black} % Used for : \rule
+\colorlet{subheading}{emphasis} % Used for : \cvsubsection, \cvsubsubsection
+\colorlet{body}{black!80!white} % Used for : 
 
 %% Definition of marker commands : \itemmarker, \ratingmarker
 \newcommand{\itemmarker}{{\small\textbullet}}
@@ -548,10 +548,10 @@
 %% Command \cvsection
 % > \cvsection[optional]{heading}
 \newcommand{\cvsection}[2][]{%
-  \bigskip%
+  \smallskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]%
-  {\color{headingrule}\rule{\linewidth}{2pt}\par}\medskip
+  {\color{headingrule}\rule{\linewidth}{2pt}\par}\smallskip
 }
 
 %% Command \cvsubsection
