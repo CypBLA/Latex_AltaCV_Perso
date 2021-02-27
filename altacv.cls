@@ -464,21 +464,21 @@
 %% Command \altacv@add@photo@left
 % > \altacv@add@photo@left{<photoPath>}
 \newcommand{\altacv@add@photo@left}[1]{%
-  \appto{\altacv@left@photos}{%
-    \@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}%
-  }%
-  \addtolength{\altacv@photos@width}{\altacv@photo@diam@left}%
-  \addtolength{\altacv@photos@width}{1ex}%
+	\appto{\altacv@left@photos}{
+    	\@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}
+  	}
+  	\addtolength{\altacv@photos@width}{\altacv@photo@diam@left}
+	\addtolength{\altacv@photos@width}{1ex}
 }
 
 %% Command \altacv@add@photo@right
 % > \altacv@add@photo@right{<photoPath>}
-\newcommand{\altacv@add@photo@right}[1]{%
-  \appto{\altacv@right@photos}{%
-    \@makeaphoto{\altacv@photo@diam@right}{#1}\hspace{1ex}%
-  }%
-  \addtolength{\altacv@photos@width}{\altacv@photo@diam@right}%
-  \addtolength{\altacv@photos@width}{1ex}%
+\newcommand{\altacv@add@photo@right}[1]{
+	\appto{\altacv@right@photos}{
+    	\@makeaphoto{\altacv@photo@diam@right}{#1}\hspace{1ex}
+  	}
+  	\addtolength{\altacv@photos@width}{\altacv@photo@diam@right}
+	\addtolength{\altacv@photos@width}{1ex}
 }
 
 % \forcsvlist{〈handler〉}{〈item, item, ...〉}
@@ -488,16 +488,16 @@
 
 %% Command \photoL
 % > \photoL{<width>}{<photoPath1>,<photoPath2>}
-\newcommand{\photoL}[2]{%
-  \setlength{\altacv@photo@diam@left}{#1}%
-  \forcsvlist{\altacv@add@photo@left}{#2}%
+\newcommand{\photoL}[2]{
+	\setlength{\altacv@photo@diam@left}{#1}
+	\forcsvlist{\altacv@add@photo@left}{#2}
 }
 
 %% Command \photoR
 % > \photoR{<width>}{<photoPath1>,<photoPath2>}
-\newcommand{\photoR}[2]{%
-  \setlength{\altacv@photo@diam@right}{#1}%
-  \forcsvlist{\altacv@add@photo@right}{#2}%
+\newcommand{\photoR}[2]{
+	\setlength{\altacv@photo@diam@right}{#1}
+	\forcsvlist{\altacv@add@photo@right}{#2}
 }
 
 %% \photo=\photoR
@@ -550,24 +550,26 @@
 
 %% Command \makecvheader
 \newcommand{\makecvheader}{
-  \begingroup
-    \altacv@left@photos
-    \hfill
-    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
-    	\raggedright
-    	{\namefont{\@name}\par}
-    	\nameskip
-    	{\taglinefont{\@tagline}\par}
-    	\taglineskip
-    	{\personalinfofont{\@personalinfo}\par}
-    \end{minipage}\hfill
-    \altacv@right@photos\par
-  \endgroup
+	\begingroup
+	    \altacv@left@photos
+	    \hfill
+	    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
+    		\raggedright
+	    	{\namefont{\@name}\par}
+	    	\nameskip
+	    	{\taglinefont{\@tagline}\par}
+	    	\taglineskip
+	    	{\personalinfofont{\@personalinfo}\par}
+	    \end{minipage}\hfill
+	    \altacv@right@photos\par
+  	\endgroup
 }
 
 %% Environment \begin{quote}
 % Adaptation of the quote environment
-\renewenvironment{quote}{\color{accent}\itshape}{\par}
+\renewenvironment{quote}{
+	\color{accent}\itshape\par
+}
 
 % \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
 % Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
