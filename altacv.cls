@@ -414,6 +414,7 @@
     	\fi
   	}
 }
+
 % CypBLA : Je n'ai honnetement pas tout compris de comment cette déclaration de commande fonctionne.
 % Pourtant, elle doit bien fonctionner puisqu'elle est appelée en dessous.
 \ExplSyntaxOff
@@ -718,69 +719,75 @@
 % Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
 % \wheelchart[<angle>]{<outer_radius>}{<inner_radius>}{<value>,<text_width>,<color>,<detail>}	% comma-separated list of value/text width/color/detail
 \newcommand{\wheelchart}[4][0]{%
-    \begingroup\centering
-    \def\innerradius{#3}%
-    \def\outerradius{#2}%
-    % Calculate total
-    \pgfmathsetmacro{\totalnum}{0}%
-    \foreach \value/\colour/\name in {#4} {%
-        \pgfmathparse{\value+\totalnum}%
-        \global\let\totalnum=\pgfmathresult%
-    }%
-    \begin{tikzpicture}
+    \begingroup
+    	\centering
+    	\def\innerradius{#3}
+		\def\outerradius{#2}	
+		
+	    % Calculate total
+	    \pgfmathsetmacro{\totalnum}{0}
+	    \foreach \value/\colour/\name in {#4} {
+     		\pgfmathparse{\value+\totalnum}
+	        \global\let\totalnum=\pgfmathresult
+	    }
+    	
+		\begin{tikzpicture}
 
-      % Calculate the thickness and the middle line of the wheel
-      \pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
-      \pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
-      \pgfmathsetmacro{\totalrot}{-90 + #1}
+			% Calculate the thickness and the middle line of the wheel
+			\pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
+			\pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
+			\pgfmathsetmacro{\totalrot}{-90 + #1}
 
-      % Rotate so we start from the top
-      \begin{scope}[rotate=\totalrot]
+			% Rotate so we start from the top
+			\begin{scope}[rotate=\totalrot]
 
-      % Loop through each value set. \cumnum keeps track of where we are in the wheel
-      \pgfmathsetmacro{\cumnum}{0}
-      \foreach \value/\width/\colour/\name in {#4} {
-            \pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
-
-            % Calculate the percent value
-            \pgfmathsetmacro{\percentage}{\value/\totalnum*100}
-            % Calculate the mid angle of the colour segments to place the labels
-            \pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
-
-            % This is necessary for the labels to align nicely
-            \pgfmathparse{
-               (-\midangle>180?"west":"east")
-            } \edef\textanchor{\pgfmathresult}
-            \pgfmathparse{
-               (-\midangle>180?"flush left":"flush right")
-            } \edef\textalign{\pgfmathresult}
-            \pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
-
-            % Draw the color segments. Somehow, the \midrow units got lost, so we add 'pt' at the end. Not nice...
-            \filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
-            (-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
-
-            % Draw the data labels
-            \draw  [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
-            % Set the old cumulated angle to the new value
-            \global\let\cumnum=\newcumnum
-        }
-      \end{scope}
-%      \draw[gray] (0,0) circle (\outerradius) circle (\innerradius);
-    \end{tikzpicture}\par
+				% Loop through each value set. \cumnum keeps track of where we are in the wheel
+				\pgfmathsetmacro{\cumnum}{0}
+				
+				\foreach \value/\width/\colour/\name in {#4} {
+		            \pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
+		
+		            % Calculate the percent value
+		            \pgfmathsetmacro{\percentage}{\value/\totalnum*100}
+		            % Calculate the mid angle of the colour segments to place the labels
+		            \pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
+		
+		            % This is necessary for the labels to align nicely
+		            \pgfmathparse{
+		               (-\midangle>180?"west":"east")
+		            } \edef\textanchor{\pgfmathresult}
+		            \pgfmathparse{
+		               (-\midangle>180?"flush left":"flush right")
+		            } \edef\textalign{\pgfmathresult}
+		            \pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
+		
+		            % Draw the color segments. Somehow, the \midrow units got lost, so we add 'pt' at the end. Not nice...
+		            \filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
+		            (-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
+		
+		            % Draw the data labels
+		            \draw  [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
+		            
+		            % Set the old cumulated angle to the new value
+		            \global\let\cumnum=\newcumnum
+	        	}
+        
+      		\end{scope}
+%      	\draw[gray] (0,0) circle (\outerradius) circle (\innerradius);
+    	\end{tikzpicture}\par
     \endgroup
 }
 
 %% Command \cvref
 % Description of referees
 % > \cvref{<name>}{<email>}{<mail adress>}
-\newcommand{\cvref}[3]{%
-  \smallskip
-  \textcolor{emphasis}{\textbf{#1}}\par
-  \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
-  \item[\small\normalfont\emailsymbol] #2
-  \item[\small\normalfont\mailaddresssymbol] #3
-  \end{description}
+\newcommand{\cvref}[3]{
+	\smallskip
+	\textEmph{#1}\par
+  	\begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
+  		\item[\small\normalfont\emailsymbol] #2
+  		\item[\small\normalfont\mailaddresssymbol] #3
+  	\end{description}
 %   \medskip
 }
 
@@ -797,7 +804,13 @@
 % > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
 
 %% Environment \begin{cvcolumn}
-\newenvironment{cvcolumn}[1]{\begin{minipage}[t]{#1}\raggedright}{\end{minipage}}
+\newenvironment{cvcolumn}[1]
+{ % Opening
+	\begin{minipage}[t]{#1}\raggedright
+}
+{ % Closing
+	\end{minipage}
+}
 
 %% Gestion bibliographie à l'aide du paquet biblatex
 
@@ -823,13 +836,19 @@
 % \addnextpagesidebar
 
 %% Command \addsidebar
-\newcommand{\addsidebar}[2][]{\marginpar{%
-  \ifstrequal{#1}{}{}{\vspace*{#1}}%
-  \input{#2}}%
+\newcommand{\addsidebar}[2][]{
+	\marginpar{
+		\ifstrequal{#1}{}
+			{} % True case
+			{\vspace*{#1}} % False case
+  		\input{#2}
+	}
 }
 
 %% Command \addnextpagesidebar
-\newcommand{\addnextpagesidebar}[2][]{\afterpage{\addsidebar[#1]{#2}}}
+\newcommand{\addnextpagesidebar}[2][]{
+	\afterpage{\addsidebar[#1]{#2}}
+}
 
 % > \afterpage
 % Command from the "afterpage" package.
