@@ -497,11 +497,22 @@
 % Dans l'ordre croissant : 
 % \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
 
-%% Commands to shape the cv header : \taglinefont \personalinfofont \cvsectionfont
-\newcommand{\taglinefont}{\large\textbf}
-\newcommand{\personalinfofont}{\footnotesize\textbf}
+%% Commands to shape the cv header : \taglinefont \personalinfofont
+\newcommand{\taglinefont}[1]{
+	\color{tagline}{\large{\titlesfont{#1}}}
+}
+
+\newcommand{\personalinfofont}[1]{
+	\footnotesize{\titlesfont{#1}}
+}
 
 %% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
+\newcommand{\cvsectionfont}[1]
+{
+	\underline{\LARGE{\titlesfont{#1}}}
+}
+
+
 \newcommand{\cvsectionfont}{\LARGE\textbf}
 \newcommand{\cvsubsectionfont}{\large\textbf}
 \newcommand{\cvsubsubsectionfont}{\normalsize\textbf}
