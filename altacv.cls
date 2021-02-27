@@ -626,17 +626,33 @@
 
 % v1.1.4: fixes inconsistent font size
 
+\newcommand{\placeFont}[1]{
+	\color{accent}{\textbf{#1}}
+}
+
 %% Command \cvevent
 % > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
-\newcommand{\cvevent}[4]{%
-  {\large\color{emphasis}#1\par}
-  \smallskip
-  \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}\par
-  \smallskip}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}%
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
-  \medskip
+\newcommand{\cvevent}[4]{
+	{\large\color{emphasis}#1\par}
+  	\smallskip
+  	\ifstrequal{#2}{}
+  	{} % True case
+  	{ % False case
+		\placeFont{#2}\par
+  		\smallskip
+	}
+	\ifstrequal{#3}{}
+	{} % True case
+	{
+		{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}
+	}
+  	\ifstrequal{#4}{}
+  	{} % True case
+  	{ % False case
+		{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}
+	}
+	\par
+  	\medskip
 }
 
 % tabularx environment (tabularx package)
