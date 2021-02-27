@@ -286,7 +286,7 @@
 % Aucune indentation de paragraphe n'aura lieu dans le document.
 % Même si la commande \indent est utilisée.
 
-\renewcommand{\titlesfont}[1]{
+\newcommand{\titlesfont}[1]{
 	\textbf{#1}
 }
 
