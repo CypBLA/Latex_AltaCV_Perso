@@ -482,7 +482,7 @@
 % \let<new-command>[[<spaces>]=]<original-command>
 
 %% Command \namefont
-\newcommand{\namefont}{\Huge\bfseries}
+\newcommand{\namefont}{\Huge\textbf}
 % > \bfseries
 % Command for font changing. Passe the text to bold font.
 %
@@ -492,13 +492,13 @@
 % \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
 
 %% Commands to shape the cv header : \taglinefont \personalinfofont \cvsectionfont
-\newcommand{\taglinefont}{\large\bfseries}
-\newcommand{\personalinfofont}{\footnotesize\bfseries}
+\newcommand{\taglinefont}{\large\textbf}
+\newcommand{\personalinfofont}{\footnotesize\textbf}
 
 %% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
-\newcommand{\cvsectionfont}{\LARGE\bfseries}
-\newcommand{\cvsubsectionfont}{\large\bfseries}
-\newcommand{\cvsubsubsectionfont}{\normalsize\bfseries}
+\newcommand{\cvsectionfont}{\LARGE\textbf}
+\newcommand{\cvsubsectionfont}{\large\textbf}
+\newcommand{\cvsubsubsectionfont}{\normalsize\textbf}
 
 % Vertical blank spaces commands :
 % \vspace{5mm}
