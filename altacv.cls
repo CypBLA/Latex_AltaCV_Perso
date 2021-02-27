@@ -505,8 +505,8 @@
 % \smallskip
 % \medskip
 % \bigskip
-\newcommand{\nameSkip}{\smallskip}
-\newcommand{\taglineSkip}{\smallskip}
+\newcommand{\nameskip}{\smallskip}
+\newcommand{\taglineskip}{\smallskip}
 
 %% Command \makecvheader
 \newcommand{\makecvheader}{%
@@ -515,9 +515,9 @@
     \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}%
     \raggedright%
     {\namefont\color{name}\MakeUppercase{\@name}\par}
-    \nameSkip
+    \nameskip
     {\taglinefont\color{tagline}\@tagline\par}
-    \taglineSkip
+    \taglineskip
     {\personalinfofont\@personalinfo\par}
     \end{minipage}\hfill%
     \altacv@right@photos\par%
