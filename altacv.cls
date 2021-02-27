@@ -524,7 +524,7 @@
 
 %% Environment \begin{quote}
 % Adaptation of the quote environment
-\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
+\renewenvironment{quote}{\color{accent}\itshape}{\par}
 
 % \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
 % Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
