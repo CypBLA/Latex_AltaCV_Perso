@@ -489,6 +489,7 @@
 \newcommand{\namefont}[1]{
 	{\Huge\color{name}\MakeUppercase{}}
 }
+
 % > \bfseries
 % Command for font changing. Passe the text to bold font.
 %
@@ -512,10 +513,13 @@
 	\underline{\LARGE{\titlesfont{#1}}}
 }
 
+\newcommand{\cvsubsectionfont}[1]{
+	\underline{\large{\titlesfont{#1}}}
+}
 
-\newcommand{\cvsectionfont}{\LARGE\textbf}
-\newcommand{\cvsubsectionfont}{\large\textbf}
-\newcommand{\cvsubsubsectionfont}{\normalsize\textbf}
+\newcommand{\cvsubsubsectionfont}[1]{
+	\underline{\normalsize{\titlesfont{#1}}}
+}
 
 % Vertical blank spaces commands :
 % \vspace{5mm}
