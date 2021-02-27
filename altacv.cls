@@ -259,12 +259,12 @@
 %% Definition of color associations
 \colorlet{name}{heading} % Used for : \name
 \colorlet{tagline}{blue!70!black} % Used for : \tagline
-\colorlet{accent}{blue!70!black} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
-\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 \colorlet{heading}{black} % Used for : \cvsection
 \colorlet{headingrule}{black} % Used for : \rule
 \colorlet{subheading}{black} % Used for : \cvsubsection, \cvsubsubsection
-\colorlet{body}{black!80!white} % Used for : 
+\colorlet{accent}{blue!70!black} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
+\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+\colorlet{body}{black} % Used for : all text color
 
 %% Definition of marker commands : \itemmarker, \ratingmarker
 \newcommand{\itemmarker}{{\small\textbullet}}
