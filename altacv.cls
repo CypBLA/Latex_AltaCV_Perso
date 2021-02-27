@@ -660,23 +660,28 @@
 
 %% Command \cvachievement
 % > \cvachievement{<symbole>}{<achievement>}{<details_about_achievement>}
-\newcommand{\cvachievement}[3]{%
-  \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
-  \multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
-  & #3
-  \end{tabularx}%
-  \smallskip
+\newcommand{\cvachievement}[3]{
+	\begin{tabularx}{\linewidth}{ @{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{} }
+		\multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
+		& #3
+  	\end{tabularx}
+  	\smallskip
 }
 
 %% Command \cvtag
 % > \cvtag{<contenuEtiquette>}
 % Crée une étiquette directement au sein du paragraphe avec un mot clé au sein d'un cadre aux bords arrondis.
 \newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+	\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
 % \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
 % Vient du paquet "etoolbox".
+
+\newcommand{\textEmph}[1]{
+	\color{emphasis}{\textbf{#1}}
+}
+% OLD : \textcolor
 
 %% Command \cvskill
 % > \cvskill{<compétence>}{<valeurDe1à5>}
@@ -685,16 +690,28 @@
 % Test sur x allant de 1 à 5 par rapport à #2.
 % Si x > #2 => \space\color{body!30}\ratingmarker
 % Si x <= #2 => \space\color{accent}\ratingmarker
-\newcommand{\cvskill}[2]{%
-\textcolor{emphasis}{\textbf{#1}}\hfill
-\foreach \x in {1,...,5}{%
-  \space{\ifnumgreater{\x}{#2}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+\newcommand{\cvskill}[2]{
+	\textEmph{#1}\hfill
+	\foreach \x in {1,...,5}{
+		\space
+		\ifnumgreater{\x}{#2}
+			{\color{body!30}} % True case
+			{\color{accent}} % False case
+		\ratingmarker
+	}
+	\par
 }
 
-\newcommand{\skillfive}[1]{%
+\newcommand{\skillfive}[1]{
 	\hfill
-	\foreach \x in {1,...,5}{%
-		\space{\ifnumgreater{\x}{#1}{\color{body!30}}{\color{accent}}\ratingmarker}}\par%
+	\foreach \x in {1,...,5}{
+		\space
+		\ifnumgreater{\x}{#1}
+			{\color{body!30}} % True case
+			{\color{accent}} % False case
+		\ratingmarker
+	}
+	\par
 }
 
 %% Command \wheelchart
