@@ -286,6 +286,10 @@
 % Aucune indentation de paragraphe n'aura lieu dans le document.
 % Même si la commande \indent est utilisée.
 
+\renewcommand{\titlesfont}[1]{
+	\textbf{#1}
+}
+
 %% Command \divider
 \newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
 % Définission d'une commande de barre horizontale de la largeur d'une ligne.
@@ -482,7 +486,9 @@
 % \let<new-command>[[<spaces>]=]<original-command>
 
 %% Command \namefont
-\newcommand{\namefont}{\Huge\textbf}
+\newcommand{\namefont}[1]{
+	{\Huge\color{name}\MakeUppercase{}}
+}
 % > \bfseries
 % Command for font changing. Passe the text to bold font.
 %
@@ -509,18 +515,19 @@
 \newcommand{\taglineskip}{\smallskip}
 
 %% Command \makecvheader
-\newcommand{\makecvheader}{%
+\newcommand{\makecvheader}{
   \begingroup
-    \altacv@left@photos\hfill%
-    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}%
-    \raggedright%
-    {\namefont\color{name}\MakeUppercase{\@name}\par}
-    \nameskip
-    {\taglinefont\color{tagline}\@tagline\par}
-    \taglineskip
-    {\personalinfofont\@personalinfo\par}
-    \end{minipage}\hfill%
-    \altacv@right@photos\par%
+    \altacv@left@photos
+    \hfill
+    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
+    	\raggedright
+    	{\namefont{\@name}\par}
+    	\nameskip
+    	{\taglinefont{\@tagline}\par}
+    	\taglineskip
+    	{\personalinfofont\@personalinfo\par}
+    \end{minipage}\hfill
+    \altacv@right@photos\par
   \endgroup
 }
 
@@ -548,9 +555,15 @@
 %% Command \cvsection
 % > \cvsection[optional]{heading}
 \newcommand{\cvsection}[2][]{%
-  \smallskip%
-  \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
-  {\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]%
+	\smallskip%
+	\ifstrequal{#1}{}%
+	{}%
+	{
+		\marginpar{
+			\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
+		}
+	}
+	{\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]%
   {\color{headingrule}\rule{\linewidth}{2pt}\par}\smallskip
 }
 
