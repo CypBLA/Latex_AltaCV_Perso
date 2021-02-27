@@ -87,7 +87,9 @@
 %  \renewcommand{\familydefault}{\sfdefault}
 %\fi
 
-\newcommand{\titlesfont}{\merriweathersans\textbf}
+\renewcommand{\titlesfont}[1]{
+	\textbf{\merriweathersans{#1}}
+}
 
 % Parametrage des differents tailles
 
@@ -95,8 +97,18 @@
 % \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
 
 %% Change some fonts, if necessary
-\renewcommand{\namefont}{\Huge\titlesfont}
-\renewcommand{\personalinfofont}{\footnotesize\merriweathersans}
+\renewcommand{\namefont}[1]{
+	\color{name}{\Huge{\MakeUppercase{\titlesfont{#1}}}}
+}
+
+\renewcommand{\taglinefont}[1]{
+	\color{tagline}{\large{\titlesfont{#1}}}
+}
+
+\renewcommand{\personalinfofont}[1]{
+	\footnotesize{\titlesfont{#1}}
+}
+
 \renewcommand{\cvsectionfont}{\LARGE\underline\titlesfont}
 \renewcommand{\cvsubsectionfont}{\large\underline\titlesfont}
 \renewcommand{\cvsubsubsectionfont}{\normalsize\underline\titlesfont}
