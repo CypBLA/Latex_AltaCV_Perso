@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  26 FEB 2021 15:15
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  27 FEB 2021 22:02
  restricted system commands enabled.
 **sample.tex
 (./sample.tex
@@ -1233,430 +1233,8 @@ Package: paracol 2018/12/31 v1.35
 \pcol@colorins=\insert252
 \pcol@everyvbox=\toks39
 )
-(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/roboto/roboto.sty
-Package: roboto 2019/12/11 (Bob Tennent) Supports Roboto fonts for all LaTeX en
-gines.
-
-("C:/Program Files/MiKTeX/tex/latex/xkeyval/xkeyval.sty"
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-("C:/Program Files/MiKTeX/tex/generic/xkeyval/xkeyval.tex"
-("C:/Program Files/MiKTeX/tex/generic/xkeyval/xkvutils.tex"
-\XKV@toks=\toks40
-\XKV@tempa@toks=\toks41
-)
-\XKV@depth=\count441
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-("C:/Program Files/MiKTeX/tex/latex/base/textcomp.sty"
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-
-Package fontspec Info: Font family 'Roboto(0)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Ligatures=TeX,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(1)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'RobotoCondensed(0)' created for font
-(fontspec)             'RobotoCondensed' with options [Ligatures = TeX,Scale =
-(fontspec)             1,Extension = .otf,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Regular.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Regular.otf]:mode=node;script=
-latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Bold.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Bold.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Italic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Italic.otf]:mode=node;script=l
-atn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-BoldItalic.otf]:mode=node;scri
-pt=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-BoldItalic.otf]:mode=node;scri
-pt=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'RobotoCondensed(1)' created for font
-(fontspec)             'RobotoCondensed' with options [Ligatures = TeX,Scale =
-(fontspec)             1,Extension = .otf,Numbers =
-(fontspec)             {Proportional,Lining},UprightFont = *-Bold,ItalicFont =
-(fontspec)             *-BoldItalic,BoldFont = *-Bold,BoldItalicFont =
-(fontspec)             *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Bold.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Bold.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Bold.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-Bold.otf]:mode=node;script=lat
-n;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-BoldItalic.otf]:mode=node;scri
-pt=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-BoldItalic.otf]:mode=node;scri
-pt=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-BoldItalic.otf]:mode=node;scri
-pt=latn;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoCondensed-BoldItalic.otf]:mode=node;scri
-pt=latn;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-luaotfload | aux : font no 42 (nil) defines no feature for script latn
-
-Package fontspec Info: Font family 'RobotoSlab(0)' created for font
-(fontspec)             'RobotoSlab' with options [Ligatures = TeX,Scale =
-(fontspec)             1,Extension = .otf,UprightFont = *-Regular,BoldFont =
-(fontspec)             *-Bold].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoSlab-Regular.otf]:mode=node;script=DFLT;
-language=dflt;+tlig;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoSlab-Regular.otf]:mode=node;script=DFLT;
-language=dflt;+tlig;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoSlab-Bold.otf]:mode=node;script=DFLT;lan
-guage=dflt;+tlig;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[RobotoSlab-Bold.otf]:mode=node;script=DFLT;lan
-guage=dflt;+tlig;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(2)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(3)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Medium,ItalicFont = *-MediumItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Medium.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Medium.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-MediumItalic.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-MediumItalic.otf]:mode=node;script=latn
-;language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(4)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Thin,ItalicFont = *-ThinItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Thin.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Thin.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-ThinItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-ThinItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(5)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Light,ItalicFont = *-LightItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Light.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Light.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-LightItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-LightItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(6)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Bold,ItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(7)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,Lining},UprightFont =
-(fontspec)             *-Black,ItalicFont = *-BlackItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Black.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Black.otf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+pnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BlackItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BlackItalic.otf]:mode=node;script=latn;
-language=dflt;+tlig;+pnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(8)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Proportional,OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+pnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+pnum;+onum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(9)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Monospaced,Lining},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+tnum;+lnum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+tnum;+lnum;+smcp;"
-
-
-Package fontspec Info: Font family 'Roboto(10)' created for font 'Roboto' with
-(fontspec)             options [Ligatures = TeX,Scale = 1,Extension =
-(fontspec)             .otf,Numbers = {Monospaced,OldStyle},UprightFont =
-(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
-(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Regular.otf]:mode=node;script=latn;lang
-uage=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Bold.otf]:mode=node;script=latn;languag
-e=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-Italic.otf]:mode=node;script=latn;langu
-age=dflt;+tlig;+tnum;+onum;+smcp;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+tnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
-(fontspec)             <->s*[1]"[Roboto-BoldItalic.otf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+tnum;+onum;+smcp;"
-
-)
-(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/lato/lato.sty
-Package: lato 2019/06/20 Style file for Lato.
+(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/opensans/opensans.sty
+Package: opensans 2019/06/20 Style file for Open Sans.
 
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
@@ -1671,791 +1249,844 @@ LaTeX Info: Redefining \textsw on input line 47.
 LaTeX Info: Redefining \textssc on input line 48.
 LaTeX Info: Redefining \textulc on input line 49.
 )
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 65 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 66 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 67 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 68 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 79 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 80 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
- with language dflt
+("C:/Program Files/MiKTeX/tex/latex/xkeyval/xkeyval.sty"
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
-Package fontspec Info: Font family 'lato-TLF' created for font 'Lato' with
-(fontspec)             options
-(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
-{ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace={el}{n}{*-Thin
-},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFace={l}{it}{*-L
-ightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFace={mb}{n}{*-Me
-dium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibold},FontFace={
-sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic
-},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n}{*-Heavy},Fon
-tFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace={ub}{it}{*-Bla
-ckItalic},Numbers={Monospaced,Lining},NFSSFamily=lato-TLF].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 65 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 66 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 67 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 68 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 79 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 80 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
- with language dflt
-
-Package fontspec Info: Font family 'lato-LF' created for font 'Lato' with
-(fontspec)             options
-(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
-{ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace={el}{n}{*-Thin
-},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFace={l}{it}{*-L
-ightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFace={mb}{n}{*-Me
-dium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibold},FontFace={
-sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic
-},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n}{*-Heavy},Fon
-tFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace={ub}{it}{*-Bla
-ckItalic},Numbers={Proportional,Lining},NFSSFamily=lato-LF].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+pnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 65 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 66 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 67 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 68 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 79 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 80 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
- with language dflt
-
-Package fontspec Info: Font family 'lato-TOsF' created for font 'Lato' with
-(fontspec)             options
-(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
-{ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace={el}{n}{*-Thin
-},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFace={l}{it}{*-L
-ightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFace={mb}{n}{*-Me
-dium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibold},FontFace={
-sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic
-},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n}{*-Heavy},Fon
-tFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace={ub}{it}{*-Bla
-ckItalic},Numbers={Monospaced,OldStyle},NFSSFamily=lato-TOsF].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 65 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 66 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 67 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 68 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 79 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 80 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
- with language dflt
-
-Package fontspec Info: Font family 'lato-OsF' created for font 'Lato' with
-(fontspec)             options
-(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
-{ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace={el}{n}{*-Thin
-},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFace={l}{it}{*-L
-ightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFace={mb}{n}{*-Me
-dium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibold},FontFace={
-sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic
-},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n}{*-Heavy},Fon
-tFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace={ub}{it}{*-Bla
-ckItalic},Numbers={Proportional,OldStyle},NFSSFamily=lato-OsF].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+pnum;+onum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 65 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 66 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 67 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 68 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 79 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 80 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
- with language dflt
-
-Package fontspec Info: Font family 'fla' created for font 'Lato' with options
-(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
-{ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace={el}{n}{*-Thin
-},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFace={l}{it}{*-L
-ightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFace={mb}{n}{*-Me
-dium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibold},FontFace={
-sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic
-},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n}{*-Heavy},Fon
-tFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace={ub}{it}{*-Bla
-ckItalic},Numbers={Monospaced,Lining},NFSSFamily=fla].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-luaotfload | aux : font no 64 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 65 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 66 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 67 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 68 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 69 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 70 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 71 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 72 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 73 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 74 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 75 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 76 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 77 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 78 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 79 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 80 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 81 (nil) does not define feature smcp for script latn
- with language dflt
-
-Package fontspec Info: Font family 'Lato(0)' created for font 'Lato' with
-(fontspec)             options
-(fontspec)             [Ligatures=TeX,Extension=.ttf,Ligatures={TeX,Common},Sca
-le=1,FontFace={ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace=
-{el}{n}{*-Thin},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFa
-ce={l}{it}{*-LightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFac
-e={mb}{n}{*-Medium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibo
-ld},FontFace={sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it
-}{*-BoldItalic},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n
-}{*-Heavy},FontFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace=
-{ub}{it}{*-BlackItalic},Numbers={Monospaced,Lining}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-LaTeX Font Info:    Font shape `TU/Roboto(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 150.
+("C:/Program Files/MiKTeX/tex/generic/xkeyval/xkeyval.tex"
+("C:/Program Files/MiKTeX/tex/generic/xkeyval/xkvutils.tex"
+\XKV@toks=\toks40
+\XKV@tempa@toks=\toks41
 )
+\XKV@depth=\count441
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'opensans-TLF' created for font 'OpenSans'
+(fontspec)             with options
+(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
+{l}{n}{*-Light},FontFace={l}{it}{*-LightItalic},FontFace={lc}{n}{*Condensed-Lig
+ht},FontFace={lc}{it}{*Condensed-LightItalic},UprightFont={*-Regular},ItalicFon
+t={*-Italic},FontFace={sb}{n}{*-SemiBold},FontFace={sb}{it}{*-SemiBoldItalic},F
+ontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic},BoldFont={*-Bold},BoldIta
+licFont={*-BoldItalic},FontFace={bc}{n}{*Condensed-Bold},FontFace={eb}{n}{*-Ext
+raBold},FontFace={eb}{it}{*-ExtraBoldItalic},Numbers={Monospaced,Lining},NFSSFa
+mily=opensans-TLF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Light.ttf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-LightItalic.ttf]:mode=node;script=lat
+n;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - (lc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Light.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (lc/sc) with NFSS spec.: 
+(fontspec)             - (lc/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-LightItalic.ttf]:mode=node;s
+cript=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (lc/scit) with NFSS spec.: 
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBold.ttf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (sb/sc) with NFSS spec.: 
+(fontspec)             - (sb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBoldItalic.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (sb/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Bold.ttf]:mode=node;script=latn;langu
+age=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-BoldItalic.ttf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (bc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Bold.ttf]:mode=node;script=l
+atn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (bc/sc) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBold.ttf]:mode=node;script=latn;
+language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBoldItalic.ttf]:mode=node;script
+=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Regular.ttf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Italic.ttf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'opensans-LF' created for font 'OpenSans'
+(fontspec)             with options
+(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
+{l}{n}{*-Light},FontFace={l}{it}{*-LightItalic},FontFace={lc}{n}{*Condensed-Lig
+ht},FontFace={lc}{it}{*Condensed-LightItalic},UprightFont={*-Regular},ItalicFon
+t={*-Italic},FontFace={sb}{n}{*-SemiBold},FontFace={sb}{it}{*-SemiBoldItalic},F
+ontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic},BoldFont={*-Bold},BoldIta
+licFont={*-BoldItalic},FontFace={bc}{n}{*Condensed-Bold},FontFace={eb}{n}{*-Ext
+raBold},FontFace={eb}{it}{*-ExtraBoldItalic},Numbers={Proportional,Lining},NFSS
+Family=opensans-LF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Light.ttf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-LightItalic.ttf]:mode=node;script=lat
+n;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - (lc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Light.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (lc/sc) with NFSS spec.: 
+(fontspec)             - (lc/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-LightItalic.ttf]:mode=node;s
+cript=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (lc/scit) with NFSS spec.: 
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBold.ttf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (sb/sc) with NFSS spec.: 
+(fontspec)             - (sb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBoldItalic.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (sb/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Bold.ttf]:mode=node;script=latn;langu
+age=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-BoldItalic.ttf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (bc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Bold.ttf]:mode=node;script=l
+atn;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (bc/sc) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBold.ttf]:mode=node;script=latn;
+language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBoldItalic.ttf]:mode=node;script
+=latn;language=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Regular.ttf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Italic.ttf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+pnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'opensans-TOsF' created for font 'OpenSans'
+(fontspec)             with options
+(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
+{l}{n}{*-Light},FontFace={l}{it}{*-LightItalic},FontFace={lc}{n}{*Condensed-Lig
+ht},FontFace={lc}{it}{*Condensed-LightItalic},UprightFont={*-Regular},ItalicFon
+t={*-Italic},FontFace={sb}{n}{*-SemiBold},FontFace={sb}{it}{*-SemiBoldItalic},F
+ontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic},BoldFont={*-Bold},BoldIta
+licFont={*-BoldItalic},FontFace={bc}{n}{*Condensed-Bold},FontFace={eb}{n}{*-Ext
+raBold},FontFace={eb}{it}{*-ExtraBoldItalic},Numbers={Monospaced,OldStyle},NFSS
+Family=opensans-TOsF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Light.ttf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-LightItalic.ttf]:mode=node;script=lat
+n;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - (lc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Light.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (lc/sc) with NFSS spec.: 
+(fontspec)             - (lc/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-LightItalic.ttf]:mode=node;s
+cript=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (lc/scit) with NFSS spec.: 
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBold.ttf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (sb/sc) with NFSS spec.: 
+(fontspec)             - (sb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBoldItalic.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (sb/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Bold.ttf]:mode=node;script=latn;langu
+age=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-BoldItalic.ttf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (bc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Bold.ttf]:mode=node;script=l
+atn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (bc/sc) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBold.ttf]:mode=node;script=latn;
+language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBoldItalic.ttf]:mode=node;script
+=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Regular.ttf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Italic.ttf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'opensans-OsF' created for font 'OpenSans'
+(fontspec)             with options
+(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
+{l}{n}{*-Light},FontFace={l}{it}{*-LightItalic},FontFace={lc}{n}{*Condensed-Lig
+ht},FontFace={lc}{it}{*Condensed-LightItalic},UprightFont={*-Regular},ItalicFon
+t={*-Italic},FontFace={sb}{n}{*-SemiBold},FontFace={sb}{it}{*-SemiBoldItalic},F
+ontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic},BoldFont={*-Bold},BoldIta
+licFont={*-BoldItalic},FontFace={bc}{n}{*Condensed-Bold},FontFace={eb}{n}{*-Ext
+raBold},FontFace={eb}{it}{*-ExtraBoldItalic},Numbers={Proportional,OldStyle},NF
+SSFamily=opensans-OsF].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Light.ttf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-LightItalic.ttf]:mode=node;script=lat
+n;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - (lc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Light.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (lc/sc) with NFSS spec.: 
+(fontspec)             - (lc/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-LightItalic.ttf]:mode=node;s
+cript=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (lc/scit) with NFSS spec.: 
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBold.ttf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (sb/sc) with NFSS spec.: 
+(fontspec)             - (sb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBoldItalic.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (sb/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Bold.ttf]:mode=node;script=latn;langu
+age=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-BoldItalic.ttf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (bc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Bold.ttf]:mode=node;script=l
+atn;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (bc/sc) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBold.ttf]:mode=node;script=latn;
+language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBoldItalic.ttf]:mode=node;script
+=latn;language=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Regular.ttf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Italic.ttf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'fos' created for font 'OpenSans' with
+(fontspec)             options
+(fontspec)             [Extension=.ttf,Ligatures={TeX,Common},Scale=1,FontFace=
+{l}{n}{*-Light},FontFace={l}{it}{*-LightItalic},FontFace={lc}{n}{*Condensed-Lig
+ht},FontFace={lc}{it}{*Condensed-LightItalic},UprightFont={*-Regular},ItalicFon
+t={*-Italic},FontFace={sb}{n}{*-SemiBold},FontFace={sb}{it}{*-SemiBoldItalic},F
+ontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic},BoldFont={*-Bold},BoldIta
+licFont={*-BoldItalic},FontFace={bc}{n}{*Condensed-Bold},FontFace={eb}{n}{*-Ext
+raBold},FontFace={eb}{it}{*-ExtraBoldItalic},Numbers={Monospaced,Lining},NFSSFa
+mily=fos].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Light.ttf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-LightItalic.ttf]:mode=node;script=lat
+n;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - (lc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Light.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (lc/sc) with NFSS spec.: 
+(fontspec)             - (lc/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-LightItalic.ttf]:mode=node;s
+cript=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (lc/scit) with NFSS spec.: 
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBold.ttf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (sb/sc) with NFSS spec.: 
+(fontspec)             - (sb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBoldItalic.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (sb/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Bold.ttf]:mode=node;script=latn;langu
+age=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-BoldItalic.ttf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (bc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Bold.ttf]:mode=node;script=l
+atn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (bc/sc) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBold.ttf]:mode=node;script=latn;
+language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBoldItalic.ttf]:mode=node;script
+=latn;language=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Regular.ttf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Italic.ttf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+lnum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+
+Package fontspec Info: Font family 'OpenSans(0)' created for font 'OpenSans'
+(fontspec)             with options
+(fontspec)             [Ligatures=TeX,Extension=.ttf,Ligatures={TeX,Common},Sca
+le=1,FontFace={l}{n}{*-Light},FontFace={l}{it}{*-LightItalic},FontFace={lc}{n}{
+*Condensed-Light},FontFace={lc}{it}{*Condensed-LightItalic},UprightFont={*-Regu
+lar},ItalicFont={*-Italic},FontFace={sb}{n}{*-SemiBold},FontFace={sb}{it}{*-Sem
+iBoldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it}{*-BoldItalic},BoldFont={*
+-Bold},BoldItalicFont={*-BoldItalic},FontFace={bc}{n}{*Condensed-Bold},FontFace
+={eb}{n}{*-ExtraBold},FontFace={eb}{it}{*-ExtraBoldItalic},Numbers={Monospaced,
+OldStyle}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - (l/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Light.ttf]:mode=node;script=latn;lang
+uage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (l/sc) with NFSS spec.: 
+(fontspec)             - (l/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-LightItalic.ttf]:mode=node;script=lat
+n;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (l/scit) with NFSS spec.: 
+(fontspec)             - (lc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Light.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (lc/sc) with NFSS spec.: 
+(fontspec)             - (lc/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-LightItalic.ttf]:mode=node;s
+cript=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (lc/scit) with NFSS spec.: 
+(fontspec)             - (sb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBold.ttf]:mode=node;script=latn;l
+anguage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (sb/sc) with NFSS spec.: 
+(fontspec)             - (sb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-SemiBoldItalic.ttf]:mode=node;script=
+latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (sb/scit) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Bold.ttf]:mode=node;script=latn;langu
+age=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-BoldItalic.ttf]:mode=node;script=latn
+;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             - (bc/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSansCondensed-Bold.ttf]:mode=node;script=l
+atn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (bc/sc) with NFSS spec.: 
+(fontspec)             - (eb/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBold.ttf]:mode=node;script=latn;
+language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (eb/sc) with NFSS spec.: 
+(fontspec)             - (eb/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-ExtraBoldItalic.ttf]:mode=node;script
+=latn;language=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             -  (eb/scit) with NFSS spec.: 
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Regular.ttf]:mode=node;script=latn;la
+nguage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[OpenSans-Italic.ttf]:mode=node;script=latn;lan
+guage=dflt;+tlig;+liga;+tnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 151.
+)
+(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/merriweather/merriweathe
+r.sty
+Package: merriweather 2020/09/12 (Bob Tennent) Supports Merriweather(Sans) font
+s for all LaTeX engines. 
+ ("C:/Program Files/MiKTeX/tex/latex/base/textcomp.sty"
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+
+Package fontspec Info: Font family 'MerriweatherSans(0)' created for font
+(fontspec)             'MerriweatherSans' with options [Ligatures =
+(fontspec)             TeX,Extension = .otf,Ligatures=TeX,Numbers =
+(fontspec)             {Proportional,OldStyle},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Regular.otf]:mode=node;script
+=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Regular.otf]:mode=node;script
+=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Bold.otf]:mode=node;script=la
+tn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Bold.otf]:mode=node;script=la
+tn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Italic.otf]:mode=node;script=
+latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Italic.otf]:mode=node;script=
+latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-BoldItalic.otf]:mode=node;scr
+ipt=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-BoldItalic.otf]:mode=node;scr
+ipt=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: Font family 'MerriweatherSans(1)' created for font
+(fontspec)             'MerriweatherSans' with options [Ligatures =
+(fontspec)             TeX,Extension = .otf,Numbers =
+(fontspec)             {Proportional,OldStyle},Scale = 1,UprightFont =
+(fontspec)             *-Regular,ItalicFont = *-Italic,BoldFont =
+(fontspec)             *-Bold,BoldItalicFont = *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Regular.otf]:mode=node;script
+=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Regular.otf]:mode=node;script
+=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Bold.otf]:mode=node;script=la
+tn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Bold.otf]:mode=node;script=la
+tn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Italic.otf]:mode=node;script=
+latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Italic.otf]:mode=node;script=
+latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-BoldItalic.otf]:mode=node;scr
+ipt=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-BoldItalic.otf]:mode=node;scr
+ipt=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: Font family 'Merriweather(0)' created for font
+(fontspec)             'Merriweather' with options [Ligatures = TeX,Extension
+(fontspec)             = .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Light,ItalicFont = *-LightItalic,BoldFont =
+(fontspec)             *-Light,BoldItalicFont = *-LightItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Light.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Light.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Light.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Light.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[Merriweather-LightItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[Merriweather-LightItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[Merriweather-LightItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[Merriweather-LightItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: Font family 'MerriweatherSans(2)' created for font
+(fontspec)             'MerriweatherSans' with options [Ligatures =
+(fontspec)             TeX,Extension = .otf,Numbers =
+(fontspec)             {Proportional,OldStyle},Scale = 1,UprightFont =
+(fontspec)             *-Light,ItalicFont = *-LightItalic,BoldFont =
+(fontspec)             *-Light,BoldItalicFont = *-LightItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Light.otf]:mode=node;script=l
+atn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Light.otf]:mode=node;script=l
+atn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Light.otf]:mode=node;script=l
+atn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-Light.otf]:mode=node;script=l
+atn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-LightItalic.otf]:mode=node;sc
+ript=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-LightItalic.otf]:mode=node;sc
+ript=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-LightItalic.otf]:mode=node;sc
+ript=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-LightItalic.otf]:mode=node;sc
+ript=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: Font family 'Merriweather(1)' created for font
+(fontspec)             'Merriweather' with options [Ligatures = TeX,Extension
+(fontspec)             = .otf,Numbers = {Proportional,OldStyle},UprightFont =
+(fontspec)             *-Black,ItalicFont = *-BlackItalic,BoldFont =
+(fontspec)             *-Black,BoldItalicFont = *-BlackItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Black.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Black.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Black.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[Merriweather-Black.otf]:mode=node;script=latn;langu
+age=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[Merriweather-BlackItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[Merriweather-BlackItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[Merriweather-BlackItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[Merriweather-BlackItalic.otf]:mode=node;script=latn
+;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+
+Package fontspec Info: Font family 'MerriweatherSans(3)' created for font
+(fontspec)             'MerriweatherSans' with options [Ligatures =
+(fontspec)             TeX,Extension = .otf,Numbers =
+(fontspec)             {Proportional,OldStyle},Scale = 1,UprightFont =
+(fontspec)             *-ExtraBold,ItalicFont = *-ExtraBoldItalic,BoldFont =
+(fontspec)             *-ExtraBold,BoldItalicFont = *-ExtraBoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBold.otf]:mode=node;scri
+pt=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBold.otf]:mode=node;scri
+pt=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBold.otf]:mode=node;scri
+pt=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBold.otf]:mode=node;scri
+pt=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBoldItalic.otf]:mode=nod
+e;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBoldItalic.otf]:mode=nod
+e;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBoldItalic.otf]:mode=nod
+e;script=latn;language=dflt;+tlig;+pnum;+onum;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"[MerriweatherSans-ExtraBoldItalic.otf]:mode=nod
+e;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
+
+)
+
+Package hyperref Warning: Option `pdftitle' has already been used,
+(hyperref)                setting the option has no effect on input line 63.
+
+
+Package hyperref Warning: Option `pdfauthor' has already been used,
+(hyperref)                setting the option has no effect on input line 63.
+
 \@quotelevel=\count442
 \@quotereset=\count443
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 166.
-
 (./sample.aux)
 \openout1 = sample.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-66.
+89.
  ("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
+LaTeX Font Info:    ... okay on input line 189.
 
 ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2475,7 +2106,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 166.
+Package hyperref Info: Link coloring OFF on input line 189.
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2489,9 +2120,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count450
 )
-LaTeX Info: Redefining \ref on input line 166.
-LaTeX Info: Redefining \pageref on input line 166.
-LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 189.
+LaTeX Info: Redefining \pageref on input line 189.
+LaTeX Info: Redefining \nameref on input line 189.
  (./sample.out) (./sample.out)
 \@outlinefile=\write8
 
@@ -2537,58 +2168,64 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 166.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 166.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 166.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 166.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 166.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 166.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 166.
-LaTeX Font Info:    Redeclaring math accent \check on input line 166.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 166.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 166.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 166.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 166.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 189.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 189.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 189.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 189.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 189.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 189.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 189.
+LaTeX Font Info:    Redeclaring math accent \check on input line 189.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 189.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 189.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 189.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 189.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 166.
+(Font)              `operators' in the math version `normal' on input line 189.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 166.
+(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 189.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 166.
+(Font)              `operators' in the math version `bold' on input line 189.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 166.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 189.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 166.
+(Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/m/n on input line
+ 189.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 166.
+(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 189.
+
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 166.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 189.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/Lato(0)/m/n on input line 166.
+(Font)                  OT1/cmss/m/n --> TU/MerriweatherSans(0)/m/n on input li
+ne 189.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 166.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 189.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 166.
+(Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/b/n on input line
+ 189.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 166.
+(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 189
+.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/Lato(0)/b/n on input line 166.
+(Font)                  OT1/cmss/bx/n --> TU/MerriweatherSans(0)/b/n on input l
+ine 189.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 166.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 189.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/english.lbx"
@@ -2613,202 +2250,240 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sample.bbl' not found.
 
 No file sample.bbl.
-Package biblatex Info: Reference section=0 on input line 166.
-Package biblatex Info: Reference segment=0 on input line 166.
+Package biblatex Info: Reference section=0 on input line 189.
+Package biblatex Info: Reference segment=0 on input line 189.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 166.
+LaTeX Info: Redefining \selectfont on input line 189.
 \c@mv@tabular=\count451
 \c@mv@boldtabular=\count452
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 195.
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 195.
-LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 195.
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 195.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 218.
+LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 218.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 218.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 195.
+(Font)              <7> on input line 218.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 195.
+(Font)              <5> on input line 218.
 <CypBLA_Square_500x500.jpg, id=11, 521.95pt x 529.98pt>
 File: CypBLA_Square_500x500.jpg Graphic file (type jpg)
 <use CypBLA_Square_500x500.jpg>
-Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 195.
+Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 218.
 (luatex.def)             Requested size: 79.6678pt x 80.89258pt.
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 209.
-luaotfload | aux : font no 109 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 110 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 111 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 112 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 113 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 114 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 115 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 116 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 117 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 118 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 119 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 120 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 121 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 122 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 123 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 124 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 108 (nil) does not define feature smcp for script lat
-n with language dflt
-luaotfload | aux : font no 125 (nil) does not define feature smcp for script lat
-n with language dflt
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 232.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 232.
+LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 232.
+luaotfload | aux : font no 68 (nil) does not define feature sups for script latn
+ with language dflt
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 234.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 234.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 234.
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 234.
 
-Package fontspec Info: Font family 'Lato(1)' created for font 'Lato' with
-(fontspec)             options
-(fontspec)             [Ligatures=TeX,Extension=.ttf,Ligatures={TeX,Common},Sca
-le=1,FontFace={ul}{n}{*-Hairline},FontFace={ul}{it}{*-HairlineItalic},FontFace=
-{el}{n}{*-Thin},FontFace={el}{it}{*-ThinItalic},FontFace={l}{n}{*-Light},FontFa
-ce={l}{it}{*-LightItalic},UprightFont={*-Regular},ItalicFont={*-Italic},FontFac
-e={mb}{n}{*-Medium},FontFace={mb}{it}{*-MediumItalic},FontFace={sb}{n}{*-Semibo
-ld},FontFace={sb}{it}{*-SemiboldItalic},FontFace={b}{n}{*-Bold},FontFace={b}{it
-}{*-BoldItalic},BoldFont={*-Bold},BoldItalicFont={*-BoldItalic},FontFace={eb}{n
-}{*-Heavy},FontFace={eb}{it}{*-HeavyItalic},FontFace={ub}{n}{*-Black},FontFace=
-{ub}{it}{*-BlackItalic},Numbers={Monospaced,Lining},VerticalPosition=Superior].
-
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - (ul/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Hairline.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (ul/sc) with NFSS spec.: 
-(fontspec)             - (ul/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HairlineItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (ul/scit) with NFSS spec.: 
-(fontspec)             - (el/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Thin.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (el/sc) with NFSS spec.: 
-(fontspec)             - (el/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-ThinItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (el/scit) with NFSS spec.: 
-(fontspec)             - (l/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Light.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (l/sc) with NFSS spec.: 
-(fontspec)             - (l/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-LightItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (l/scit) with NFSS spec.: 
-(fontspec)             - (mb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Medium.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (mb/sc) with NFSS spec.: 
-(fontspec)             - (mb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-MediumItalic.ttf]:mode=node;script=latn;l
-anguage=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (mb/scit) with NFSS spec.: 
-(fontspec)             - (sb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Semibold.ttf]:mode=node;script=latn;langu
-age=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (sb/sc) with NFSS spec.: 
-(fontspec)             - (sb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-SemiboldItalic.ttf]:mode=node;script=latn
-;language=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (sb/scit) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Bold.ttf]:mode=node;script=latn;language=
-dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BoldItalic.ttf]:mode=node;script=latn;lan
-guage=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-(fontspec)             - (eb/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Heavy.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (eb/sc) with NFSS spec.: 
-(fontspec)             - (eb/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-HeavyItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (eb/scit) with NFSS spec.: 
-(fontspec)             - (ub/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Black.ttf]:mode=node;script=latn;language
-=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (ub/sc) with NFSS spec.: 
-(fontspec)             - (ub/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-BlackItalic.ttf]:mode=node;script=latn;la
-nguage=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             -  (ub/scit) with NFSS spec.: 
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Regular.ttf]:mode=node;script=latn;langua
-ge=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->s*[1]"[Lato-Italic.ttf]:mode=node;script=latn;languag
-e=dflt;+tlig;+liga;+tnum;+lnum;+sups;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-
-LaTeX Font Info:    Font shape `TU/Lato(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 211.
-LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 211.
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 211.
-
-Overfull \hbox (7.00322pt too wide) in paragraph at lines 226--227
-[]\TU/Lato(0)/m/n/10 Cur-sus en cinq ans avec deux stages in-génieur de six moi
-s et un semestre à l’étranger 
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 234--234
+[][]   [] 
  []
 
 
-Overfull \hbox (7.36821pt too wide) in paragraph at lines 267--268
-[]\TU/Lato(0)/m/n/10 En charge les lundi et mardi d’une classe de CP à l’
-école élé-men-taire ”Les Chadrillons” 
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
+ 
  []
 
 
-Overfull \hbox (18.14827pt too wide) in paragraph at lines 294--295
-[]\TU/Lato(0)/m/n/10 Outil d’im-por-ta-tion de don-nées, de vi-su-al-i-sa-tio
-n de sig-naux et d’ex-port de graphiques  
- []
-
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 295.
-
-Overfull \hbox (26.68826pt too wide) in paragraph at lines 345--346
-[]\TU/Lato(0)/m/n/10 Or-gan-i-sa-tion d’évène-ments, ges-tion d’un lo-cal as-so-ci-atif, r
-éal-i-sa-tion de sup-ports graphiques, 
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 242--242
+[][]   [] 
  []
 
 
-Overfull \hbox (123.07819pt too wide) in paragraph at lines 362--369
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 247--247
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 255--255
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 262--262
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--262
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 289--289
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+ 
+ []
+
+
+Overfull \hbox (30.32404pt too wide) in paragraph at lines 291--292
+[]\TU/OpenSans(0)/m/n/10 En charge les lundi et mardi d’une classe de CP à l
+’école élé-men-taire ”Les Chadrillons” 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 297--297
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+ 
+ []
+
+
+Overfull \hbox (13.79962pt too wide) in paragraph at lines 305--305
+[]\TU/OpenSans(0)/m/n/12 Stage in-génieur - Développe-ment Mat-lab - Logi-ciel
+ de post-traitement 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 305--305
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 313--313
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
+ 
+ []
+
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 319.
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 325--325
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--325
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 337--337
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 358--358
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 365--365
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 368--368
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--368
+ 
+ []
+
+
+Overfull \hbox (7.79297pt too wide) in paragraph at lines 371--371
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+ 
+ []
+
+
+Overfull \hbox (144.9656pt too wide) in paragraph at lines 386--393
 [][]  []  []  []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
-[]\TU/Lato(0)/m/n/10 Lec-ture et vi-sion-nage régulier de
+Underfull \hbox (badness 10000) in paragraph at lines 423--423
+[]\TU/OpenSans(0)/m/n/10 Lec-ture et vi-sion-nage régulier de
  []
 
 [1
 
-<./CypBLA_Square_500x500.jpg>] [2] [3] (./sample.aux)
+<./CypBLA_Square_500x500.jpg>] [2] [3] [4] (./sample.aux)
 Package rerunfilecheck Info: File `sample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'sample.run.xml'.
@@ -2817,27 +2492,25 @@ Package logreq Info: Writing requests to 'sample.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41528 strings out of 478819
- 125007,1977958 words of node,token memory allocated
- 1869 words of node memory still in use:
-   3 hlist, 7 vlist, 1 rule, 110 glue, 3 kern, 1 glyph, 119 attribute, 86 glue_s
-pec, 119 attribute_list, 2 write nodes
-   avail lists: 1:3,2:3547,3:1326,4:357,5:1142,6:190,7:9146,8:9,9:1054,10:9,11:6
-00
- 59812 multiletter control sequences out of 65536+200000
- 131 fonts using 36054687 bytes
- 113i,10n,122p,1130b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/truetype/typoland/lato/Lato-I
-talic.ttf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/opentype/public/fon
-tawesome5/FontAwesome5Brands-Regular-400.otf><C:/Users/impishwhite/AppData/Roami
-ng/MiKTeX/fonts/truetype/typoland/lato/Lato-Regular.ttf><C:/Users/impishwhite/Ap
-pData/Roaming/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Free-Solid-9
-00.otf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/truetype/typoland/lato
-/Lato-Bold.ttf><//?/c:/program files/miktex/fonts/opentype/public/lm/lmroman12-b
-old.otf>
-Output written on sample.pdf (3 pages, 250677 bytes).
+ 41235 strings out of 478819
+ 100000,1648299 words of node,token memory allocated
+ 1775 words of node memory still in use:
+   3 hlist, 22 vlist, 1 rule, 67 glue, 3 kern, 1 glyph, 92 attribute, 86 glue_sp
+ec, 92 attribute_list, 2 write, 45 pdf_colorstack nodes
+   avail lists: 1:5,2:3649,3:1266,4:383,5:156,6:168,7:8735,8:9,9:987,10:9,11:567
 
-PDF statistics: 71 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 131072)
+ 59518 multiletter control sequences out of 65536+200000
+ 105 fonts using 14880359 bytes
+ 113i,10n,122p,1130b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
+<//?/c:/windows/fonts/opensans-italic.ttf><//?/c:/windows/fonts/opensans-bold.tt
+f><//?/c:/windows/fonts/opensans-regular.ttf><C:/Users/impishwhite/AppData/Roami
+ng/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Brands-Regular-400.otf>
+<C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/opentype/public/fontawesome5/
+FontAwesome5Free-Solid-900.otf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/font
+s/opentype/sorkin/merriweather/MerriweatherSans-Bold.otf>
+Output written on sample.pdf (4 pages, 231994 bytes).
+
+PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 131072)
  31 words of extra memory for PDF output out of 10000 (max. 100000000)
 
