@@ -98,7 +98,7 @@
 
 %% Change some fonts, if necessary
 \renewcommand{\namefont}[1]{
-	\color{name}{\Huge{\MakeUppercase{\titlesfont{#1}}}}
+	\color{name}{\Huge{\titlesfont{#1}}}
 }
 
 \renewcommand{\taglinefont}[1]{
@@ -109,7 +109,11 @@
 	\footnotesize{\titlesfont{#1}}
 }
 
-\renewcommand{\cvsectionfont}{\LARGE\underline\titlesfont}
+\renewcommand{\cvsectionfont}[1]
+{
+	\underline{\LARGE{\titlesfont{#1}}}
+}
+
 \renewcommand{\cvsubsectionfont}{\large\underline\titlesfont}
 \renewcommand{\cvsubsubsectionfont}{\normalsize\underline\titlesfont}
 
