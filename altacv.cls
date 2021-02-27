@@ -106,7 +106,7 @@
 % afterpage – Execute command after the next page break
 % https://www.ctan.org/pkg/afterpage
 
-\RequirePackage[english, noftligs]{selnolig}
+%\RequirePackage[english, noftligs]{selnolig}
 
 %%%%% OPTIONS
 
