@@ -171,86 +171,96 @@
 %% v1.1.5: added for convenience
 \newif\ifxetexorluatex
 \ifxetex
-  \xetexorluatextrue
+	\xetexorluatextrue
 \else
-  \ifluatex
-    \xetexorluatextrue
-  \else
-    \xetexorluatexfalse
-  \fi
+	\ifluatex
+		\xetexorluatextrue
+	\else
+		\xetexorluatexfalse
+	\fi
 \fi
 
 \ifxetexorluatex
-  \RequirePackage{fontspec}
-  % fontspec – Advanced font selection in XeLaTeX and LuaLaTeX : https://www.ctan.org/pkg/fontspec
+	\RequirePackage{fontspec}
+	% fontspec – Advanced font selection in XeLaTeX and LuaLaTeX : https://www.ctan.org/pkg/fontspec
 \else
-  %% v1.3.2 attempts to make ligatures
-  %% copy-paste as normal characters
-  \RequirePackage{cmap}
-  \RequirePackage[utf8]{inputenc}
-  \RequirePackage[T1]{fontenc}
-  \input{glyphtounicode}
-  \pdfglyphtounicode{f_f}{FB00}
-  \pdfglyphtounicode{f_f_i}{FB03}
-  \pdfglyphtounicode{f_f_l}{FB04}
-  \pdfglyphtounicode{f_i}{FB01}
-  \pdfgentounicode=1
+	%% v1.3.2 attempts to make ligatures
+	%% copy-paste as normal characters
+	\RequirePackage{cmap}
+	\RequirePackage[utf8]{inputenc}
+	\RequirePackage[T1]{fontenc}
+	\input{glyphtounicode}
+	\pdfglyphtounicode{f_f}{FB00}
+	\pdfglyphtounicode{f_f_i}{FB03}
+	\pdfglyphtounicode{f_f_l}{FB04}
+	\pdfglyphtounicode{f_i}{FB01}
+	\pdfgentounicode=1
 \fi
 
 %% v1.1: Optionally load academicons
 %% v1.1.5: Handle different versions of academicons
 \if@academicons
-  \ifxetexorluatex
-    \RequirePackage{fontspec}
-    %% academicons in TL2018 doesn't require
-    %% Academicons to be installed in OS fonts
-    %% so can be loaded directly
-    
-    % D'où vient la command \@ifl@t@r ? Est-elle liée à un paquet spécifique ?
-    % Est-elle dans les commandes par défaut de LaTex ?
-    % LaTeX core macro \@ifl@ter to check the file date
-    \@ifl@t@r\fmtversion{2018/04/01}{%
-      \RequirePackage{academicons}
-    }{%
-      % TL2017
-      % TL = TexLive ??
-      \@ifl@t@r\fmtversion{2017/04/01}{%
-        \@ifpackagelater{academicons}{2018/03/01}{%
-          \RequirePackage{academicons}
-        }{%
-          \let\ori@newfontfamily\newfontfamily%
-          \renewcommand{\newfontfamily}[2]{}
-          \RequirePackage{academicons}
-          \let\newfontfamily\ori@newfontfamily
-          \newfontfamily{\AI}{academicons.ttf}
-        }
-      }{% TL2016 requires the package to be loaded before
-        % the version can be checked. Only added because
-        % Overleaf v1 still runs TL2016; will be removed
-        % when v1 is completely retired.
-          \let\ori@newfontfamily\newfontfamily%
-          \renewcommand{\newfontfamily}[2]{}
-          \RequirePackage{academicons}
-          \let\newfontfamily\ori@newfontfamily
-          \newfontfamily{\AI}{academicons.ttf}
-      }
-    }
+	\ifxetexorluatex
+	    \RequirePackage{fontspec}
+	    %% academicons in TL2018 doesn't require
+	    %% Academicons to be installed in OS fonts
+	    %% so can be loaded directly
+	    
+	    % D'où vient la command \@ifl@t@r ? Est-elle liée à un paquet spécifique ?
+	    % Est-elle dans les commandes par défaut de LaTex ?
+	    % LaTeX core macro \@ifl@ter to check the file date
+	    \@ifl@t@r\fmtversion{2018/04/01}
+	    { % True case
+	      \RequirePackage{academicons}
+	    }
+    	{ % False case
+			% TL2017
+			% TL = TexLive ??
+			\@ifl@t@r\fmtversion{2017/04/01}
+			{ % True case
+	 			\@ifpackagelater{academicons}{2018/03/01}
+	 			{ % True case
+				   \RequirePackage{academicons}
+		 		}
+	 			{ % False case
+				   \let\ori@newfontfamily\newfontfamily%
+				   \renewcommand{\newfontfamily}[2]{}
+				   \RequirePackage{academicons}
+				   \let\newfontfamily\ori@newfontfamily
+				   \newfontfamily{\AI}{academicons.ttf}
+		 		}
+			}
+			{ % False case
+				% TL2016 requires the package to be loaded before
+				% the version can be checked. Only added because
+				% Overleaf v1 still runs TL2016; will be removed
+				% when v1 is completely retired.
+				\let\ori@newfontfamily\newfontfamily%
+				\renewcommand{\newfontfamily}[2]{}
+				\RequirePackage{academicons}
+				\let\newfontfamily\ori@newfontfamily
+				\newfontfamily{\AI}{academicons.ttf}
+			}
+    	}
   \else
     \ClassError{AltaCV}{academicons unsupported by latex or pdflatex. Please compile with xelatex or lualatex}{Please compile with xelatex or lualatex to use the academicons option}
   \fi
 \fi
 
 \if@raggedtwoe
-  \RequirePackage[newcommands]{ragged2e}
+  	\RequirePackage[newcommands]{ragged2e}
 \fi
 
 % Macro \AtBeginDocument has its content expanded right after \begin{document}
 \if@withhyper
-  \AtBeginDocument{%
+  	\AtBeginDocument{%
     \RequirePackage{hyperref}
+    
     % \hypersetup{hidelinks}
     % CypBLA : Commented to see where a links in the PDF.
-    \urlstyle{same}
+    
+    % \urlstyle{same}
+    % CypBLA : Comment because don't know what it does.
   }
 \fi
 
@@ -291,7 +301,10 @@
 }
 
 %% Command \divider
-\newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+\newcommand{\divider}{
+	\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}
+	\medskip
+}
 % Définission d'une commande de barre horizontale de la largeur d'une ligne.
 % Précisions : 
 % > \hdashrule{<largeur>}{<hauteur>}{<espace_laissé_vide>}
@@ -300,9 +313,14 @@
 % > \bigskip
 
 %% Environment \begin{fullwidth}
-\newenvironment{fullwidth}{%
-  \begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}}
-  {\end{adjustwidth}}
+\newenvironment{fullwidth}
+{ % Opening
+  	\begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}
+}
+{ % Closing
+	\end{adjustwidth}
+}
+
 % CypBLA : Que renvoie \dimexpr dans cette expression ?
 %
 % Théoriquement :
@@ -317,19 +335,19 @@
 
 %% v1.3.1 \detokenize will break UTF-8 in pdflatex
 %% Using alternative from https://tex.stackexchange.com/a/530911/226
-\newcommand{\utffriendlydetokenize}[1]{%
-\scantokens{%
-  \catcode`\_=12%
-%   \catcode`\^=12%
-%   \catcode`\{=12%
-%   \catcode`\}=12%
-  \catcode`\&=12%
-  \catcode`\$=12%
-  \catcode`\#=12%
-  \catcode`\~=12%
-%   \catcode`\\=12%
-  {#1}%
-}%
+\newcommand{\utffriendlydetokenize}[1]{
+	\scantokens{
+		\catcode`\_=12
+	%   \catcode`\^=12%
+	%   \catcode`\{=12%
+	%   \catcode`\}=12%
+		\catcode`\&=12%
+		\catcode`\$=12%
+		\catcode`\#=12%
+		\catcode`\~=12%
+	%   \catcode`\\=12%
+  		{#1}
+	}
 }
 
 %% v1.3: Incorporating hyperlinks
