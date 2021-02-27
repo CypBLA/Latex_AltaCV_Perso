@@ -358,19 +358,33 @@
 
 % \printinfo{symbol}{detail}[optional hyperlink prefix]
 
-\NewDocumentCommand{\printinfo}{m m o}{%
-  \IfNoValueTF{#3}{%
-    \mbox{\textcolor{accent}{\normalfont #1}~\utffriendlydetokenize{#2}\hspace{2em}}%
-  }{%
-     \if@withhyper%
-      \mbox{\textcolor{accent}{\normalfont #1}~
-      \href{#3}{\utffriendlydetokenize{#2}}\hspace{2em}}
-     \else%
-       \ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}%
-      \mbox{\textcolor{accent}{\normalfont #1}~{\utffriendlydetokenize{#3#2}}\hspace{2em}}%
-     \fi%
-  }%
-}%
+\newcommand{\infoIconFont}[1]{
+	\color{accent}{#1}
+}
+% OLD : \textcolor
+
+\newcommand{\interIconsSpace}{
+	\hspace{2em}
+}
+
+\NewDocumentCommand{\printinfo}{m m o}{
+	\IfNoValueTF{#3}%
+	{ % True case
+		\mbox{\infoIconFont{#1}~\utffriendlydetokenize{#2}\interIconsSpace} 
+	}
+	{ % False case
+		\if@withhyper
+			\mbox{
+				\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsSpace
+			}
+		\else
+			\ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}
+			\mbox{
+				\infoIconFont{#1}~{\utffriendlydetokenize{#3#2}}\interIconsSpace
+			}
+		\fi
+  	}
+}
 
 %% Command \NewInfoField
 % > \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix]
@@ -487,9 +501,8 @@
 
 %% Command \namefont
 \newcommand{\namefont}[1]{
-	{\Huge\color{name}\MakeUppercase{}}
+	\color{name}{\Huge{\titlesfont{#1}}}
 }
-
 % > \bfseries
 % Command for font changing. Passe the text to bold font.
 %
@@ -540,7 +553,7 @@
     	\nameskip
     	{\taglinefont{\@tagline}\par}
     	\taglineskip
-    	{\personalinfofont\@personalinfo\par}
+    	{\personalinfofont{\@personalinfo}\par}
     \end{minipage}\hfill
     \altacv@right@photos\par
   \endgroup
