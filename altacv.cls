@@ -395,18 +395,24 @@
 % \gitlab{your_id}
 
 % v1.3: Exploring convenient creation of fields
-\NewDocumentCommand{\NewInfoField}{m m o}{%
-  \IfNoValueF{#3}{\csdef{#1 hyperprefix}{#3}}%
-  \csdef{#1 symbol}{#2}%
-  \csdef{#1}##1{%
-    \if@withhyper
-      \IfNoValueTF {#3}
-        {\printinfo{\csuse{#1 symbol}}{##1}}%
-        {\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]}%
-    \else
-      \printinfo{\csuse{#1 symbol}}{##1}%
-    \fi%
-  }
+\NewDocumentCommand{\NewInfoField}{m m o}{
+	\IfNoValueF{#3}{
+		\csdef{#1 hyperprefix}{#3}
+	}
+  	\csdef{#1 symbol}{#2}%
+  	\csdef{#1}##1{
+		\if@withhyper
+   			\IfNoValueTF{#3}
+			{ % True case
+				\printinfo{\csuse{#1 symbol}}{##1}
+			} 
+      		{ % False case
+      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]
+      		} 
+    	\else
+			\printinfo{\csuse{#1 symbol}}{##1}
+    	\fi
+  	}
 }
 % CypBLA : Je n'ai honnetement pas tout compris de comment cette déclaration de commande fonctionne.
 % Pourtant, elle doit bien fonctionner puisqu'elle est appelée en dessous.
@@ -441,14 +447,14 @@
 %% Command \@makeaphoto
 % Crée la commande :
 % \@makeaphoto{<width>}{<cheminVersImage>}
-\newcommand{\@makeaphoto}[2]{%
-  \begin{minipage}{#1}%
-    \if@normalphoto
-      \includegraphics[width=\linewidth]{#2} % \linewidth => largeur au sein de la minipage.
-    \else
-      \tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
-    \fi%
-  \end{minipage}%
+\newcommand{\@makeaphoto}[2]{
+	\begin{minipage}{#1}
+		\if@normalphoto
+ 			\includegraphics[width=\linewidth]{#2} % \linewidth => largeur au sein de la minipage.
+		\else
+ 			\tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
+		\fi
+  	\end{minipage}%
 }
 
 % \appto{〈hook〉}{〈code〉}
