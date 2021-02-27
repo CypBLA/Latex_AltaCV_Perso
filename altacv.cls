@@ -526,11 +526,18 @@
 	\footnotesize{\titlesfont{#1}}
 }
 
+\newcommand{\headingRule}{
+	[-1ex]{\color{headingrule}\rule{\linewidth}{2pt}}\par
+}
+
 %% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 \newcommand{\cvsectionfont}[1]
 {
-	\color{heading}{\underline{\LARGE{\titlesfont{#1}}}}
+	\color{heading}{\underline{\LARGE{\titlesfont{#1}}}}\\
+	\headingRule
+	\smallskip
 }
+% \MakeUppercase 
 
 \newcommand{\cvsubsectionfont}[1]{
 	\underline{\large{\titlesfont{#1}}}
@@ -586,6 +593,7 @@
 % Si un premier argument est fourni, exprimé entre crochets, il est inséré dans la marge ?
 % ... je devrais teste la commande pour observer son résultat...
 
+
 %% Command \cvsection
 % > \cvsection[optional]{heading}
 \newcommand{\cvsection}[2][]{
@@ -597,9 +605,7 @@
 			\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
 		}
 	}
-	{\color{heading}\cvsectionfont\MakeUppercase{#2}}\\[-1ex]
-  	{\color{headingrule}\rule{\linewidth}{2pt}\par}
-  	\smallskip
+	{\cvsectionfont{#2}}
 }
 
 %% Command \cvsubsection
