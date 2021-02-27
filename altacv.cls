@@ -498,6 +498,14 @@
 \newcommand{\cvsubsectionfont}{\large\bfseries}
 \newcommand{\cvsubsubsectionfont}{\normalsize\bfseries}
 
+% Vertical blank spaces commands :
+% \vspace{5mm}
+% \smallskip
+% \medskip
+% \bigskip
+\newcommand{\nameSkip}{\smallskip}
+\newcommand{\taglineSkip}{\smallskip}
+
 %% Command \makecvheader
 \newcommand{\makecvheader}{%
   \begingroup
@@ -505,13 +513,13 @@
     \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}%
     \raggedright%
     {\namefont\color{name}\MakeUppercase{\@name}\par}
-    \medskip
+    \nameSkip
     {\taglinefont\color{tagline}\@tagline\par}
-    \medskip
+    \taglineSkip
     {\personalinfofont\@personalinfo\par}
     \end{minipage}\hfill%
     \altacv@right@photos\par%
-  \endgroup\medskip
+  \endgroup
 }
 
 %% Environment \begin{quote}
