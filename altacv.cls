@@ -257,7 +257,7 @@
 %%%%% CONFIGURATIONS AND NEW COMMANDS DECLARATION
 
 %% Definition of color associations
-\colorlet{name}{heading} % Used for : \name
+\colorlet{name}{black} % Used for : \name
 \colorlet{tagline}{blue!70!black} % Used for : \tagline
 \colorlet{heading}{black} % Used for : \cvsection
 \colorlet{headingrule}{black} % Used for : \rule
