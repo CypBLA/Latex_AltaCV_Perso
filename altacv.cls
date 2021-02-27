@@ -263,7 +263,7 @@
 \colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 \colorlet{heading}{black} % Used for : \cvsection
 \colorlet{headingrule}{black} % Used for : \rule
-\colorlet{subheading}{emphasis} % Used for : \cvsubsection, \cvsubsubsection
+\colorlet{subheading}{black} % Used for : \cvsubsection, \cvsubsubsection
 \colorlet{body}{black!80!white} % Used for : 
 
 %% Definition of marker commands : \itemmarker, \ratingmarker
