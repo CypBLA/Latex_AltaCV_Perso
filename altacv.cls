@@ -540,7 +540,7 @@
 % \MakeUppercase 
 
 \newcommand{\cvsubsectionfont}[1]{
-	\underline{\large{\titlesfont{#1}}}
+	\color{subheading}{\underline{\large{\titlesfont{#1}}}}
 }
 
 \newcommand{\cvsubsubsectionfont}[1]{
@@ -605,14 +605,15 @@
 			\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
 		}
 	}
-	{\cvsectionfont{#2}}
+	\cvsectionfont{#2}
 }
 
 %% Command \cvsubsection
 % > cvsubsection{heading}
-\newcommand{\cvsubsection}[1]{%
-  \smallskip%
-  {\color{subheading}\cvsubsectionfont{#1}\par}\medskip
+\newcommand{\cvsubsection}[1]{
+	\smallskip
+	\cvsubsectionfont{#1}\par
+	\medskip
 }
 
 %% Command \cvsubsubsection
