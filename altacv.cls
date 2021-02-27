@@ -618,9 +618,10 @@
 
 %% Command \cvsubsubsection
 % > cvsubsubsection{heading}
-\newcommand{\cvsubsubsection}[1]{%
-	\smallskip%
-	{\cvsubsectionfont{#1}\par}
+\newcommand{\cvsubsubsection}[1]{
+	\smallskip
+	\cvsubsectionfont{#1}\par
+	\smallskip
 }	
 
 % v1.1.4: fixes inconsistent font size
