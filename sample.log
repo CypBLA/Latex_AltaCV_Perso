@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  27 FEB 2021 22:02
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  28 FEB 2021 22:33
  restricted system commands enabled.
 **sample.tex
 (./sample.tex
@@ -1120,6 +1120,18 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@partial=\box71
 \AP@footins=\box72
 )
+(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/ulem/ulem.sty
+\UL@box=\box73
+\UL@hyphenbox=\box74
+\UL@skip=\skip75
+\UL@hook=\toks39
+\UL@height=\dimen271
+\UL@pe=\count423
+\UL@pixel=\dimen272
+\ULC@box=\box75
+Package: ulem 2019/11/18
+\ULdepth=\dimen273
+)
 ("C:/Program Files/MiKTeX/tex/latex/base/article.cls"
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 ("C:/Program Files/MiKTeX/tex/latex/base/size10.clo"
@@ -1139,12 +1151,12 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\c@part=\count423
-\c@section=\count424
-\c@subsection=\count425
-\c@subsubsection=\count426
-\c@paragraph=\count427
-\c@subparagraph=\count428
+\c@part=\count424
+\c@section=\count425
+\c@subsection=\count426
+\c@subsubsection=\count427
+\c@paragraph=\count428
+\c@subparagraph=\count429
 
 ! LaTeX Error: Command \description already defined.
                Or name \end... illegal, see p.192 of the manual.
@@ -1173,11 +1185,11 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\c@figure=\count429
-\c@table=\count430
-\abovecaptionskip=\skip75
-\belowcaptionskip=\skip76
-\bibindent=\dimen271
+\c@figure=\count430
+\c@table=\count431
+\abovecaptionskip=\skip76
+\belowcaptionskip=\skip77
+\bibindent=\dimen274
 ) ("C:/Program Files/MiKTeX/tex/latex/ragged2e/ragged2e.sty"
 Package: ragged2e 2021/02/05 v3.0 ragged2e Package
 
@@ -1186,52 +1198,52 @@ Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
 
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/everysel/everysel-2011-1
 0-28.sty))
-\CenteringLeftskip=\skip77
-\RaggedLeftLeftskip=\skip78
-\RaggedRightLeftskip=\skip79
-\CenteringRightskip=\skip80
-\RaggedLeftRightskip=\skip81
-\RaggedRightRightskip=\skip82
-\CenteringParfillskip=\skip83
-\RaggedLeftParfillskip=\skip84
-\RaggedRightParfillskip=\skip85
-\JustifyingParfillskip=\skip86
-\CenteringParindent=\skip87
-\RaggedLeftParindent=\skip88
-\RaggedRightParindent=\skip89
-\JustifyingParindent=\skip90
+\CenteringLeftskip=\skip78
+\RaggedLeftLeftskip=\skip79
+\RaggedRightLeftskip=\skip80
+\CenteringRightskip=\skip81
+\RaggedLeftRightskip=\skip82
+\RaggedRightRightskip=\skip83
+\CenteringParfillskip=\skip84
+\RaggedLeftParfillskip=\skip85
+\RaggedRightParfillskip=\skip86
+\JustifyingParfillskip=\skip87
+\CenteringParindent=\skip88
+\RaggedLeftParindent=\skip89
+\RaggedRightParindent=\skip90
+\JustifyingParindent=\skip91
 )
-\altacv@photos@width=\skip91
-\altacv@photo@diam@left=\skip92
-\altacv@photo@diam@right=\skip93
+\altacv@photos@width=\skip92
+\altacv@photo@diam@left=\skip93
+\altacv@photo@diam@right=\skip94
 )
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/paracol/paracol.sty
 Package: paracol 2018/12/31 v1.35 
-\pcol@currcol=\count431
-\pcol@nextcol=\count432
-\pcol@ncol=\count433
-\pcol@ncolleft=\count434
-\pcol@page=\count435
-\pcol@basepage=\count436
-\pcol@toppage=\count437
-\pcol@footnotebase=\count438
-\pcol@nfootnotes=\count439
-\pcol@mcid=\count440
-\pcol@prevdepth=\dimen272
-\pcol@colht=\dimen273
-\pcol@textfloatsep=\dimen274
-\pcol@lrmargin=\dimen275
-\pagerim=\dimen276
-\pcol@topskip=\skip94
-\belowfootnoteskip=\skip95
-\pcol@topfnotes=\box73
-\pcol@prespan=\box74
-\pcol@rightpage=\box75
-\pcol@colorstack@saved=\box76
-\pcol@tempboxa=\box77
-\pcol@tempboxb=\box78
+\pcol@currcol=\count432
+\pcol@nextcol=\count433
+\pcol@ncol=\count434
+\pcol@ncolleft=\count435
+\pcol@page=\count436
+\pcol@basepage=\count437
+\pcol@toppage=\count438
+\pcol@footnotebase=\count439
+\pcol@nfootnotes=\count440
+\pcol@mcid=\count441
+\pcol@prevdepth=\dimen275
+\pcol@colht=\dimen276
+\pcol@textfloatsep=\dimen277
+\pcol@lrmargin=\dimen278
+\pagerim=\dimen279
+\pcol@topskip=\skip95
+\belowfootnoteskip=\skip96
+\pcol@topfnotes=\box76
+\pcol@prespan=\box77
+\pcol@rightpage=\box78
+\pcol@colorstack@saved=\box79
+\pcol@tempboxa=\box80
+\pcol@tempboxb=\box81
 \pcol@colorins=\insert252
-\pcol@everyvbox=\toks39
+\pcol@everyvbox=\toks40
 )
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/opensans/opensans.sty
 Package: opensans 2019/06/20 Style file for Open Sans.
@@ -1254,14 +1266,12 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 ("C:/Program Files/MiKTeX/tex/generic/xkeyval/xkeyval.tex"
 ("C:/Program Files/MiKTeX/tex/generic/xkeyval/xkvutils.tex"
-\XKV@toks=\toks40
-\XKV@tempa@toks=\toks41
+\XKV@toks=\toks41
+\XKV@tempa@toks=\toks42
 )
-\XKV@depth=\count441
+\XKV@depth=\count442
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
@@ -1285,6 +1295,8 @@ luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'opensans-TLF' created for font 'OpenSans'
@@ -1354,8 +1366,6 @@ nguage=dflt;+tlig;+liga;+tnum;+lnum;"
 guage=dflt;+tlig;+liga;+tnum;+lnum;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
@@ -1379,6 +1389,8 @@ luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'opensans-LF' created for font 'OpenSans'
@@ -1448,8 +1460,6 @@ nguage=dflt;+tlig;+liga;+pnum;+lnum;"
 guage=dflt;+tlig;+liga;+pnum;+lnum;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
@@ -1473,6 +1483,8 @@ luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'opensans-TOsF' created for font 'OpenSans'
@@ -1542,8 +1554,6 @@ nguage=dflt;+tlig;+liga;+tnum;+onum;"
 guage=dflt;+tlig;+liga;+tnum;+onum;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
@@ -1567,6 +1577,8 @@ luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'opensans-OsF' created for font 'OpenSans'
@@ -1636,8 +1648,6 @@ nguage=dflt;+tlig;+liga;+pnum;+onum;"
 guage=dflt;+tlig;+liga;+pnum;+onum;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
@@ -1661,6 +1671,8 @@ luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'fos' created for font 'OpenSans' with
@@ -1730,8 +1742,6 @@ nguage=dflt;+tlig;+liga;+tnum;+lnum;"
 guage=dflt;+tlig;+liga;+tnum;+lnum;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
@@ -1755,6 +1765,8 @@ luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'OpenSans(0)' created for font 'OpenSans'
@@ -2051,62 +2063,62 @@ e;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
 )
 
 Package hyperref Warning: Option `pdftitle' has already been used,
-(hyperref)                setting the option has no effect on input line 63.
+(hyperref)                setting the option has no effect on input line 65.
 
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 63.
+(hyperref)                setting the option has no effect on input line 65.
 
-\@quotelevel=\count442
-\@quotereset=\count443
+\@quotelevel=\count443
+\@quotereset=\count444
 (./sample.aux)
 \openout1 = sample.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 232.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+32.
  ("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
 
 ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count444
-\scratchdimen=\dimen277
-\scratchbox=\box79
-\nofMPsegments=\count445
-\nofMParguments=\count446
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count447
-\MPscratchDim=\dimen278
-\MPnumerator=\count448
-\makeMPintoPDFobject=\count449
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count445
+\scratchdimen=\dimen280
+\scratchbox=\box82
+\nofMPsegments=\count446
+\nofMParguments=\count447
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count448
+\MPscratchDim=\dimen281
+\MPnumerator=\count449
+\makeMPintoPDFobject=\count450
+\everyMPtoPDFconversion=\toks44
 ) ("C:/Program Files/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 189.
+Package hyperref Info: Link coloring OFF on input line 232.
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2118,11 +2130,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 estring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count450
+\c@section@level=\count451
 )
-LaTeX Info: Redefining \ref on input line 189.
-LaTeX Info: Redefining \pageref on input line 189.
-LaTeX Info: Redefining \nameref on input line 189.
+LaTeX Info: Redefining \ref on input line 232.
+LaTeX Info: Redefining \pageref on input line 232.
+LaTeX Info: Redefining \nameref on input line 232.
  (./sample.out) (./sample.out)
 \@outlinefile=\write8
 
@@ -2168,64 +2180,64 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 189.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 189.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 189.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 189.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 189.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 189.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 189.
-LaTeX Font Info:    Redeclaring math accent \check on input line 189.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 189.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 189.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 189.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 189.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 189.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 232.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 232.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 232.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 232.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 232.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 232.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 232.
+LaTeX Font Info:    Redeclaring math accent \check on input line 232.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 232.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 232.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 232.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 232.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 189.
+(Font)              `operators' in the math version `normal' on input line 232.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 189.
+(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 232.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 189.
+(Font)              `operators' in the math version `bold' on input line 232.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 189.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 232.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/m/n on input line
- 189.
+ 232.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 189.
+(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 232.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 189.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 232.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/MerriweatherSans(0)/m/n on input li
-ne 189.
+ne 232.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 189.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 232.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/b/n on input line
- 189.
+ 232.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 189
+(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 232
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/MerriweatherSans(0)/b/n on input l
-ine 189.
+ine 232.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 189.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 232.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/english.lbx"
@@ -2250,240 +2262,102 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sample.bbl' not found.
 
 No file sample.bbl.
-Package biblatex Info: Reference section=0 on input line 189.
-Package biblatex Info: Reference segment=0 on input line 189.
+Package biblatex Info: Reference section=0 on input line 232.
+Package biblatex Info: Reference segment=0 on input line 232.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 189.
-\c@mv@tabular=\count451
-\c@mv@boldtabular=\count452
+LaTeX Info: Redefining \selectfont on input line 232.
+\c@mv@tabular=\count452
+\c@mv@boldtabular=\count453
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 218.
+(Font)              scaled to size 24.88pt on input line 267.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 218.
+(Font)              scaled to size 24.88pt on input line 267.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 218.
+(Font)              scaled to size 24.88pt on input line 267.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 218.
+(Font)              scaled to size 12.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 218.
+(Font)              scaled to size 12.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 218.
+(Font)              scaled to size 12.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 218.
+(Font)              scaled to size 8.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 218.
+(Font)              scaled to size 8.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 218.
+(Font)              scaled to size 8.0pt on input line 267.
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[][][] [][] [][] 
+ []
+
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 218.
+(Font)              scaled to size 7.0pt on input line 267.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 218.
+(Font)              scaled to size 5.0pt on input line 267.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 218.
+(Font)              <7> on input line 267.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 218.
-<CypBLA_Square_500x500.jpg, id=11, 521.95pt x 529.98pt>
+(Font)              <5> on input line 267.
+<CypBLA_Square_500x500.jpg, id=12, 521.95pt x 529.98pt>
 File: CypBLA_Square_500x500.jpg Graphic file (type jpg)
 <use CypBLA_Square_500x500.jpg>
-Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 218.
+Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 267.
 (luatex.def)             Requested size: 79.6678pt x 80.89258pt.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 232.
+(Font)              scaled to size 17.28pt on input line 281.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 232.
+(Font)              scaled to size 17.28pt on input line 281.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 232.
-luaotfload | aux : font no 68 (nil) does not define feature sups for script latn
+(Font)              scaled to size 17.28pt on input line 281.
+luaotfload | aux : font no 69 (nil) does not define feature sups for script latn
  with language dflt
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 234.
+(Font)              scaled to size 6.0pt on input line 283.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 234.
+(Font)              <12> on input line 283.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 234.
+(Font)              <8> on input line 283.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 234.
+(Font)              <6> on input line 283.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 234.
+(Font)              scaled to size 10.0pt on input line 283.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 234.
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 234--234
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 242--242
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--242
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 247--247
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--247
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 255--255
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 262--262
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 289--289
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
- 
- []
-
-
-Overfull \hbox (30.32404pt too wide) in paragraph at lines 291--292
-[]\TU/OpenSans(0)/m/n/10 En charge les lundi et mardi d’une classe de CP à l
-’école élé-men-taire ”Les Chadrillons” 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 297--297
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
- 
- []
-
-
-Overfull \hbox (13.79962pt too wide) in paragraph at lines 305--305
-[]\TU/OpenSans(0)/m/n/12 Stage in-génieur - Développe-ment Mat-lab - Logi-ciel
- de post-traitement 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 305--305
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 313--313
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
- 
- []
-
+(Font)              scaled to size 9.0pt on input line 283.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 319.
+(Font)              scaled to size 10.0pt on input line 366.
+LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 423.
 
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 325--325
-[][]   [] 
+Overfull \hbox (10.28824pt too wide) in paragraph at lines 429--436
+[][]  []  []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--325
- 
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+[]\TU/OpenSans(0)/m/n/10 Lec-ture et vi-sion-nage régulier
  []
 
 
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 337--337
-[][]   [] 
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
+\TU/OpenSans(0)/m/n/10 de mé-dia en en langue
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
- 
+Overfull \hbox (6.38358pt too wide) in paragraph at lines 476--477
+[]\TU/OpenSans(0)/m/it/10 Me dé-passer et af-fron-ter des ob-sta-cles tou-jours
+ plus dif-fi-ciles en sachant 
  []
 
 
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 358--358
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 358--358
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 365--365
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--365
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 368--368
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 368--368
- 
- []
-
-
-Overfull \hbox (7.79297pt too wide) in paragraph at lines 371--371
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--371
- 
- []
-
-
-Overfull \hbox (144.9656pt too wide) in paragraph at lines 386--393
-[][]  []  []  []  [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
-[]\TU/OpenSans(0)/m/n/10 Lec-ture et vi-sion-nage régulier de
+Overfull \hbox (17.79959pt too wide) in paragraph at lines 476--477
+\TU/OpenSans(0)/m/it/10 pou-voir tou-jours compter sur mon binôme pour m’as-s
+urer et me prodiguer 
  []
 
 [1
 
-<./CypBLA_Square_500x500.jpg>] [2] [3] [4] (./sample.aux)
+<./CypBLA_Square_500x500.jpg>] [2] [3] (./sample.aux)
 Package rerunfilecheck Info: File `sample.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'sample.run.xml'.
@@ -2492,15 +2366,15 @@ Package logreq Info: Writing requests to 'sample.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41235 strings out of 478819
- 100000,1648299 words of node,token memory allocated
- 1775 words of node memory still in use:
-   3 hlist, 22 vlist, 1 rule, 67 glue, 3 kern, 1 glyph, 92 attribute, 86 glue_sp
-ec, 92 attribute_list, 2 write, 45 pdf_colorstack nodes
-   avail lists: 1:5,2:3649,3:1266,4:383,5:156,6:168,7:8735,8:9,9:987,10:9,11:567
-
- 59518 multiletter control sequences out of 65536+200000
- 105 fonts using 14880359 bytes
+ 41320 strings out of 478819
+ 125007,1648299 words of node,token memory allocated
+ 2566 words of node memory still in use:
+   3 hlist, 53 vlist, 1 rule, 68 glue, 3 kern, 1 glyph, 124 attribute, 87 glue_s
+pec, 124 attribute_list, 2 write, 138 pdf_colorstack nodes
+   avail lists: 1:5,2:3665,3:1235,4:612,5:191,6:193,7:9561,8:11,9:1076,10:7,11:6
+29
+ 59595 multiletter control sequences out of 65536+200000
+ 107 fonts using 15112975 bytes
  113i,10n,122p,1130b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/windows/fonts/opensans-italic.ttf><//?/c:/windows/fonts/opensans-bold.tt
 f><//?/c:/windows/fonts/opensans-regular.ttf><C:/Users/impishwhite/AppData/Roami
@@ -2508,9 +2382,9 @@ ng/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Brands-Regular-400.otf>
 <C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/opentype/public/fontawesome5/
 FontAwesome5Free-Solid-900.otf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/font
 s/opentype/sorkin/merriweather/MerriweatherSans-Bold.otf>
-Output written on sample.pdf (4 pages, 231994 bytes).
+Output written on sample.pdf (3 pages, 233111 bytes).
 
-PDF statistics: 75 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 131072)
+PDF statistics: 72 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 131072)
  31 words of extra memory for PDF output out of 10000 (max. 100000000)
 
