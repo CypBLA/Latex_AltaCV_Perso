@@ -886,7 +886,8 @@
 	%% Environment \begin{cvcolumn}
 	\newenvironment{cvcolumn}[1]
 	{ % Opening
-		\begin{minipage}[t]{#1}\raggedright
+		\begin{minipage}[t]{#1}
+			\raggedright
 	}
 	{ % Closing
 		\end{minipage}
