@@ -752,6 +752,8 @@
 	  	\end{tabularx}
 	  	\smallskip
 	}
+
+\ExplSyntaxOff
 	
 	%% Command \cvtag
 	% > \cvtag{<contenuEtiquette>}
@@ -941,4 +943,3 @@
 	  \raggedright
 	}
 
-\ExplSyntaxOff
