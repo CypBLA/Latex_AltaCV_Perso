@@ -381,24 +381,30 @@
 }
 % OLD : \textcolor
 
-\newcommand{\interIconsSpace}{
+\newcommand{\interIconsHSpace}{
 	\hspace{2em}
 }
+
+% > \NewDocumentCommand
 
 \NewDocumentCommand{\printinfo}{m m o}{
 	\IfNoValueTF{#3}%
 	{ % True case
-		\mbox{\infoIconFont{#1}~\utffriendlydetokenize{#2}\interIconsSpace} 
+		\makebox{
+			% Create a single line box, large enough to hold its content.
+			% "> \mbox{text}" is a shotcut command for "> \makebox[width][pos]{text}".
+			\infoIconFont{#1}~\utffriendlydetokenize{#2}\interIconsHSpace
+		}
 	}
 	{ % False case
 		\if@withhyper
-			\mbox{
-				\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsSpace
+			\makebox{
+				\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsHSpace
 			}
 		\else
 			\ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}
-			\mbox{
-				\infoIconFont{#1}~{\utffriendlydetokenize{#3#2}}\interIconsSpace
+			\makebox{
+				\infoIconFont{#1}~{\utffriendlydetokenize{#3#2}}\interIconsHSpace
 			}
 		\fi
   	}
@@ -411,6 +417,12 @@
 % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
 %
 % \gitlab{your_id}
+
+% > \NewDocumentCommand{<command_name>}{<arguments_specification>}{< macro >}
+% Part of the "xparse" package.
+
+% > \csdef
+% Part of the "etoolbox" package.
 
 % v1.3: Exploring convenient creation of fields
 \NewDocumentCommand{\NewInfoField}{m m o}{
@@ -432,6 +444,13 @@
     	\fi
   	}
 }
+
+% > \@namedef{<text>}{<def>}
+% Lets define a macro called \<text>.
+
+% > \@nameuse{<text>}
+% Lets you call a macro called \<text>.
+
 
 % CypBLA : Je n'ai honnetement pas tout compris de comment cette déclaration de commande fonctionne.
 % Pourtant, elle doit bien fonctionner puisqu'elle est appelée en dessous.
@@ -542,7 +561,7 @@
 }
 
 \newcommand{\personalinfofont}[1]{
-	\footnotesize{\titlesfont{#1}}
+	\large{\titlesfont{#1}}
 }
 
 \newcommand{\headingRule}{
@@ -567,11 +586,12 @@
 }
 
 % Vertical blank spaces commands :
+% \vspace{0mm}
 % \vspace{5mm}
 % \smallskip
 % \medskip
 % \bigskip
-\newcommand{\nameskip}{\smallskip}
+\newcommand{\nameskip}{\vspace{0mm}}
 \newcommand{\taglineskip}{\smallskip}
 
 %% Command \makecvheader
@@ -581,9 +601,9 @@
 	    \hfill
 	    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
     		\raggedright
-	    	{\namefont{\@name}\par}
+	    	\namefont{\@name}\par
 	    	\nameskip
-	    	{\taglinefont{\@tagline}\par}
+	    	\taglinefont{\@tagline}\par
 	    	\taglineskip
 	    	{\personalinfofont{\@personalinfo}\par}
 	    \end{minipage}\hfill
