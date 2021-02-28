@@ -52,138 +52,142 @@
 %\usepackage[sfdefault]{roboto}
 % \usepackage[defaultsans]{lato}
 
-%%%% Paramétrage des dimensions
-% Change the page layout if you need to
-\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=1.2cm}
+\ExplSyntaxOn
+	
+	%%%% Paramétrage des dimensions
+	% Change the page layout if you need to
+	\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=1.2cm}
+	
+	%%%% Options des liens et du PDF
+	\hypersetup{
+		pdftitle={CV - Cyprien  BLANC},
+		pdfauthor={Cyprien BLANC}
+	}
+	
+	%%%% Parametrage des fonts, polices, etc. 
+	% CypBLA : Finalement pas besoin car définies à l'aide de l'appel aux paquets !
+	
+	% \usepackage[OT1]{fontenc}
+	% Nécessaire ?
+	
+	% \renewcommand{\familydefault}{\sfdefault}
+	% Normalement plus nécessaire comme OpenSans déclarée comme "default"
+	
+	%% CypBLA : Commenté car je ne vois pas de raisons de faire une distinction conditionnelle...
+	%% Change the font if you want to, depending on whether
+	%% you're using pdflatex or xelatex/lualatex
+	%\ifxetexorluatex
+	%  % If using xelatex or lualatex:
+	%  \setmainfont{Roboto Slab}
+	%  \setsansfont{Lato}
+	%  \renewcommand{\familydefault}{\sfdefault}
+	%\else
+	%  % If using pdflatex:
+	%  \usepackage[rm]{roboto}
+	%  \usepackage[defaultsans]{lato}
+	%  % \usepackage{sourcesanspro}
+	%  \renewcommand{\familydefault}{\sfdefault}
+	%\fi
+	
+	\renewcommand{\titlesfont}[1]{
+		\textbf{\merriweathersans{#1}}
+	}
+	
+	% Parametrage des differents tailles
+	
+	% Rappel de l'échelle des tailles :
+	% \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
+	
+	%% Change some fonts, if necessary
+	\renewcommand{\namefont}[1]{
+		\color{name}{\Huge{\titlesfont{#1}}}
+	}
+	
+	\renewcommand{\taglinefont}[1]{
+		\color{tagline}{\large{\titlesfont{#1}}}
+	}
+	
+	\renewcommand{\personalinfofont}[1]{
+		\footnotesize{\titlesfont{#1}}
+	}
+	
+	\renewcommand{\cvsectionfont}[1]{
+		\underline{\LARGE{\titlesfont{#1}}}
+	}
+	
+	\renewcommand{\cvsubsectionfont}[1]{
+		\underline{\large{\titlesfont{#1}}}
+	}
+	
+	\renewcommand{\cvsubsubsectionfont}[1]{
+		\underline{\normalsize{\titlesfont{#1}}}
+	}
+	
+	%% Change the bullets for itemize and rating marker for \cvskill if you want to
+	\renewcommand{\itemmarker}{{\small\textbullet}}
+	\renewcommand{\ratingmarker}{\faCircle}
+	
+	%%%% Personnalisation des couleurs
+	
+	%% Définition de noms de couleurs
+	
+	% Outils utiles :
+	% * HTML Color Values : https://www.w3schools.com/colors/colors_hex.asp
+	% * Color picker : https://www.w3schools.com/colors/colors_picker.asp
+	
+	% A noter : 
+	% Withinxcolor.sty, the following color names are defined:
+	% red,green,blue,cyan,magenta,yellow,black,gray,white,darkgray,lightgray,
+	% brown,lime,olive,orange,pink,purple,teal,violet.
+	%
+	% Option "svgnames" activée dans le paquet "xcolor"
+	% De nombreuses teintes de couleur par nom sont donc déjà théoriquement définies.
+	% Toutes celles au lien suivant : https://www.w3schools.com/colors/colors_names.asp
+	
+	%% Teintes grises
+	%\definecolor{SlateGrey}{HTML}{2E2E2E} % Gris sombre
+	%\definecolor{LightGrey}{HTML}{666666} % Gris moyen
+	%\definecolor{Silver}{C0C0C0} % Gris clair
+	%
+	%% Teintes bleues
+	%\definecolor{DeepSkyBlue}{00BFFF}
+	%\definecolor{DodgerBlue}{1E90FF}
+	%
+	%% Teintes vertes
+	%\definecolor{MediumSpringGreen}{00FA9A}
+	%\definecolor{ForestGreen}{228B22}
+	%\definecolor{SeaGreen}{2E8B57}
+	%\definecolor{LimeGreen}{32CD32}
+	%
+	%% Teintes rouges
+	%\definecolor{DarkPastelRed}{HTML}{450808} % Rouge très sombre presque marron
+	%\definecolor{PastelRed}{HTML}{8F0D0D} % Rouge foncé
+	%\definecolor{Tomato}{FF6347} % Rouge pastel
+	%\definecolor{Coral}{FF7F50} % Corail 
+	%
+	%% Teintes jaunes
+	%\definecolor{GoldenEarth}{HTML}{E7D192} % Couleur or/beige
+	
+	
+	%% Définition des champs de couleurs utilisés dans le document.
+	% Change the colours if you want to.
+	\colorlet{name}{black} % Used for : \name
+	\colorlet{tagline}{RoyalBlue} % Used for : \tagline
+	\colorlet{heading}{RoyalBlue} % Used for : \cvsection
+	\colorlet{headingrule}{black} % Used for : \rule
+	\colorlet{subheading}{Navy} % Used for : \cvsubsection, \cvsubsubsection
+	\colorlet{accent}{MediumBlue} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
+	\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+	\colorlet{body}{black} % Used for : all text color
+	
+	%%%% Définitions de l'emplacement du fichier .bib de bibliographie
+	%% sample.bib contains your publications
+	\addbibresource{sample.bib}
+	
+	%%%% DEFINITION DE NOUVELLES COMMANDES
+	\newcommand{\emphasis}[1]{\bfseries\textcolor{emphasis}{#1}}
 
-%%%% Options des liens et du PDF
-\hypersetup{
-	pdftitle={CV - Cyprien  BLANC},
-	pdfauthor={Cyprien BLANC}
-}
-
-%%%% Parametrage des fonts, polices, etc. 
-% CypBLA : Finalement pas besoin car définies à l'aide de l'appel aux paquets !
-
-% \usepackage[OT1]{fontenc}
-% Nécessaire ?
-
-% \renewcommand{\familydefault}{\sfdefault}
-% Normalement plus nécessaire comme OpenSans déclarée comme "default"
-
-%% CypBLA : Commenté car je ne vois pas de raisons de faire une distinction conditionnelle...
-%% Change the font if you want to, depending on whether
-%% you're using pdflatex or xelatex/lualatex
-%\ifxetexorluatex
-%  % If using xelatex or lualatex:
-%  \setmainfont{Roboto Slab}
-%  \setsansfont{Lato}
-%  \renewcommand{\familydefault}{\sfdefault}
-%\else
-%  % If using pdflatex:
-%  \usepackage[rm]{roboto}
-%  \usepackage[defaultsans]{lato}
-%  % \usepackage{sourcesanspro}
-%  \renewcommand{\familydefault}{\sfdefault}
-%\fi
-
-\renewcommand{\titlesfont}[1]{
-	\textbf{\merriweathersans{#1}}
-}
-
-% Parametrage des differents tailles
-
-% Rappel de l'échelle des tailles :
-% \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
-
-%% Change some fonts, if necessary
-\renewcommand{\namefont}[1]{
-	\color{name}{\Huge{\titlesfont{#1}}}
-}
-
-\renewcommand{\taglinefont}[1]{
-	\color{tagline}{\large{\titlesfont{#1}}}
-}
-
-\renewcommand{\personalinfofont}[1]{
-	\footnotesize{\titlesfont{#1}}
-}
-
-\renewcommand{\cvsectionfont}[1]{
-	\underline{\LARGE{\titlesfont{#1}}}
-}
-
-\renewcommand{\cvsubsectionfont}[1]{
-	\underline{\large{\titlesfont{#1}}}
-}
-
-\renewcommand{\cvsubsubsectionfont}[1]{
-	\underline{\normalsize{\titlesfont{#1}}}
-}
-
-%% Change the bullets for itemize and rating marker for \cvskill if you want to
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
-
-%%%% Personnalisation des couleurs
-
-%% Définition de noms de couleurs
-
-% Outils utiles :
-% * HTML Color Values : https://www.w3schools.com/colors/colors_hex.asp
-% * Color picker : https://www.w3schools.com/colors/colors_picker.asp
-
-% A noter : 
-% Withinxcolor.sty, the following color names are defined:
-% red,green,blue,cyan,magenta,yellow,black,gray,white,darkgray,lightgray,
-% brown,lime,olive,orange,pink,purple,teal,violet.
-%
-% Option "svgnames" activée dans le paquet "xcolor"
-% De nombreuses teintes de couleur par nom sont donc déjà théoriquement définies.
-% Toutes celles au lien suivant : https://www.w3schools.com/colors/colors_names.asp
-
-%% Teintes grises
-%\definecolor{SlateGrey}{HTML}{2E2E2E} % Gris sombre
-%\definecolor{LightGrey}{HTML}{666666} % Gris moyen
-%\definecolor{Silver}{C0C0C0} % Gris clair
-%
-%% Teintes bleues
-%\definecolor{DeepSkyBlue}{00BFFF}
-%\definecolor{DodgerBlue}{1E90FF}
-%
-%% Teintes vertes
-%\definecolor{MediumSpringGreen}{00FA9A}
-%\definecolor{ForestGreen}{228B22}
-%\definecolor{SeaGreen}{2E8B57}
-%\definecolor{LimeGreen}{32CD32}
-%
-%% Teintes rouges
-%\definecolor{DarkPastelRed}{HTML}{450808} % Rouge très sombre presque marron
-%\definecolor{PastelRed}{HTML}{8F0D0D} % Rouge foncé
-%\definecolor{Tomato}{FF6347} % Rouge pastel
-%\definecolor{Coral}{FF7F50} % Corail 
-%
-%% Teintes jaunes
-%\definecolor{GoldenEarth}{HTML}{E7D192} % Couleur or/beige
-
-
-%% Définition des champs de couleurs utilisés dans le document.
-% Change the colours if you want to.
-\colorlet{name}{black} % Used for : \name
-\colorlet{tagline}{RoyalBlue} % Used for : \tagline
-\colorlet{heading}{RoyalBlue} % Used for : \cvsection
-\colorlet{headingrule}{black} % Used for : \rule
-\colorlet{subheading}{Navy} % Used for : \cvsubsection, \cvsubsubsection
-\colorlet{accent}{MediumBlue} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
-\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
-\colorlet{body}{black} % Used for : all text color
-
-%%%% Définitions de l'emplacement du fichier .bib de bibliographie
-%% sample.bib contains your publications
-\addbibresource{sample.bib}
-
-%%%% DEFINITION DE NOUVELLES COMMANDES
-\newcommand{\emphasis}[1]{\bfseries\textcolor{emphasis}{#1}}
+\ExplSyntaxOff
 
 %%%%% CONTENU
 \begin{document}
