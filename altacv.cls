@@ -704,7 +704,7 @@
 		\smallskip
 		\cvsubsectionfont{#1}\par
 		\smallskip
-	}	
+	}
 	
 	% Command used when declaring the locations in \cvevent
 	\newcommand{\placeFont}[1]{
@@ -766,11 +766,11 @@
 	\newcommand{\cvskill}[2]{
 		\textEmph{#1} % Skill description
 		\hfill
-		\foreach \x in {1,...,5}{ % Drawing of the score on five
+		\foreach \x in {1,...,5}{% Drawing of the score on five
 			% OLD : \space
 			\ifnumgreater{\x}{#2}
-			{\color{body!30}} % True case
-			{\color{accent}} % False case
+			{\color{body!30}}% True case
+			{\color{accent}}% False case
 			\ratingmarker
 		}
 		\par
