@@ -110,15 +110,21 @@
 	\renewcommand{\personalinfofont}[1]{
 		\footnotesize{\titlesfont{#1}}
 	}
+
+	\renewcommand{\headingRule}{
+		\color{headingrule}{\rule{\linewidth}{2pt}}
+	}
 	
-	\renewcommand{\cvsectionfont}[1]{
+	\renewcommand{\cvsection}[1]{
 		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
 		[-1.2ex]\headingRule\par
 		\smallskip
 	}
 	
-	\renewcommand{\cvsubsectionfont}[1]{
-		\uline{\large{\titlesfont{#1}}}
+	\renewcommand{\cvsubsection}[1]{
+		\smallskip
+		\color{subheading}{\uline{\large{\titlesfont{#1}}}}
+		\smallskip
 	}
 	
 	\renewcommand{\cvsubsubsectionfont}[1]{
