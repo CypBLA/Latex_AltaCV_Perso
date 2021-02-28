@@ -664,25 +664,11 @@
 		\smallskip
 	}
 	
-	\newcommand{\cvsubsubsectionfont}[1]{
-		\uline{\normalsize{\titlesfont{#1}}}
-	}
-	
-	
-	%% Command \cvsection
-	% > \cvsection{heading}
-%	\newcommand{\cvsection}[1]{
-%		\smallskip
-%		\cvsectionfont{#1}
-%	}
-	
-
-	
 	%% Command \cvsubsubsection
 	% > cvsubsubsection{heading}
 	\newcommand{\cvsubsubsection}[1]{
 		\smallskip
-		\cvsubsectionfont{#1}\par
+		\uline{\normalsize{\titlesfont{#1}}}\par
 		\smallskip
 	}
 	
@@ -717,7 +703,7 @@
 			}
 		}
 		\par
-	  	\medskip
+	  	\smallskip
 	}
 	
 	% tabularx environment (tabularx package)
