@@ -379,7 +379,7 @@
 	% OLD : \textcolor
 	
 	\newcommand{\interIconsHSpace}{
-		\hspace{2em}
+		\hspace{1.8em}
 	}
 	
 	% > \NewDocumentCommand
