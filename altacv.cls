@@ -636,7 +636,10 @@
 	\newcommand{\titlesfont}[1]{
 		\textbf{#1}
 	}
-
+	
+	% Used in :
+	% * \cvskill
+	% * \cvref
 	\newcommand{\textEmph}[1]{
 		\color{emphasis}{\textbf{#1}}
 	}
@@ -768,9 +771,10 @@
 	% Si x > #2 => \space\color{body!30}\ratingmarker
 	% Si x <= #2 => \space\color{accent}\ratingmarker
 	\newcommand{\cvskill}[2]{
-		\textEmph{#1}\hfill
-		\foreach \x in {1,...,5}{
-			\space
+		\textEmph{#1} % Skill description
+		\hfill
+		\foreach \x in {1,...,5}{ % Drawing of the score on five
+			% OLD : \space
 			\ifnumgreater{\x}{#2}
 				{\color{body!30}} % True case
 				{\color{accent}} % False case
@@ -782,7 +786,7 @@
 	\newcommand{\skillfive}[1]{
 		\hfill
 		\foreach \x in {1,...,5}{
-			\space
+			% OLD : \space
 			\ifnumgreater{\x}{#1}
 				{\color{body!30}} % True case
 				{\color{accent}} % False case
@@ -859,10 +863,10 @@
 	% > \cvref{<name>}{<email>}{<mail adress>}
 	\newcommand{\cvref}[3]{
 		\smallskip
-		\textEmph{#1}\par
+		\textEmph{#1}\par % Referee's name
 	  	\begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
-	  		\item[\small\normalfont\emailsymbol] #2
-	  		\item[\small\normalfont\mailaddresssymbol] #3
+	  		\item[\small\normalfont\emailsymbol] #2 % Referee's email
+	  		\item[\small\normalfont\mailaddresssymbol] #3 % Referee's mail adress
 	  	\end{description}
 	%   \medskip
 	}
