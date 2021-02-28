@@ -111,6 +111,11 @@
 % https://www.ctan.org/pkg/iftex
 % The package, which works both for Plain TeX and for LaTeX, defines the \ifPDFTeX, \ifXeTeX, and \ifLuaTeX conditionals for testing which engine is being used for typesetting. 
 
+\RequirePackage{ulem}
+% ulem – Package for underlining
+% https://www.ctan.org/pkg/ulem
+% The ulem package provides various types of underlining that canstretch between words and be broken across lines
+
 %\RequirePackage[english, noftligs]{selnolig}
 
 %%%%% OPTIONS
@@ -588,17 +593,17 @@
 	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 	\newcommand{\cvsectionfont}[1]
 	{
-		\color{heading}{\underline{\LARGE{\titlesfont{#1}}}}\\
+		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
 		\headingRule
 		\smallskip
 	}
 	
 	\newcommand{\cvsubsectionfont}[1]{
-		\color{subheading}{\underline{\large{\titlesfont{#1}}}}
+		\color{subheading}{\uline{\large{\titlesfont{#1}}}}
 	}
 	
 	\newcommand{\cvsubsubsectionfont}[1]{
-		\underline{\normalsize{\titlesfont{#1}}}
+		\uline{\normalsize{\titlesfont{#1}}}
 	}
 	
 	% Vertical blank spaces commands :
