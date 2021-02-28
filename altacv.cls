@@ -528,11 +528,15 @@
 }
 
 % \appto{〈hook〉}{〈code〉}
-% This command appends arbitrary〈code〉to a〈hook〉.  If the〈code〉contains any pa-rameter characters, they need not be doubled. This command is robust.
+% This command appends arbitrary 〈code〉 to a 〈hook〉.  If the 〈code〉contains any parameter characters, they need not be doubled. This command is robust.
 % Part of the "etoolbox" package.
 
 %% Command \altacv@add@photo@left
 % > \altacv@add@photo@left{<photoPath>}
+%
+% Each time this command is called it append a new photo creation macro "\@makeaphoto" to the macro "\altacv@left@photos".
+% It also fill the length macro \altacv@photos@width
+
 \newcommand{\altacv@add@photo@left}[1]{%
 	\appto{\altacv@left@photos}{
     	\@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}
