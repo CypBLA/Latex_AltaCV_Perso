@@ -106,6 +106,11 @@
 % afterpage – Execute command after the next page break
 % https://www.ctan.org/pkg/afterpage
 
+\RequirePackage{iftex}
+% iftex – Am I running under pdfTeX, XeTeX or LuaTeX?
+% https://www.ctan.org/pkg/iftex
+% The package, which works both for Plain TeX and for LaTeX, defines the \ifPDFTeX, \ifXeTeX, and \ifLuaTeX conditionals for testing which engine is being used for typesetting. 
+
 %\RequirePackage[english, noftligs]{selnolig}
 
 %%%%% OPTIONS
@@ -451,6 +456,8 @@
 % > \@nameuse{<text>}
 % Lets you call a macro called \<text>.
 
+% > 
+% 
 
 % CypBLA : Je n'ai honnetement pas tout compris de comment cette déclaration de commande fonctionne.
 % Pourtant, elle doit bien fonctionner puisqu'elle est appelée en dessous.
