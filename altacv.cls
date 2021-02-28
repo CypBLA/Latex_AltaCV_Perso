@@ -593,8 +593,8 @@
 	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 	\newcommand{\cvsectionfont}[1]
 	{
-		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
-		\headingRule
+		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\%
+		\headingRule%
 		\smallskip
 	}
 	
