@@ -138,9 +138,10 @@
 		\uline{\normalsize{\titlesfont{#1}}}\par
 		\smallskip
 	}
-	
-	\renewcommand{\cvsubsubsectionfont}[1]{
-		\uline{\normalsize{\titlesfont{#1}}}
+
+	% Command used when declaring the locations in \cvevent
+	\renewcommand{\placeFont}[1]{
+		\color{accent}{\textbf{#1}}
 	}
 	
 	%% Change the bullets for itemize and rating marker for \cvskill if you want to
