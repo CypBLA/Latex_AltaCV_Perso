@@ -144,6 +144,13 @@
 	\renewcommand{\placeFont}[1]{
 		\color{accent}{\textbf{#1}}
 	}
+
+	% Used in :
+	% * \cvskill
+	% * \cvref
+	\renewcommand{\textEmph}[1]{
+		\color{emphasis}{\textbf{#1}}
+	}
 	
 	%% Change the bullets for itemize and rating marker for \cvskill if you want to
 	\renewcommand{\itemmarker}{{\small\textbullet}}
@@ -259,16 +266,6 @@
 
 	%%% FORMATION
 	\cvsection{Formation}
-	
-	\framebox{
-		\begin{minipage}{\linewidth}
-			cvsection\cvsection{test}\par
-			cvsectionfont\cvsectionfont{test}\par
-			headingRule\headingRule\par
-		\end{minipage}
-	}
-	
-	\cvsectionfont{test}
 	
 	\cvevent{Diplôme universitaire - Formation Adaptée Enseignement (FAE) 1\textsuperscript{er} degré}{Institut National Supérieur du Professorat et de l'Education}{2019--2020}{Lyon}
 	
