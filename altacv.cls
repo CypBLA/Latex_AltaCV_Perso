@@ -677,17 +677,10 @@
 	% ... je devrais teste la commande pour observer son résultat...
 	
 	%% Command \cvsection
-	% > \cvsection[optional]{heading}
-	\newcommand{\cvsection}[2][]{
-		\smallskip%
-		\ifstrequal{#1}{}
-		{} % True case
-		{ % False case
-			\marginpar{
-				\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
-			}
-		}
-		\cvsectionfont{#2}
+	% > \cvsection{heading}
+	\newcommand{\cvsection}[1]{
+		\smallskip
+		\cvsectionfont{#1}
 	}
 	
 	%% Command \cvsubsection
