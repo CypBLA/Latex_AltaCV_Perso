@@ -391,6 +391,8 @@
 }
 
 % > \NewDocumentCommand
+% Package xparse – A generic document command parser
+% https://ctan.org/pkg/xparse
 
 \NewDocumentCommand{\printinfo}{m m o}{
 	% Arguments :
@@ -445,15 +447,18 @@
 		\csdef{#1 hyperprefix}{#3}% Create command > \<fieldname>hyperprefix{<hyperlink>}
 	}
   	\csdef{#1 symbol}{#2}% Create command > \<fieldname>symbol{<symbol>}
-  	\csdef{#1}##1{% Create command > \<fieldname>{...} < in which argument #1 (<fieldname>) is passed to define the replacement texte
+  	\csdef{#1}##1{% Create command > \<fieldname>{<text>} 
 		\if@withhyper
    			\IfNoValueTF{#3}
-			{ % True case
+			{% True case
 				\printinfo{\csuse{#1 symbol}}{##1}% Call : \printinfo{<symbol>}{<fieldname>}
-			} 
-      		{ % False case
-      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]
-      		} 
+				% Note : 
+				% #1 : <fieldname>, is replaced right now by its value
+				% ##1 : <text>, will be filled when the command > \<fieldname>{<text>} < will be used.
+			}
+      		{% False case
+      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
+      		}
     	\else
 			\printinfo{\csuse{#1 symbol}}{##1}
     	\fi
@@ -502,12 +507,20 @@
 %% Command \@makeaphoto
 % Crée la commande :
 % \@makeaphoto{<width>}{<cheminVersImage>}
+
+% Mini-page environment
+% > \begin{minipage}[position][height][inner-pos]{width}
+% > 	contents
+% > \end{minipage}
+
+
 \newcommand{\@makeaphoto}[2]{
 	\begin{minipage}{#1}
-		\if@normalphoto
- 			\includegraphics[width=\linewidth]{#2} % \linewidth => largeur au sein de la minipage.
-		\else
- 			\tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
+		\if@normalphoto% Cas d'une photo carré
+ 			\includegraphics[width=\linewidth]{#2}%
+ 			% \linewidth => largeur au sein de la minipage.
+		\else% Cas d'une photo ronde
+			\tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
 		\fi
   	\end{minipage}%
 }
