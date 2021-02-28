@@ -115,15 +115,27 @@
 		\color{headingrule}{\rule{\linewidth}{2pt}}
 	}
 	
+	%% Command \cvsection
+	% > \cvsection{heading}
 	\renewcommand{\cvsection}[1]{
 		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
 		[-1.2ex]\headingRule\par
 		\smallskip
 	}
 	
+	%% Command \cvsubsection
+	% > \cvsubsection{heading}
 	\renewcommand{\cvsubsection}[1]{
 		\smallskip
 		\color{subheading}{\uline{\large{\titlesfont{#1}}}}\par
+		\smallskip
+	}
+
+	%% Command \cvsubsubsection
+	% > cvsubsubsection{heading}
+	\renewcommand{\cvsubsubsection}[1]{
+		\smallskip
+		\uline{\normalsize{\titlesfont{#1}}}\par
 		\smallskip
 	}
 	
