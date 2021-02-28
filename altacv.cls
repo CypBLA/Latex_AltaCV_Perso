@@ -512,7 +512,9 @@
 % > \begin{minipage}[position][height][inner-pos]{width}
 % > 	contents
 % > \end{minipage}
-
+% Put contents into a box that is width wide. 
+% This is like a small version of a page; it can contain its own footnotes, itemized lists, etc. (There are some restrictions, including that it cannot have floats.) 
+% This box will not be broken across pages.
 
 \newcommand{\@makeaphoto}[2]{
 	\begin{minipage}{#1}
