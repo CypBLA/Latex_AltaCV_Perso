@@ -477,6 +477,8 @@
 	\NewInfoField{github}{\faGithub}[https://github.com/] % Github
 	\NewInfoField{orcid}{\aiOrcid}[https://orcid.org/] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
 	\NewInfoField{location}{\faMapMarker} % Emplacement (Pas forcément utile si la même que l'adresse déclarée...)
+	\NewInfoField{birth}{\faBaby} % Birthday and age field
+	\NewInfoField{drivingLicence}{\faCar} % Birthday and age field
 	
 	%% Create length fields. Act as global variables.
 	% v1.2: Support for multiple photos
