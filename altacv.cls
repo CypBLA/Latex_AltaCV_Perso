@@ -111,7 +111,7 @@
 % https://www.ctan.org/pkg/iftex
 % The package, which works both for Plain TeX and for LaTeX, defines the \ifPDFTeX, \ifXeTeX, and \ifLuaTeX conditionals for testing which engine is being used for typesetting. 
 
-\RequirePackage{ulem}
+\RequirePackage[normalem]{ulem}
 % ulem – Package for underlining
 % https://www.ctan.org/pkg/ulem
 % The ulem package provides various types of underlining that canstretch between words and be broken across lines
