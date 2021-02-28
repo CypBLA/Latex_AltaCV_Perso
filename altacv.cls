@@ -271,665 +271,663 @@
 
 %%%%% CONFIGURATIONS AND NEW COMMANDS DECLARATION
 
-%% Definition of color associations
-\colorlet{name}{black} % Used for : \name
-\colorlet{tagline}{blue!70!black} % Used for : \tagline
-\colorlet{heading}{black} % Used for : \cvsection
-\colorlet{headingrule}{black} % Used for : \rule
-\colorlet{subheading}{black} % Used for : \cvsubsection, \cvsubsubsection
-\colorlet{accent}{blue!70!black} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
-\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
-\colorlet{body}{black} % Used for : all text color
-
-%% Definition of marker commands : \itemmarker, \ratingmarker
-\newcommand{\itemmarker}{{\small\textbullet}}
-\newcommand{\ratingmarker}{\faCircle}
-
-\setlist{leftmargin=*,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vspace{0.25\baselineskip}}
-% leftmargin : marge laissée à gauche du paragraphe de l'item par rapport à la frontière gauche du texte dans lequel l'environnement est inséré.
-% labelsep : espace horizontal entre le label et le paragraphe.
-% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
-% 
-
-\setlist[itemize]{label=\itemmarker}
-% > \setlist
-% Command of the "enumitem" package. 
-
-%% Supression de l'indentation des paragraphes
-\setlength{\parindent}{0pt}
-% CypBLA : Supression de l'indentation ?
-% Aucune indentation de paragraphe n'aura lieu dans le document.
-% Même si la commande \indent est utilisée.
-
-\newcommand{\titlesfont}[1]{
-	\textbf{#1}
-}
-
-%% Command \divider
-\newcommand{\divider}{
-	\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}
-	\medskip
-}
-% Définission d'une commande de barre horizontale de la largeur d'une ligne.
-% Précisions : 
-% > \hdashrule{<largeur>}{<hauteur>}{<espace_laissé_vide>}
-% \medskip <=> \vspace{\medskipamount}
-% > \smallskip
-% > \bigskip
-
-%% Environment \begin{fullwidth}
-\newenvironment{fullwidth}
-{ % Opening
-  	\begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}
-}
-{ % Closing
-	\end{adjustwidth}
-}
-
-% CypBLA : Que renvoie \dimexpr dans cette expression ?
-%
-% Théoriquement :
-% \dimexpr ne sert qu'à exprimer que ce qui suit est une expression de type "dimen" (dimension)
-% Donc ajustement négatif de la largeur du paragraph ?
-% Je suppose que adjustwidth ajuste la largeur du paragraphe exprimée par la variable \textwidth ?
-%
-% > \begin{adjustwidth}{〈leftmargin〉}{〈rightmargin〉
-% The adjustwidth environment of changepage takes two arguments, both of which are adjustments inward from the existing margins.
-% So negative values will enlarge the text block width around this environment.
-% Apparemment ce serait la longueur \linewidth qui serait ajustée et non \textwidth.
-
-%% v1.3.1 \detokenize will break UTF-8 in pdflatex
-%% Using alternative from https://tex.stackexchange.com/a/530911/226
-\newcommand{\utffriendlydetokenize}[1]{
-	\scantokens{
-		\catcode`\_=12
-	%   \catcode`\^=12%
-	%   \catcode`\{=12%
-	%   \catcode`\}=12%
-		\catcode`\&=12%
-		\catcode`\$=12%
-		\catcode`\#=12%
-		\catcode`\~=12%
-	%   \catcode`\\=12%
-  		{#1}
-	}
-}
-
-%% v1.3: Incorporating hyperlinks
-%% v1.3.1: using \unfriendlydetokenize to avoid
-%% breaking unicode
 \ExplSyntaxOn
-% The \ExplSyntaxOn command alters the treatment of spaces and line endings so these are ignored.
-% Inside, the code does not require % at the end of each line (compare to 'normal' LaTeX2e code).
-% CypBLA : Mais alors pourquoi % toujours utilisé ci-dessous ? Je peux le supprimer ?
-% To allow inclusion of spaces in the output, ~ is made into a 'normal' space by \ExplSyntaxOn.
-% \ExplSyntaxOff reverses this, returning :, _ and ~ to their values before \ExplSyntaxOn and making spaces 'important' again.
 
-% \NewDocumentCommand est tiré du paquet "xparse"
-% xparsedoes not simply need to know the number of arguments for a function, but also the nature of each one. This is done by constructing anargument specification, which defines the number of arguments, the type of each argument and any additional information needed for xparse to read the user input and properly pass itthrough to internal functions.
-%
-% Optional arguments created using xparse make use of dedicated variables to return information about the nature of the argument received.
-% \IfNoValueTF {<argument>} {<true code>} {<false code>}
-% \IfNoValueT {<argument>} {<true code>}
-% \IfNoValueF {<argument>} {<false code>}
-
-%% Command \printinfo
-% Création d'une commande \printinfo avec :
-% > Comme 1e argument obligatoire un symbole
-% > Comme 2e argument obligatoire l'information (illustrée par le symbole)
-% > Comme 3e argument facultatif un URL qui sera superposé à l'information.
-
-% \printinfo{symbol}{detail}[optional hyperlink prefix]
-
-\newcommand{\infoIconFont}[1]{
-	\color{accent}{#1}
-}
-% OLD : \textcolor
-
-\newcommand{\interIconsHSpace}{
-	\hspace{2em}
-}
-
-% > \NewDocumentCommand
-% Package xparse – A generic document command parser
-% https://ctan.org/pkg/xparse
-
-\NewDocumentCommand{\printinfo}{m m o}{
-	% Arguments :
-	% #1 : <icon>
-	% #2 : <writtenText>
-	% #3 : <hyperlink> - optional
-	\IfNoValueTF{#3}
-	{ % True case
-		\makebox{
-			% Create a single line box, large enough to hold its content.
-			% "> \mbox{text}" is a shotcut command for "> \makebox[width][pos]{text}".
-			\infoIconFont{#1}~\utffriendlydetokenize{#2}\interIconsHSpace
+	% The \ExplSyntaxOn command alters the treatment of spaces and line endings so these are ignored.
+	% Inside, the code does not require % at the end of each line (compare to 'normal' LaTeX2e code).
+	% CypBLA : Mais alors pourquoi % toujours utilisé ci-dessous ? Je peux le supprimer ?
+	% To allow inclusion of spaces in the output, ~ is made into a 'normal' space by \ExplSyntaxOn.
+	% \ExplSyntaxOff reverses this, returning :, _ and ~ to their values before \ExplSyntaxOn and making spaces 'important' again.
+	
+	%% Definition of color associations
+	\colorlet{name}{black} % Used for : \name
+	\colorlet{tagline}{blue!70!black} % Used for : \tagline
+	\colorlet{heading}{black} % Used for : \cvsection
+	\colorlet{headingrule}{black} % Used for : \rule
+	\colorlet{subheading}{black} % Used for : \cvsubsection, \cvsubsubsection
+	\colorlet{accent}{blue!70!black} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
+	\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+	\colorlet{body}{black} % Used for : all text color
+	
+	%% Definition of marker commands : \itemmarker, \ratingmarker
+	\newcommand{\itemmarker}{{\small\textbullet}}
+	\newcommand{\ratingmarker}{\faCircle}
+	
+	\setlist{leftmargin=*,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vspace{0.25\baselineskip}}
+	% leftmargin : marge laissée à gauche du paragraphe de l'item par rapport à la frontière gauche du texte dans lequel l'environnement est inséré.
+	% labelsep : espace horizontal entre le label et le paragraphe.
+	% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
+	% 
+	
+	\setlist[itemize]{label=\itemmarker}
+	% > \setlist
+	% Command of the "enumitem" package. 
+	
+	%% Supression de l'indentation des paragraphes
+	\setlength{\parindent}{0pt}
+	% CypBLA : Supression de l'indentation ?
+	% Aucune indentation de paragraphe n'aura lieu dans le document.
+	% Même si la commande \indent est utilisée.
+	
+	%% Environment \begin{fullwidth}
+	\newenvironment{fullwidth}
+	{ % Opening
+	  	\begin{adjustwidth}{}{\dimexpr-\marginparwidth-\marginparsep\relax}
+	}
+	{ % Closing
+		\end{adjustwidth}
+	}
+	
+	% CypBLA : Que renvoie \dimexpr dans cette expression ?
+	%
+	% Théoriquement :
+	% \dimexpr ne sert qu'à exprimer que ce qui suit est une expression de type "dimen" (dimension)
+	% Donc ajustement négatif de la largeur du paragraph ?
+	% Je suppose que adjustwidth ajuste la largeur du paragraphe exprimée par la variable \textwidth ?
+	%
+	% > \begin{adjustwidth}{〈leftmargin〉}{〈rightmargin〉
+	% The adjustwidth environment of changepage takes two arguments, both of which are adjustments inward from the existing margins.
+	% So negative values will enlarge the text block width around this environment.
+	% Apparemment ce serait la longueur \linewidth qui serait ajustée et non \textwidth.
+	
+	%% > \utffriendlydetokenize
+	% Used to detokenize inputs with special meaning for Latex.
+	% Particularly useful when parsing URLs
+	% \detokenize will break UTF-8 in pdflatex
+	% \unfriendlydetokenize is used to avoid breaking unicode
+	%% Using alternative from https://tex.stackexchange.com/a/530911/226
+	\newcommand{\utffriendlydetokenize}[1]{
+		\scantokens{
+			\catcode`\_=12
+		%   \catcode`\^=12%
+		%   \catcode`\{=12%
+		%   \catcode`\}=12%
+			\catcode`\&=12%
+			\catcode`\$=12%
+			\catcode`\#=12%
+			\catcode`\~=12%
+		%   \catcode`\\=12%
+	  		{#1}
 		}
 	}
-	{ % False case
-		\if@withhyper
-			\makebox{
-				\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsHSpace
-			}
-		\else
-			\ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}
-			\makebox{
-				\infoIconFont{#1}~{\utffriendlydetokenize{#3#2}}\interIconsHSpace
-			}
-		\fi
-  	}
-}
-
-%% Command \NewInfoField
-% > \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix]
-% 
-% Ex :
-% \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-%
-% \gitlab{your_id}
-%
-%
-
-% > \NewDocumentCommand{<command_name>}{<arguments_specification>}{< macro >}
-% Part of the "xparse" package.
-
-% > \csdef
-% Part of the "etoolbox" package.
-
-% v1.3: Exploring convenient creation of fields
-\NewDocumentCommand{\NewInfoField}{m m o}{
-	% Arguments :
-	% #1 : <fieldname>
-	% #2 : <symbol>
-	% #3 : <hyperlink> - optional
-	\IfNoValueF{#3}{
-		\csdef{#1 hyperprefix}{#3}% Create command > \<fieldname>hyperprefix{<hyperlink>}
+	
+	% \NewDocumentCommand est tiré du paquet "xparse"
+	% xparsedoes not simply need to know the number of arguments for a function, but also the nature of each one. This is done by constructing anargument specification, which defines the number of arguments, the type of each argument and any additional information needed for xparse to read the user input and properly pass itthrough to internal functions.
+	%
+	% Optional arguments created using xparse make use of dedicated variables to return information about the nature of the argument received.
+	% \IfNoValueTF {<argument>} {<true code>} {<false code>}
+	% \IfNoValueT {<argument>} {<true code>}
+	% \IfNoValueF {<argument>} {<false code>}
+	
+	%% Command \printinfo
+	% Création d'une commande \printinfo avec :
+	% > Comme 1e argument obligatoire un symbole
+	% > Comme 2e argument obligatoire l'information (illustrée par le symbole)
+	% > Comme 3e argument facultatif un URL qui sera superposé à l'information.
+	
+	% \printinfo{symbol}{detail}[optional hyperlink prefix]
+	
+	\newcommand{\infoIconFont}[1]{
+		\color{accent}{#1}
 	}
-  	\csdef{#1 symbol}{#2}% Create command > \<fieldname>symbol{<symbol>}
-  	\csdef{#1}##1{% Create command > \<fieldname>{<text>} 
-		\if@withhyper
-   			\IfNoValueTF{#3}
-			{% True case
-				\printinfo{\csuse{#1 symbol}}{##1}% Call : \printinfo{<symbol>}{<fieldname>}
-				% Note : 
-				% #1 : <fieldname>, is replaced right now by its value
-				% ##1 : <text>, will be filled when the command > \<fieldname>{<text>} < will be used.
+	% OLD : \textcolor
+	
+	\newcommand{\interIconsHSpace}{
+		\hspace{2em}
+	}
+	
+	% > \NewDocumentCommand
+	% Package xparse – A generic document command parser
+	% https://ctan.org/pkg/xparse
+	
+	\NewDocumentCommand{\printinfo}{m m o}{
+		% Arguments :
+		% #1 : <icon>
+		% #2 : <writtenText>
+		% #3 : <hyperlink> - optional
+		\IfNoValueTF{#3}
+		{ % True case
+			\makebox{
+				% Create a single line box, large enough to hold its content.
+				% "> \mbox{text}" is a shotcut command for "> \makebox[width][pos]{text}".
+				\infoIconFont{#1}~\utffriendlydetokenize{#2}\interIconsHSpace
 			}
-      		{% False case
-      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
-      		}
-    	\else
-			\printinfo{\csuse{#1 symbol}}{##1}
-    	\fi
-  	}
-}
-
-% > \@namedef{<text>}{<def>}
-% Lets define a macro called \<text>.
-
-% > \@nameuse{<text>}
-% Lets you call a macro called \<text>.
-
-% > 
-% 
-
-% CypBLA : Je n'ai honnetement pas tout compris de comment cette déclaration de commande fonctionne.
-% Pourtant, elle doit bien fonctionner puisqu'elle est appelée en dessous.
-\ExplSyntaxOff
-
-%% Définition de 3 champs d'information.
-\newcommand{\name}[1]{\def\@name{#1}} % > \name{<nom>}
-\newcommand{\tagline}[1]{\def\@tagline{#1}} % > \tagline{<tag>}
-\newcommand{\personalinfo}[1]{\def\@personalinfo{#1}} % > \personalinfo{<personalinfo>}
-
-%% Champs d'information à symbole.
-\NewInfoField{email}{\faAt}[mailto:] % Adresse mail
-\NewInfoField{mailaddress}{\faEnvelope} % Adresse postale
-\NewInfoField{phone}{\faPhone} % Numéro de téléphone
-\NewInfoField{homepage}{\faGlobe}[https://] % Site internet
-\NewInfoField{twitter}{\faTwitter}[https://twitter.com/] % Twitter
-\NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/] % LinkedIn
-\NewInfoField{github}{\faGithub}[https://github.com/] % Github
-\NewInfoField{orcid}{\aiOrcid}[https://orcid.org/] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
-\NewInfoField{location}{\faMapMarker} % Emplacement (Pas forcément utile si la même que l'adresse déclarée...)
-
-%% Create length fields. Act as global variables.
-% v1.2: Support for multiple photos
-\newlength{\altacv@photos@width}
-\newlength{\altacv@photo@diam@left}
-\newlength{\altacv@photo@diam@right}
-
-%% Macros used to append the macros "\@makeaphoto" as many times as needed.
-\def\altacv@left@photos{}
-\def\altacv@right@photos{}
-
-%% Command \@makeaphoto
-% Crée la commande :
-% \@makeaphoto{<width>}{<cheminVersImage>}
-
-% Mini-page environment
-% > \begin{minipage}[position][height][inner-pos]{width}
-% > 	contents
-% > \end{minipage}
-% Put contents into a box that is width wide. 
-% This is like a small version of a page; it can contain its own footnotes, itemized lists, etc. (There are some restrictions, including that it cannot have floats.) 
-% This box will not be broken across pages.
-
-\newcommand{\@makeaphoto}[2]{
-	\begin{minipage}{#1}
-		\if@normalphoto% Cas d'une photo carré
- 			\includegraphics[width=\linewidth]{#2}%
- 			% \linewidth => largeur au sein de la minipage.
-		\else% Cas d'une photo ronde
-			\tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
-		\fi
-  	\end{minipage}%
-}
-
-% \appto{〈hook〉}{〈code〉}
-% This command appends arbitrary 〈code〉 to a 〈hook〉.  If the 〈code〉contains any parameter characters, they need not be doubled. This command is robust.
-% Part of the "etoolbox" package.
-
-%% Command \altacv@add@photo@left
-% > \altacv@add@photo@left{<photoPath>}
-%
-% Each time this command is called it append a new photo creation macro "\@makeaphoto" to the macro "\altacv@left@photos".
-% It also fill the length macro \altacv@photos@width
-
-\newcommand{\altacv@add@photo@left}[1]{%
-	\appto{\altacv@left@photos}{
-    	\@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}
-  	}
-  	\addtolength{\altacv@photos@width}{\altacv@photo@diam@left}
-	\addtolength{\altacv@photos@width}{1ex}
-}
-
-%% Command \altacv@add@photo@right
-% > \altacv@add@photo@right{<photoPath>}
-\newcommand{\altacv@add@photo@right}[1]{
-	\appto{\altacv@right@photos}{
-    	\@makeaphoto{\altacv@photo@diam@right}{#1}\hspace{1ex}
-  	}
-  	\addtolength{\altacv@photos@width}{\altacv@photo@diam@right}
-	\addtolength{\altacv@photos@width}{1ex}
-}
-
-% \forcsvlist{〈handler〉}{〈item, item, ...〉}
-% This command loops over a comma-separated list of items and executes the 〈handler〉specified at invocation time for every item in the list, passing the item as an argument.
-% Ex : \forcsvlist{\listadd\mylist}{item1, item2, item3}
-% La commande est définie par la paquet "etoolbox"
-
-%% Command \photoL
-% > \photoL{<width>}{<photoPath1>,<photoPath2>}
-\newcommand{\photoL}[2]{
-	\setlength{\altacv@photo@diam@left}{#1}
-	\forcsvlist{\altacv@add@photo@left}{#2}
-}
-
-%% Command \photoR
-% > \photoR{<width>}{<photoPath1>,<photoPath2>}
-\newcommand{\photoR}[2]{
-	\setlength{\altacv@photo@diam@right}{#1}
-	\forcsvlist{\altacv@add@photo@right}{#2}
-}
-
-%% \photo=\photoR
-\let\photo\photoR % Est-ce que rend la commande \photo équivalente à \photoR ?
-% \let allows you to copy the content of a command into a new command.  
-% \let<new-command>[[<spaces>]=]<original-command>
-
-%% Command \namefont
-\newcommand{\namefont}[1]{
-	\color{name}{\Huge{\titlesfont{#1}}}
-}
-% > \bfseries
-% Command for font changing. Passe the text to bold font.
-%
-% > Huge
-% Commande créant automatiquement la plus grande taille de polices.
-% Dans l'ordre croissant : 
-% \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
-
-%% Commands to shape the cv header : \taglinefont \personalinfofont
-\newcommand{\taglinefont}[1]{
-	\color{tagline}{\large{\titlesfont{#1}}}
-}
-
-\newcommand{\personalinfofont}[1]{
-	\large{\titlesfont{#1}}
-}
-
-\newcommand{\headingRule}{
-	[-1ex]{\color{headingrule}\rule{\linewidth}{2pt}}\par
-}
-
-%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
-\newcommand{\cvsectionfont}[1]
-{
-	\color{heading}{\underline{\LARGE{\titlesfont{#1}}}}\\
-	\headingRule
-	\smallskip
-}
-% \MakeUppercase 
-
-\newcommand{\cvsubsectionfont}[1]{
-	\color{subheading}{\underline{\large{\titlesfont{#1}}}}
-}
-
-\newcommand{\cvsubsubsectionfont}[1]{
-	\underline{\normalsize{\titlesfont{#1}}}
-}
-
-% Vertical blank spaces commands :
-% \vspace{0mm}
-% \vspace{5mm}
-% \smallskip
-% \medskip
-% \bigskip
-\newcommand{\nameskip}{\vspace{0mm}}
-\newcommand{\taglineskip}{\smallskip}
-
-%% Command \makecvheader
-\newcommand{\makecvheader}{
-	\begingroup
-	    \altacv@left@photos
-	    \hfill
-	    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
-    		\raggedright
-	    	\namefont{\@name}\par
-	    	\nameskip
-	    	\taglinefont{\@tagline}\par
-	    	\taglineskip
-	    	{\personalinfofont{\@personalinfo}\par}
-	    \end{minipage}\hfill
-	    \altacv@right@photos\par
-  	\endgroup
-}
-
-%% Environment \begin{quote}
-% Adaptation of the quote environment
-\renewenvironment{quote}{\color{accent}\itshape}{\par}
-
-% \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
-% Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
-
-% Rappel : Fonctionnement de \newcommand
-% Exemple avec écriture d'une expression binomiale :
-% > \newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}
-% 
-% \plusbinomial - This is the name of the new command.
-% [3] - The number of parameters the command will take, in this case 3.
-% [2] - Is the default value for the first parameter. This is what makes the first parameter optional, if not passed it will use this default value.
-% (#2 + #3)^#1 - This is what the command does. In this case it will put the second and third parameters in a "binomial format" to the power represented by the first parameter.
-
-% CypBLA
-% Ma lecture de cette commande :
-% Si un premier argument est fourni, exprimé entre crochets, il est inséré dans la marge ?
-% ... je devrais teste la commande pour observer son résultat...
-
-
-%% Command \cvsection
-% > \cvsection[optional]{heading}
-\newcommand{\cvsection}[2][]{
-	\smallskip%
-	\ifstrequal{#1}{}
-	{} % True case
-	{ % False case
-		\marginpar{
-			\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
 		}
+		{ % False case
+			\if@withhyper
+				\makebox{
+					\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsHSpace
+				}
+			\else
+				\ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}
+				\makebox{
+					\infoIconFont{#1}~{\utffriendlydetokenize{#3#2}}\interIconsHSpace
+				}
+			\fi
+	  	}
 	}
-	\cvsectionfont{#2}
-}
-
-%% Command \cvsubsection
-% > cvsubsection{heading}
-\newcommand{\cvsubsection}[1]{
-	\smallskip
-	\cvsubsectionfont{#1}\par
-	\medskip
-}
-
-%% Command \cvsubsubsection
-% > cvsubsubsection{heading}
-\newcommand{\cvsubsubsection}[1]{
-	\smallskip
-	\cvsubsectionfont{#1}\par
-	\smallskip
-}	
-
-% v1.1.4: fixes inconsistent font size
-
-\newcommand{\placeFont}[1]{
-	\color{accent}{\textbf{#1}}
-}
-
-%% Command \cvevent
-% > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
-\newcommand{\cvevent}[4]{
-	{\large\color{emphasis}#1\par}
-  	\smallskip
-  	\ifstrequal{#2}{}
-  	{} % True case
-  	{ % False case
-		\placeFont{#2}\par
-  		\smallskip
+	
+	%% Command \NewInfoField
+	% > \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix]
+	% Used for convenient creation of fields with text and symbol.
+	%
+	% 
+	% Ex :
+	% \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+	%
+	% \gitlab{your_id}
+	
+	% > \NewDocumentCommand{<command_name>}{<arguments_specification>}{< macro >}
+	% Part of the "xparse" package.
+	
+	% > \@namedef{<text>}{<def>}
+	% Lets define a macro called \<text>.
+	
+	% > \@nameuse{<text>}
+	% Lets you call a macro called \<text>.
+	
+	% > \csdef
+	% Part of the "etoolbox" package.
+	
+	\NewDocumentCommand{\NewInfoField}{m m o}{
+		% Arguments :
+		% #1 : <fieldname>
+		% #2 : <symbol>
+		% #3 : <hyperlink> - optional
+		\IfNoValueF{#3}{
+			\csdef{#1 hyperprefix}{#3}% Create command > \<fieldname>hyperprefix{<hyperlink>}
+		}
+	  	\csdef{#1 symbol}{#2}% Create command > \<fieldname>symbol{<symbol>}
+	  	\csdef{#1}##1{% Create command > \<fieldname>{<text>} 
+			\if@withhyper
+	   			\IfNoValueTF{#3}
+				{% True case
+					\printinfo{\csuse{#1 symbol}}{##1}% Call : \printinfo{<symbol>}{<fieldname>}
+					% Note : 
+					% #1 : <fieldname>, is replaced right now by its value
+					% ##1 : <text>, will be filled when the command > \<fieldname>{<text>} < will be used.
+				}
+	      		{% False case
+	      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
+	      		}
+	    	\else
+				\printinfo{\csuse{#1 symbol}}{##1}
+	    	\fi
+	  	}
 	}
-	\ifstrequal{#3}{}
-	{} % True case
+	
+	%% Définition de 3 champs d'information.
+	\newcommand{\name}[1]{\def\@name{#1}} % > \name{<nom>}
+	\newcommand{\tagline}[1]{\def\@tagline{#1}} % > \tagline{<tag>}
+	\newcommand{\personalinfo}[1]{\def\@personalinfo{#1}} % > \personalinfo{<personalinfo>}
+	
+	%% Champs d'information à symbole.
+	\NewInfoField{email}{\faAt}[mailto:] % Adresse mail
+	\NewInfoField{mailaddress}{\faEnvelope} % Adresse postale
+	\NewInfoField{phone}{\faPhone} % Numéro de téléphone
+	\NewInfoField{homepage}{\faGlobe}[https://] % Site internet
+	\NewInfoField{twitter}{\faTwitter}[https://twitter.com/] % Twitter
+	\NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/] % LinkedIn
+	\NewInfoField{github}{\faGithub}[https://github.com/] % Github
+	\NewInfoField{orcid}{\aiOrcid}[https://orcid.org/] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
+	\NewInfoField{location}{\faMapMarker} % Emplacement (Pas forcément utile si la même que l'adresse déclarée...)
+	
+	%% Create length fields. Act as global variables.
+	% v1.2: Support for multiple photos
+	\newlength{\altacv@photos@width}
+	\newlength{\altacv@photo@diam@left}
+	\newlength{\altacv@photo@diam@right}
+	
+	%% Macros used to append the macros "\@makeaphoto" as many times as needed.
+	\def\altacv@left@photos{}
+	\def\altacv@right@photos{}
+	
+	%% Command \@makeaphoto
+	% Crée la commande :
+	% \@makeaphoto{<width>}{<cheminVersImage>}
+	
+	% Mini-page environment
+	% > \begin{minipage}[position][height][inner-pos]{width}
+	% > 	contents
+	% > \end{minipage}
+	% Put contents into a box that is width wide. 
+	% This is like a small version of a page; it can contain its own footnotes, itemized lists, etc. (There are some restrictions, including that it cannot have floats.) 
+	% This box will not be broken across pages.
+	
+	\newcommand{\@makeaphoto}[2]{
+		\begin{minipage}{#1}
+			\if@normalphoto% Cas d'une photo carré
+	 			\includegraphics[width=\linewidth]{#2}%
+	 			% \linewidth => largeur au sein de la minipage.
+			\else% Cas d'une photo ronde
+				\tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
+			\fi
+	  	\end{minipage}%
+	}
+	
+	% \appto{〈hook〉}{〈code〉}
+	% This command appends arbitrary 〈code〉 to a 〈hook〉.  If the 〈code〉contains any parameter characters, they need not be doubled. This command is robust.
+	% Part of the "etoolbox" package.
+	
+	%% Command \altacv@add@photo@left
+	% > \altacv@add@photo@left{<photoPath>}
+	%
+	% Each time this command is called it append a new photo creation macro "\@makeaphoto" to the macro "\altacv@left@photos".
+	% It also fill the length macro \altacv@photos@width
+	
+	\newcommand{\altacv@add@photo@left}[1]{%
+		\appto{\altacv@left@photos}{
+	    	\@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}
+	  	}
+	  	\addtolength{\altacv@photos@width}{\altacv@photo@diam@left}
+		\addtolength{\altacv@photos@width}{1ex}
+	}
+	
+	%% Command \altacv@add@photo@right
+	% > \altacv@add@photo@right{<photoPath>}
+	%
+	% The "symetric" \altacv@add@photo@left but to place photos on the right.
+	\newcommand{\altacv@add@photo@right}[1]{
+		\appto{\altacv@right@photos}{
+	    	\@makeaphoto{\altacv@photo@diam@right}{#1}\hspace{1ex}
+	  	}
+	  	\addtolength{\altacv@photos@width}{\altacv@photo@diam@right}
+		\addtolength{\altacv@photos@width}{1ex}
+	}
+	
+	% \forcsvlist{〈handler〉}{〈item, item, ...〉}
+	% This command loops over a comma-separated list of items and executes the 〈handler〉specified at invocation time for every item in the list, passing the item as an argument.
+	% Ex : \forcsvlist{\listadd\mylist}{item1, item2, item3}
+	% La commande est définie par la paquet "etoolbox"
+	
+	%% Command \photoL
+	% > \photoL{<width>}{<photoPath1>,<photoPath2>}
+	\newcommand{\photoL}[2]{
+		\setlength{\altacv@photo@diam@left}{#1}
+		\forcsvlist{\altacv@add@photo@left}{#2}
+	}
+	
+	%% Command \photoR
+	% > \photoR{<width>}{<photoPath1>,<photoPath2>}
+	\newcommand{\photoR}[2]{
+		\setlength{\altacv@photo@diam@right}{#1}
+		\forcsvlist{\altacv@add@photo@right}{#2}
+	}
+	
+	%% \photo=\photoR
+	\let\photo\photoR % Est-ce que rend la commande \photo équivalente à \photoR ?
+	% \let allows you to copy the content of a command into a new command.  
+	% \let<new-command>[[<spaces>]=]<original-command>
+	
+	%% Command \namefont
+	\newcommand{\namefont}[1]{
+		\color{name}{\Huge{\titlesfont{#1}}}
+	}
+	% > \bfseries
+	% Pass the text to bold font.
+	%
+	% > Huge
+	% Commande créant automatiquement la plus grande taille de polices.
+	% Dans l'ordre croissant : 
+	% \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
+	
+	%% Commands to shape the cv header : \taglinefont \personalinfofont
+	\newcommand{\taglinefont}[1]{
+		\color{tagline}{\large{\titlesfont{#1}}}
+	}
+	
+	\newcommand{\personalinfofont}[1]{
+		\large{\titlesfont{#1}}
+	}
+	
+	\newcommand{\headingRule}{
+		[-1ex]{\color{headingrule}\rule{\linewidth}{2pt}}\par
+	}
+	
+	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
+	\newcommand{\cvsectionfont}[1]
 	{
-		{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}
+		\color{heading}{\underline{\LARGE{\titlesfont{#1}}}}\\
+		\headingRule
+		\smallskip
 	}
-  	\ifstrequal{#4}{}
-  	{} % True case
-  	{ % False case
-		{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}
+	% \MakeUppercase 
+	
+	\newcommand{\cvsubsectionfont}[1]{
+		\color{subheading}{\underline{\large{\titlesfont{#1}}}}
 	}
-	\par
-  	\medskip
-}
-
-% tabularx environment (tabularx package)
-% > \begin{tabularx}{<width>}[<pos>]{<preamble>}
-
-%% Command \cvachievement
-% > \cvachievement{<symbole>}{<achievement>}{<details_about_achievement>}
-\newcommand{\cvachievement}[3]{
-	\begin{tabularx}{\linewidth}{ @{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{} }
-		\multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
-		& #3
-  	\end{tabularx}
-  	\smallskip
-}
-
-%% Command \cvtag
-% > \cvtag{<contenuEtiquette>}
-% Crée une étiquette directement au sein du paragraphe avec un mot clé au sein d'un cadre aux bords arrondis.
-\newcommand{\cvtag}[1]{%
-	\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
-}
-
-% \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
-% Vient du paquet "etoolbox".
-
-\newcommand{\textEmph}[1]{
-	\color{emphasis}{\textbf{#1}}
-}
-% OLD : \textcolor
-
-%% Command \cvskill
-% > \cvskill{<compétence>}{<valeurDe1à5>}
-%
-% Explication :
-% Test sur x allant de 1 à 5 par rapport à #2.
-% Si x > #2 => \space\color{body!30}\ratingmarker
-% Si x <= #2 => \space\color{accent}\ratingmarker
-\newcommand{\cvskill}[2]{
-	\textEmph{#1}\hfill
-	\foreach \x in {1,...,5}{
-		\space
-		\ifnumgreater{\x}{#2}
-			{\color{body!30}} % True case
-			{\color{accent}} % False case
-		\ratingmarker
+	
+	\newcommand{\cvsubsubsectionfont}[1]{
+		\underline{\normalsize{\titlesfont{#1}}}
 	}
-	\par
-}
-
-\newcommand{\skillfive}[1]{
-	\hfill
-	\foreach \x in {1,...,5}{
-		\space
-		\ifnumgreater{\x}{#1}
-			{\color{body!30}} % True case
-			{\color{accent}} % False case
-		\ratingmarker
+	
+	% Vertical blank spaces commands :
+	% \vspace{0mm}
+	% \vspace{5mm}
+	% \smallskip
+	% \medskip
+	% \bigskip
+	\newcommand{\nameskip}{\vspace{0mm}}
+	\newcommand{\taglineskip}{\smallskip}
+	
+	%% Command \makecvheader
+	\newcommand{\makecvheader}{
+		\begingroup
+		    \altacv@left@photos
+		    \hfill
+		    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
+	    		\raggedright
+		    	\namefont{\@name}\par
+		    	\nameskip
+		    	\taglinefont{\@tagline}\par
+		    	\taglineskip
+		    	{\personalinfofont{\@personalinfo}\par}
+		    \end{minipage}\hfill
+		    \altacv@right@photos\par
+	  	\endgroup
 	}
-	\par
-}
-
-%% Command \wheelchart
-% Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
-% \wheelchart[<angle>]{<outer_radius>}{<inner_radius>}{<value>,<text_width>,<color>,<detail>}	% comma-separated list of value/text width/color/detail
-\newcommand{\wheelchart}[4][0]{%
-    \begingroup
-    	\centering
-    	\def\innerradius{#3}
-		\def\outerradius{#2}	
-		
-	    % Calculate total
-	    \pgfmathsetmacro{\totalnum}{0}
-	    \foreach \value/\colour/\name in {#4} {
-     		\pgfmathparse{\value+\totalnum}
-	        \global\let\totalnum=\pgfmathresult
-	    }
-    	
-		\begin{tikzpicture}
-
-			% Calculate the thickness and the middle line of the wheel
-			\pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
-			\pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
-			\pgfmathsetmacro{\totalrot}{-90 + #1}
-
-			% Rotate so we start from the top
-			\begin{scope}[rotate=\totalrot]
-
-				% Loop through each value set. \cumnum keeps track of where we are in the wheel
-				\pgfmathsetmacro{\cumnum}{0}
-				
-				\foreach \value/\width/\colour/\name in {#4} {
-		            \pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
-		
-		            % Calculate the percent value
-		            \pgfmathsetmacro{\percentage}{\value/\totalnum*100}
-		            % Calculate the mid angle of the colour segments to place the labels
-		            \pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
-		
-		            % This is necessary for the labels to align nicely
-		            \pgfmathparse{
-		               (-\midangle>180?"west":"east")
-		            } \edef\textanchor{\pgfmathresult}
-		            \pgfmathparse{
-		               (-\midangle>180?"flush left":"flush right")
-		            } \edef\textalign{\pgfmathresult}
-		            \pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
-		
-		            % Draw the color segments. Somehow, the \midrow units got lost, so we add 'pt' at the end. Not nice...
-		            \filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
-		            (-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
-		
-		            % Draw the data labels
-		            \draw  [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
-		            
-		            % Set the old cumulated angle to the new value
-		            \global\let\cumnum=\newcumnum
-	        	}
-        
-      		\end{scope}
-%      	\draw[gray] (0,0) circle (\outerradius) circle (\innerradius);
-    	\end{tikzpicture}\par
-    \endgroup
-}
-
-%% Command \cvref
-% Description of referees
-% > \cvref{<name>}{<email>}{<mail adress>}
-\newcommand{\cvref}[3]{
-	\smallskip
-	\textEmph{#1}\par
-  	\begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
-  		\item[\small\normalfont\emailsymbol] #2
-  		\item[\small\normalfont\mailaddresssymbol] #3
-  	\end{description}
-%   \medskip
-}
-
-% ...Environnement ne semblant utilisé nulle part dans le CV...
-% 
-% A propos de \parbox : 
-% A \parbox is a box of specific width formatted in paragraph mode. 
-% In paragraph mode, text is broken into lines and lines are broken into pages.
-% > \parbox[pos][height][contentpos]{width}{text} 
-%
-% A propos de l'environnement minipage : 
-% The minipage environment takes the same parameters as a \parbox, and behaves nearly identically to it. 
-% The difference between a minipage and a \parbox is that a \parbox can only contain a single paragraph and you cannot use all commands and environments inside it, while a minipage may contain multiple paragraphs and, in fact, almost anything.
-% > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
-
-%% Environment \begin{cvcolumn}
-\newenvironment{cvcolumn}[1]
-{ % Opening
-	\begin{minipage}[t]{#1}\raggedright
-}
-{ % Closing
-	\end{minipage}
-}
-
-%% Gestion bibliographie à l'aide du paquet biblatex
-
-% Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
-
-%% For removing numbering entirely when using a numeric style
-% \setlength{\bibhang}{1em}
-% \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
-% \setlength{\biblabelsep}{0pt}
-
-\defbibheading{pubtype}{\cvsubsection{#1}} 
-% Est-ce cette ligne qui définit le le heading comme "pubtype" ?
-% Ce qui permettra de jolies icones dans le titre ?
-
-\renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
-\AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}} % Pour obtenir une liste de publication à puces ?
-\setlength{\bibitemsep}{0.25\baselineskip}
-
-% v1.1.2: make it easier to add a sidebar aligned with top of next page
-
-% Quel utilité pour ces commandes dans ce document ?
-% \addsidebar{<dimen>}{<}
-% \addnextpagesidebar
-
-%% Command \addsidebar
-\newcommand{\addsidebar}[2][]{
-	\marginpar{
+	
+	%% Environment \begin{quote}
+	% Adaptation of the quote environment
+	\renewenvironment{quote}{\color{accent}\itshape}{\par}
+	
+	
+	\newcommand{\titlesfont}[1]{
+		\textbf{#1}
+	}
+	
+	%% Command \divider
+	\newcommand{\divider}{
+		\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}
+		\medskip
+	}
+	% Définission d'une commande de barre horizontale de la largeur d'une ligne.
+	% Précisions : 
+	% > \hdashrule{<largeur>}{<hauteur>}{<espace_laissé_vide>}
+	% \medskip <=> \vspace{\medskipamount}
+	% > \smallskip
+	% > \bigskip
+	
+	
+	% \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
+	% Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
+	
+	% Rappel : Fonctionnement de \newcommand
+	% Exemple avec écriture d'une expression binomiale :
+	% > \newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}
+	% 
+	% \plusbinomial - This is the name of the new command.
+	% [3] - The number of parameters the command will take, in this case 3.
+	% [2] - Is the default value for the first parameter. This is what makes the first parameter optional, if not passed it will use this default value.
+	% (#2 + #3)^#1 - This is what the command does. In this case it will put the second and third parameters in a "binomial format" to the power represented by the first parameter.
+	
+	% CypBLA
+	% Ma lecture de cette commande :
+	% Si un premier argument est fourni, exprimé entre crochets, il est inséré dans la marge ?
+	% ... je devrais teste la commande pour observer son résultat...
+	
+	%% Command \cvsection
+	% > \cvsection[optional]{heading}
+	\newcommand{\cvsection}[2][]{
+		\smallskip%
 		\ifstrequal{#1}{}
-			{} % True case
-			{\vspace*{#1}} % False case
-  		\input{#2}
+		{} % True case
+		{ % False case
+			\marginpar{
+				\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}
+			}
+		}
+		\cvsectionfont{#2}
 	}
-}
+	
+	%% Command \cvsubsection
+	% > cvsubsection{heading}
+	\newcommand{\cvsubsection}[1]{
+		\smallskip
+		\cvsubsectionfont{#1}\par
+		\medskip
+	}
+	
+	%% Command \cvsubsubsection
+	% > cvsubsubsection{heading}
+	\newcommand{\cvsubsubsection}[1]{
+		\smallskip
+		\cvsubsectionfont{#1}\par
+		\smallskip
+	}	
+	
+	% Command used when declaring the locations in \cvevent
+	\newcommand{\placeFont}[1]{
+		\color{accent}{\textbf{#1}}
+	}
+	
+	%% Command \cvevent
+	% > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
+	\newcommand{\cvevent}[4]{
+		{\large\color{emphasis}#1\par}
+	  	\smallskip
+	  	\ifstrequal{#2}{}
+	  	{} % True case
+	  	{ % False case
+			\placeFont{#2}\par
+	  		\smallskip
+		}
+		\ifstrequal{#3}{}
+		{} % True case
+		{
+			{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}
+		}
+	  	\ifstrequal{#4}{}
+	  	{} % True case
+	  	{ % False case
+			{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}
+		}
+		\par
+	  	\medskip
+	}
+	
+	% tabularx environment (tabularx package)
+	% > \begin{tabularx}{<width>}[<pos>]{<preamble>}
+	
+	%% Command \cvachievement
+	% > \cvachievement{<symbole>}{<achievement>}{<details_about_achievement>}
+	\newcommand{\cvachievement}[3]{
+		\begin{tabularx}{\linewidth}{ @{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{} }
+			\multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
+			& #3
+	  	\end{tabularx}
+	  	\smallskip
+	}
+	
+	%% Command \cvtag
+	% > \cvtag{<contenuEtiquette>}
+	% Crée une étiquette directement au sein du paragraphe avec un mot clé au sein d'un cadre aux bords arrondis.
+	\newcommand{\cvtag}[1]{%
+		\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+	}
+	
+	% \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
+	% Vient du paquet "etoolbox".
+	
+	\newcommand{\textEmph}[1]{
+		\color{emphasis}{\textbf{#1}}
+	}
+	% OLD : \textcolor
+	
+	%% Command \cvskill
+	% > \cvskill{<compétence>}{<valeurDe1à5>}
+	%
+	% Explication :
+	% Test sur x allant de 1 à 5 par rapport à #2.
+	% Si x > #2 => \space\color{body!30}\ratingmarker
+	% Si x <= #2 => \space\color{accent}\ratingmarker
+	\newcommand{\cvskill}[2]{
+		\textEmph{#1}\hfill
+		\foreach \x in {1,...,5}{
+			\space
+			\ifnumgreater{\x}{#2}
+				{\color{body!30}} % True case
+				{\color{accent}} % False case
+			\ratingmarker
+		}
+		\par
+	}
+	
+	\newcommand{\skillfive}[1]{
+		\hfill
+		\foreach \x in {1,...,5}{
+			\space
+			\ifnumgreater{\x}{#1}
+				{\color{body!30}} % True case
+				{\color{accent}} % False case
+			\ratingmarker
+		}
+		\par
+	}
+	
+	%% Command \wheelchart
+	% Adapted from @Jake's answer at http://tex.stackexchange.com/a/82729/226
+	% \wheelchart[<angle>]{<outer_radius>}{<inner_radius>}{<value>,<text_width>,<color>,<detail>}	% comma-separated list of value/text width/color/detail
+	\newcommand{\wheelchart}[4][0]{%
+	    \begingroup
+	    	\centering
+	    	\def\innerradius{#3}
+			\def\outerradius{#2}	
+			
+		    % Calculate total
+		    \pgfmathsetmacro{\totalnum}{0}
+		    \foreach \value/\colour/\name in {#4} {
+	     		\pgfmathparse{\value+\totalnum}
+		        \global\let\totalnum=\pgfmathresult
+		    }
+	    	
+			\begin{tikzpicture}
+	
+				% Calculate the thickness and the middle line of the wheel
+				\pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
+				\pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
+				\pgfmathsetmacro{\totalrot}{-90 + #1}
+	
+				% Rotate so we start from the top
+				\begin{scope}[rotate=\totalrot]
+	
+					% Loop through each value set. \cumnum keeps track of where we are in the wheel
+					\pgfmathsetmacro{\cumnum}{0}
+					
+					\foreach \value/\width/\colour/\name in {#4} {
+			            \pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
+			
+			            % Calculate the percent value
+			            \pgfmathsetmacro{\percentage}{\value/\totalnum*100}
+			            % Calculate the mid angle of the colour segments to place the labels
+			            \pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
+			
+			            % This is necessary for the labels to align nicely
+			            \pgfmathparse{
+			               (-\midangle>180?"west":"east")
+			            } \edef\textanchor{\pgfmathresult}
+			            \pgfmathparse{
+			               (-\midangle>180?"flush left":"flush right")
+			            } \edef\textalign{\pgfmathresult}
+			            \pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
+			
+			            % Draw the color segments. Somehow, the \midrow units got lost, so we add 'pt' at the end. Not nice...
+			            \filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
+			            (-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
+			
+			            % Draw the data labels
+			            \draw  [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
+			            
+			            % Set the old cumulated angle to the new value
+			            \global\let\cumnum=\newcumnum
+		        	}
+	        
+	      		\end{scope}
+	%      	\draw[gray] (0,0) circle (\outerradius) circle (\innerradius);
+	    	\end{tikzpicture}\par
+	    \endgroup
+	}
+	
+	%% Command \cvref
+	% Description of referees
+	% > \cvref{<name>}{<email>}{<mail adress>}
+	\newcommand{\cvref}[3]{
+		\smallskip
+		\textEmph{#1}\par
+	  	\begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
+	  		\item[\small\normalfont\emailsymbol] #2
+	  		\item[\small\normalfont\mailaddresssymbol] #3
+	  	\end{description}
+	%   \medskip
+	}
+	
+	% ...Environnement ne semblant utilisé nulle part dans le CV...
+	% 
+	% A propos de \parbox : 
+	% A \parbox is a box of specific width formatted in paragraph mode. 
+	% In paragraph mode, text is broken into lines and lines are broken into pages.
+	% > \parbox[pos][height][contentpos]{width}{text} 
+	%
+	% A propos de l'environnement minipage : 
+	% The minipage environment takes the same parameters as a \parbox, and behaves nearly identically to it. 
+	% The difference between a minipage and a \parbox is that a \parbox can only contain a single paragraph and you cannot use all commands and environments inside it, while a minipage may contain multiple paragraphs and, in fact, almost anything.
+	% > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
+	
+	%% Environment \begin{cvcolumn}
+	\newenvironment{cvcolumn}[1]
+	{ % Opening
+		\begin{minipage}[t]{#1}\raggedright
+	}
+	{ % Closing
+		\end{minipage}
+	}
+	
+	%% Gestion bibliographie à l'aide du paquet biblatex
+	
+	% Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
+	
+	%% For removing numbering entirely when using a numeric style
+	% \setlength{\bibhang}{1em}
+	% \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
+	% \setlength{\biblabelsep}{0pt}
+	
+	\defbibheading{pubtype}{\cvsubsection{#1}} 
+	% Est-ce cette ligne qui définit le le heading comme "pubtype" ?
+	% Ce qui permettra de jolies icones dans le titre ?
+	
+	\renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
+	\AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}} % Pour obtenir une liste de publication à puces ?
+	\setlength{\bibitemsep}{0.25\baselineskip}
+	
+	% v1.1.2: make it easier to add a sidebar aligned with top of next page
+	
+	% Quel utilité pour ces commandes dans ce document ?
+	% \addsidebar{<dimen>}{<}
+	% \addnextpagesidebar
+	
+	%% Command \addsidebar
+	\newcommand{\addsidebar}[2][]{
+		\marginpar{
+			\ifstrequal{#1}{}
+				{} % True case
+				{\vspace*{#1}} % False case
+	  		\input{#2}
+		}
+	}
+	
+	%% Command \addnextpagesidebar
+	\newcommand{\addnextpagesidebar}[2][]{
+		\afterpage{\addsidebar[#1]{#2}}
+	}
+	
+	% > \afterpage
+	% Command from the "afterpage" package.
+	
+	%%% Actions en début de document
+	\AtBeginDocument{%
+	  \pagestyle{empty}
+	  \color{body}
+	  \raggedright
+	}
 
-%% Command \addnextpagesidebar
-\newcommand{\addnextpagesidebar}[2][]{
-	\afterpage{\addsidebar[#1]{#2}}
-}
-
-% > \afterpage
-% Command from the "afterpage" package.
-
-%%% Actions en début de document
-\AtBeginDocument{%
-  \pagestyle{empty}
-  \color{body}
-  \raggedright
-}
+\ExplSyntaxOff
