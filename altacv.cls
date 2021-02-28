@@ -681,12 +681,12 @@
 	% > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
 	\newcommand{\cvevent}[4]{
 		\color{emphasis}{\large{#1}}\par
-	  	\smallskip
+%	  	\smallskip
 	  	\ifstrequal{#2}{}
 	  	{} % True case
 	  	{ % False case
 			\placeFont{#2}\par % Text insertion for the place of the cv event.
-	  		\smallskip
+%	  		\smallskip
 		}
 		\ifstrequal{#3}{}
 		{} % True case
@@ -703,7 +703,7 @@
 			}
 		}
 		\par
-	  	\smallskip
+%	  	\smallskip
 	}
 	
 	% tabularx environment (tabularx package)
