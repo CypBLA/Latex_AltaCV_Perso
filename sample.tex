@@ -112,7 +112,9 @@
 	}
 	
 	\renewcommand{\cvsectionfont}[1]{
-		\underline{\LARGE{\titlesfont{#1}}}
+		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
+		\headingRule\par
+		\smallskip
 	}
 	
 	\renewcommand{\cvsubsectionfont}[1]{
@@ -229,7 +231,7 @@
 %%%% CONTENU EN COLONNES
 
 %% Set the left/right column width ratio to 6:4.
-\columnratio{0.7}
+\columnratio{0.6}
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
