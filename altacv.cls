@@ -586,37 +586,6 @@
 		\large{\titlesfont{#1}}
 	}
 	
-	\newcommand{\headingRule}{
-		\color{headingrule}{\rule{\linewidth}{2pt}}
-	}
-	
-	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
-	\newcommand{\cvsectionfont}[1]
-	{
-		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
-		\headingRule\par
-		\smallskip
-	}
-
-%		\newcommand{\cvsectionfont}[1]
-%		{
-%			\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\ \headingRule \smallskip 
-%		}
-
-%		\newcommand{\cvsectionfont}[1]{
-%			#1\\
-%			\headingRule
-%			\smallskip
-%		}
-	
-	\newcommand{\cvsubsectionfont}[1]{
-		\color{subheading}{\uline{\large{\titlesfont{#1}}}}
-	}
-	
-	\newcommand{\cvsubsubsectionfont}[1]{
-		\uline{\normalsize{\titlesfont{#1}}}
-	}
-	
 	% Vertical blank spaces commands :
 	% \vspace{0mm}
 	% \vspace{5mm}
@@ -674,30 +643,44 @@
 	% > \smallskip
 	% > \bigskip
 	
+	\newcommand{\headingRule}{
+		\color{headingrule}{\rule{\linewidth}{2pt}}
+	}
 	
-	% \ifstrequal{〈string〉}{〈string〉}{〈true〉}{〈false〉}
-	% Compares two strings and executes〈true〉if they are equal, and〈false〉otherwise.
+	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
+	\newcommand{\cvsection}[1]
+	{
+		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
+		[-1.2ex]\headingRule\par
+		\smallskip
+	}
 	
-	% Rappel : Fonctionnement de \newcommand
-	% Exemple avec écriture d'une expression binomiale :
-	% > \newcommand{\plusbinomial}[3][2]{(#2 + #3)^#1}
-	% 
-	% \plusbinomial - This is the name of the new command.
-	% [3] - The number of parameters the command will take, in this case 3.
-	% [2] - Is the default value for the first parameter. This is what makes the first parameter optional, if not passed it will use this default value.
-	% (#2 + #3)^#1 - This is what the command does. In this case it will put the second and third parameters in a "binomial format" to the power represented by the first parameter.
+	%		\newcommand{\cvsectionfont}[1]
+	%		{
+	%			\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\ \headingRule \smallskip 
+	%		}
 	
-	% CypBLA
-	% Ma lecture de cette commande :
-	% Si un premier argument est fourni, exprimé entre crochets, il est inséré dans la marge ?
-	% ... je devrais teste la commande pour observer son résultat...
+	%		\newcommand{\cvsectionfont}[1]{
+	%			#1\\
+	%			\headingRule
+	%			\smallskip
+	%		}
+	
+	\newcommand{\cvsubsectionfont}[1]{
+		\color{subheading}{\uline{\large{\titlesfont{#1}}}}
+	}
+	
+	\newcommand{\cvsubsubsectionfont}[1]{
+		\uline{\normalsize{\titlesfont{#1}}}
+	}
+	
 	
 	%% Command \cvsection
 	% > \cvsection{heading}
-	\newcommand{\cvsection}[1]{
-		\smallskip
-		\cvsectionfont{#1}
-	}
+%	\newcommand{\cvsection}[1]{
+%		\smallskip
+%		\cvsectionfont{#1}
+%	}
 	
 	%% Command \cvsubsection
 	% > cvsubsection{heading}
