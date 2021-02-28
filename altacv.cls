@@ -786,8 +786,8 @@
 	{ % Opening
 		\begin{minipage}[t]{#1}
 			\raggedright
-		}
-		{ % Closing
+	}
+	{ % Closing
 		\end{minipage}
 	}
 	
