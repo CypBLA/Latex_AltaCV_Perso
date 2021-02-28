@@ -336,6 +336,7 @@
 	% \detokenize will break UTF-8 in pdflatex
 	% \unfriendlydetokenize is used to avoid breaking unicode
 	%% Using alternative from https://tex.stackexchange.com/a/530911/226
+	
 	\newcommand{\utffriendlydetokenize}[1]{
 		\scantokens{
 			\catcode`\_=12
@@ -581,7 +582,7 @@
 	}
 	
 	\newcommand{\headingRule}{
-		[-1ex]{\color{headingrule}\rule{\linewidth}{2pt}}\par
+		\color{headingrule}{\rule{\linewidth}{2pt}}\par
 	}
 	
 	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
@@ -591,7 +592,6 @@
 		\headingRule
 		\smallskip
 	}
-	% \MakeUppercase 
 	
 	\newcommand{\cvsubsectionfont}[1]{
 		\color{subheading}{\underline{\large{\titlesfont{#1}}}}
