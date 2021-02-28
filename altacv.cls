@@ -753,15 +753,6 @@
 	  	\smallskip
 	}
 
-\ExplSyntaxOff
-	
-	%% Command \cvtag
-	% > \cvtag{<contenuEtiquette>}
-	% Crée une étiquette directement au sein du paragraphe avec un mot clé au sein d'un cadre aux bords arrondis.
-	\newcommand{\cvtag}[1]{%
-		\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
-	}
-	
 	% \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
 	% Vient du paquet "etoolbox".
 	
@@ -778,23 +769,118 @@
 		\foreach \x in {1,...,5}{ % Drawing of the score on five
 			% OLD : \space
 			\ifnumgreater{\x}{#2}
-				{\color{body!30}} % True case
-				{\color{accent}} % False case
+			{\color{body!30}} % True case
+			{\color{accent}} % False case
 			\ratingmarker
 		}
 		\par
 	}
-	
+
+	%% Command \skillfive
 	\newcommand{\skillfive}[1]{
 		\hfill
 		\foreach \x in {1,...,5}{
 			% OLD : \space
 			\ifnumgreater{\x}{#1}
-				{\color{body!30}} % True case
-				{\color{accent}} % False case
+			{\color{body!30}} % True case
+			{\color{accent}} % False case
 			\ratingmarker
 		}
 		\par
+	}
+
+	
+	%% Command \cvref
+	% Description of referees
+	% > \cvref{<name>}{<email>}{<mail adress>}
+	\newcommand{\cvref}[3]{
+		\smallskip
+		\textEmph{#1}\par % Referee's name
+		\begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
+			\item[\small\normalfont\emailsymbol] #2 % Referee's email
+			\item[\small\normalfont\mailaddresssymbol] #3 % Referee's mail adress
+		\end{description}
+		%   \medskip
+	}
+	
+	% ...Environnement ne semblant utilisé nulle part dans le CV...
+	% 
+	% A propos de \parbox : 
+	% A \parbox is a box of specific width formatted in paragraph mode. 
+	% In paragraph mode, text is broken into lines and lines are broken into pages.
+	% > \parbox[pos][height][contentpos]{width}{text} 
+	%
+	% A propos de l'environnement minipage : 
+	% The minipage environment takes the same parameters as a \parbox, and behaves nearly identically to it. 
+	% The difference between a minipage and a \parbox is that a \parbox can only contain a single paragraph and you cannot use all commands and environments inside it, while a minipage may contain multiple paragraphs and, in fact, almost anything.
+	% > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
+	
+	%% Environment \begin{cvcolumn}
+	\newenvironment{cvcolumn}[1]
+	{ % Opening
+		\begin{minipage}[t]{#1}
+			\raggedright
+		}
+		{ % Closing
+		\end{minipage}
+	}
+	
+	%% Gestion bibliographie à l'aide du paquet biblatex
+	
+	% Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
+	
+	%% For removing numbering entirely when using a numeric style
+	% \setlength{\bibhang}{1em}
+	% \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
+	% \setlength{\biblabelsep}{0pt}
+	
+	\defbibheading{pubtype}{\cvsubsection{#1}} 
+	% Est-ce cette ligne qui définit le le heading comme "pubtype" ?
+	% Ce qui permettra de jolies icones dans le titre ?
+	
+	\renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
+	\AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}} % Pour obtenir une liste de publication à puces ?
+	\setlength{\bibitemsep}{0.25\baselineskip}
+	
+	% v1.1.2: make it easier to add a sidebar aligned with top of next page
+	
+	% Quel utilité pour ces commandes dans ce document ?
+	% \addsidebar{<dimen>}{<}
+	% \addnextpagesidebar
+	
+	%% Command \addsidebar
+	\newcommand{\addsidebar}[2][]{
+		\marginpar{
+			\ifstrequal{#1}{}
+			{} % True case
+			{\vspace*{#1}} % False case
+			\input{#2}
+		}
+	}
+	
+	%% Command \addnextpagesidebar
+	\newcommand{\addnextpagesidebar}[2][]{
+		\afterpage{\addsidebar[#1]{#2}}
+	}
+	
+	% > \afterpage
+	% Command from the "afterpage" package.
+	
+	%%% Actions en début de document
+	\AtBeginDocument{%
+		\pagestyle{empty}
+		\color{body}
+		\raggedright
+	}
+
+\ExplSyntaxOff % L'environnement de syntaxe explicite ne considérant pas les espaces est fermé ici.
+% Les commandes qui suivent de la bibliothèque "Tikz" son plus clairs avec l'utilisation de véritables espaces.
+	
+	%% Command \cvtag
+	% > \cvtag{<contenuEtiquette>}
+	% Crée une étiquette directement au sein du paragraphe avec un mot clé au sein d'un cadre aux bords arrondis.
+	\newcommand{\cvtag}[1]{%
+		\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 	}
 	
 	%% Command \wheelchart
@@ -859,87 +945,3 @@
 	    	\end{tikzpicture}\par
 	    \endgroup
 	}
-	
-	%% Command \cvref
-	% Description of referees
-	% > \cvref{<name>}{<email>}{<mail adress>}
-	\newcommand{\cvref}[3]{
-		\smallskip
-		\textEmph{#1}\par % Referee's name
-	  	\begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em,align=left]
-	  		\item[\small\normalfont\emailsymbol] #2 % Referee's email
-	  		\item[\small\normalfont\mailaddresssymbol] #3 % Referee's mail adress
-	  	\end{description}
-	%   \medskip
-	}
-	
-	% ...Environnement ne semblant utilisé nulle part dans le CV...
-	% 
-	% A propos de \parbox : 
-	% A \parbox is a box of specific width formatted in paragraph mode. 
-	% In paragraph mode, text is broken into lines and lines are broken into pages.
-	% > \parbox[pos][height][contentpos]{width}{text} 
-	%
-	% A propos de l'environnement minipage : 
-	% The minipage environment takes the same parameters as a \parbox, and behaves nearly identically to it. 
-	% The difference between a minipage and a \parbox is that a \parbox can only contain a single paragraph and you cannot use all commands and environments inside it, while a minipage may contain multiple paragraphs and, in fact, almost anything.
-	% > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
-	
-	%% Environment \begin{cvcolumn}
-	\newenvironment{cvcolumn}[1]
-	{ % Opening
-		\begin{minipage}[t]{#1}
-			\raggedright
-	}
-	{ % Closing
-		\end{minipage}
-	}
-	
-	%% Gestion bibliographie à l'aide du paquet biblatex
-	
-	% Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
-	
-	%% For removing numbering entirely when using a numeric style
-	% \setlength{\bibhang}{1em}
-	% \DeclareFieldFormat{labelnumberwidth}{\makebox[\bibhang][l]{\itemmarker}}
-	% \setlength{\biblabelsep}{0pt}
-	
-	\defbibheading{pubtype}{\cvsubsection{#1}} 
-	% Est-ce cette ligne qui définit le le heading comme "pubtype" ?
-	% Ce qui permettra de jolies icones dans le titre ?
-	
-	\renewcommand{\bibsetup}{\vspace*{-\baselineskip}}
-	\AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}} % Pour obtenir une liste de publication à puces ?
-	\setlength{\bibitemsep}{0.25\baselineskip}
-	
-	% v1.1.2: make it easier to add a sidebar aligned with top of next page
-	
-	% Quel utilité pour ces commandes dans ce document ?
-	% \addsidebar{<dimen>}{<}
-	% \addnextpagesidebar
-	
-	%% Command \addsidebar
-	\newcommand{\addsidebar}[2][]{
-		\marginpar{
-			\ifstrequal{#1}{}
-				{} % True case
-				{\vspace*{#1}} % False case
-	  		\input{#2}
-		}
-	}
-	
-	%% Command \addnextpagesidebar
-	\newcommand{\addnextpagesidebar}[2][]{
-		\afterpage{\addsidebar[#1]{#2}}
-	}
-	
-	% > \afterpage
-	% Command from the "afterpage" package.
-	
-	%%% Actions en début de document
-	\AtBeginDocument{%
-	  \pagestyle{empty}
-	  \color{body}
-	  \raggedright
-	}
-
