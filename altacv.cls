@@ -613,17 +613,18 @@
 	%% Command \makecvheader
 	\newcommand{\makecvheader}{
 		\begingroup
-		    \altacv@left@photos
+		    \altacv@left@photos % Call the macro containing the appened macros for photos insertion (left side)
 		    \hfill
-		    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}
-	    		\raggedright
-		    	\namefont{\@name}\par
+		    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width} % \dimexpr starts a <dimen expr> that is optionally closed with a \relax
+	    		\raggedright % Left alignement
+		    	\namefont{\@name}\par % Name as title of the CV
 		    	\nameskip
-		    	\taglinefont{\@tagline}\par
+		    	\taglinefont{\@tagline}\par % Description text
 		    	\taglineskip
-		    	{\personalinfofont{\@personalinfo}\par}
-		    \end{minipage}\hfill
-		    \altacv@right@photos\par
+		    	{\personalinfofont{\@personalinfo}\par} % Personnal infos which are information fields with symbols
+		    \end{minipage}
+	    	\hfill
+		    \altacv@right@photos\par % Right side photo insertion
 	  	\endgroup
 	}
 	
@@ -631,12 +632,18 @@
 	% Adaptation of the quote environment
 	\renewenvironment{quote}{\color{accent}\itshape}{\par}
 	
-	
+	% Used for all titles. Change here tom impact each title.
 	\newcommand{\titlesfont}[1]{
 		\textbf{#1}
 	}
+
+	\newcommand{\textEmph}[1]{
+		\color{emphasis}{\textbf{#1}}
+	}
+	% OLD : \textcolor
 	
 	%% Command \divider
+	% A dashed rule to divide the sections.
 	\newcommand{\divider}{
 		\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}
 		\medskip
@@ -704,23 +711,27 @@
 	%% Command \cvevent
 	% > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
 	\newcommand{\cvevent}[4]{
-		{\large\color{emphasis}#1\par}
+		\color{emphasis}{\large{#1}}\par
 	  	\smallskip
 	  	\ifstrequal{#2}{}
 	  	{} % True case
 	  	{ % False case
-			\placeFont{#2}\par
+			\placeFont{#2}\par % Text insertion for the place of the cv event.
 	  		\smallskip
 		}
 		\ifstrequal{#3}{}
 		{} % True case
 		{
-			{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}
+			\makebox[0.5\linewidth][l]{
+				\small{\faCalendar~#3}
+			}
 		}
 	  	\ifstrequal{#4}{}
 	  	{} % True case
 	  	{ % False case
-			{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}
+			\makebox[0.5\linewidth][l]{
+				\small{\faMapMarker~#4}
+			}
 		}
 		\par
 	  	\medskip
@@ -732,7 +743,7 @@
 	%% Command \cvachievement
 	% > \cvachievement{<symbole>}{<achievement>}{<details_about_achievement>}
 	\newcommand{\cvachievement}[3]{
-		\begin{tabularx}{\linewidth}{ @{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{} }
+		\begin{tabularx}{\linewidth}{ p{2em} | >{\raggedright\arraybackslash}X }
 			\multirow{2}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
 			& #3
 	  	\end{tabularx}
@@ -748,11 +759,6 @@
 	
 	% \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
 	% Vient du paquet "etoolbox".
-	
-	\newcommand{\textEmph}[1]{
-		\color{emphasis}{\textbf{#1}}
-	}
-	% OLD : \textcolor
 	
 	%% Command \cvskill
 	% > \cvskill{<compétence>}{<valeurDe1à5>}
