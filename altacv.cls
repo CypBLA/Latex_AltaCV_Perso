@@ -643,31 +643,25 @@
 	% > \smallskip
 	% > \bigskip
 	
+	%% Commands for heading rule, as separator
 	\newcommand{\headingRule}{
 		\color{headingrule}{\rule{\linewidth}{2pt}}
 	}
 	
 	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
-	\newcommand{\cvsection}[1]
-	{
+	% Definition of section titles
+	\newcommand{\cvsection}[1]{
 		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
 		[-1.2ex]\headingRule\par
 		\smallskip
 	}
 	
-	%		\newcommand{\cvsectionfont}[1]
-	%		{
-	%			\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\ \headingRule \smallskip 
-	%		}
-	
-	%		\newcommand{\cvsectionfont}[1]{
-	%			#1\\
-	%			\headingRule
-	%			\smallskip
-	%		}
-	
-	\newcommand{\cvsubsectionfont}[1]{
-		\color{subheading}{\uline{\large{\titlesfont{#1}}}}
+	% > cvsubsection{heading}
+	% Definition of subsection titles
+	\newcommand{\cvsubsection}[1]{
+		\smallskip
+		\color{subheading}{\uline{\large{\titlesfont{#1}}}}\par
+		\smallskip
 	}
 	
 	\newcommand{\cvsubsubsectionfont}[1]{
@@ -682,13 +676,7 @@
 %		\cvsectionfont{#1}
 %	}
 	
-	%% Command \cvsubsection
-	% > cvsubsection{heading}
-	\newcommand{\cvsubsection}[1]{
-		\smallskip
-		\cvsubsectionfont{#1}\par
-		\medskip
-	}
+
 	
 	%% Command \cvsubsubsection
 	% > cvsubsubsection{heading}
