@@ -393,7 +393,11 @@
 % > \NewDocumentCommand
 
 \NewDocumentCommand{\printinfo}{m m o}{
-	\IfNoValueTF{#3}%
+	% Arguments :
+	% #1 : <icon>
+	% #2 : <writtenText>
+	% #3 : <hyperlink> - optional
+	\IfNoValueTF{#3}
 	{ % True case
 		\makebox{
 			% Create a single line box, large enough to hold its content.
@@ -422,6 +426,8 @@
 % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
 %
 % \gitlab{your_id}
+%
+%
 
 % > \NewDocumentCommand{<command_name>}{<arguments_specification>}{< macro >}
 % Part of the "xparse" package.
@@ -431,15 +437,19 @@
 
 % v1.3: Exploring convenient creation of fields
 \NewDocumentCommand{\NewInfoField}{m m o}{
+	% Arguments :
+	% #1 : <fieldname>
+	% #2 : <symbol>
+	% #3 : <hyperlink> - optional
 	\IfNoValueF{#3}{
-		\csdef{#1 hyperprefix}{#3}
+		\csdef{#1 hyperprefix}{#3}% Create command > \<fieldname>hyperprefix{<hyperlink>}
 	}
-  	\csdef{#1 symbol}{#2}%
-  	\csdef{#1}##1{
+  	\csdef{#1 symbol}{#2}% Create command > \<fieldname>symbol{<symbol>}
+  	\csdef{#1}##1{% Create command > \<fieldname>{...} < in which argument #1 (<fieldname>) is passed to define the replacement texte
 		\if@withhyper
    			\IfNoValueTF{#3}
 			{ % True case
-				\printinfo{\csuse{#1 symbol}}{##1}
+				\printinfo{\csuse{#1 symbol}}{##1}% Call : \printinfo{<symbol>}{<fieldname>}
 			} 
       		{ % False case
       			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]
