@@ -598,10 +598,12 @@
 %		\smallskip
 %	}
 
-		\newcommand{\cvsectionfont}[1]
-		{
-			\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\ \headingRule \smallskip 
-		}
+%		\newcommand{\cvsectionfont}[1]
+%		{
+%			\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\ \headingRule \smallskip 
+%		}
+
+		\newcommand{\cvsectionfont}[1]{\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\ \headingRule \smallskip}
 	
 	\newcommand{\cvsubsectionfont}[1]{
 		\color{subheading}{\uline{\large{\titlesfont{#1}}}}
