@@ -765,7 +765,6 @@
   			\cveventMapBox{#4} % Event location
 		}
 		\par
-%	  	\smallskip
 	}
 	
 	% tabularx environment (tabularx package)
