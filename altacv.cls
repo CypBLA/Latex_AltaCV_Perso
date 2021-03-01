@@ -312,7 +312,7 @@
 		leftmargin=!,% Distance from left margin to item paragraph (without item indent)
 		% Vertical distances
 		topsep=0pt,
-		parskip=0pt,
+%		parskip=0pt,
 		itemsep=0pt,
 		parsep=0.2\baselineskip
 %		nosep% Remove vertical space altogether
