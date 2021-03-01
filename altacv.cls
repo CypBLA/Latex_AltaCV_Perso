@@ -638,7 +638,7 @@
 	\newcommand{\personalInfoPar}[1]{
 		\begingroup
 			\linespread{1.3}
-			\large{\titlesfont{#1}}
+			\large{\titlesfont{#1}}\par
 		\endgroup
 	}
 	% Changing space between line :
