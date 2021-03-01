@@ -174,7 +174,7 @@
 
 %%%%% External classes loading
 
-\LoadClass{article}
+\LoadClass{extarticle}
 % Convenient command to build classes from existing ones
  
 %% v1.3.3 Temporary fix for pdfx and biblatex incompatibility
