@@ -120,6 +120,10 @@
 % layouts – Display various elements of a document's layout
 % https://www.ctan.org/pkg/layouts
 
+\RequirePackage{extsizes}
+% extsizes – Extend the standard classes’ size options
+% https://www.ctan.org/pkg/extsizes
+
 %\RequirePackage[english, noftligs]{selnolig}
 
 %%%%% OPTIONS
@@ -152,11 +156,14 @@
 %% Choice to call or not the package "ragged2e".
 % The package essentially defines new commands \Centering, \RaggedLeft, and \RaggedRight and new environments Center, FlushLeft, and FlushRight.
 \newif\if@raggedtwoe
-
 \DeclareOption{ragged2e}{\@raggedtwoetrue}
 
+%% v1.3: load hyperref for clickable hyperlinks
+\newif\if@withhyper
+\DeclareOption{withhyper}{\@withhypertrue}
+
 %% Les options non explicitement déclarées sont passée à la classe "extarticle".
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 % Toute option supplémentaire inconnue car non déclarée par un élément \DeclareOption est passé à la classe "article" pour être géré par cette dernière.
 
 % OLD : > \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
@@ -164,9 +171,6 @@
 % Ne faut-il pas inclure à un moment donné le paquet "extsizes" ? :
 % https://www.ctan.org/pkg/extsizes
 
-%% v1.3: load hyperref for clickable hyperlinks
-\newif\if@withhyper
-\DeclareOption{withhyper}{\@withhypertrue}
 \ProcessOptions\relax
 
 %%%%% External classes loading
