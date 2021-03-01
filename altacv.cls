@@ -631,9 +631,9 @@
 		\color{tagline}{\large{\titlesfont{#1}}}
 	}
 	
-%	\newcommand{\personalinfofont}[1]{
-%		\large{\titlesfont{#1}}
-%	}
+	\newcommand{\personalinfofont}[1]{
+		\large{\titlesfont{#1}}
+	}
 
 	\newcommand{\nameTitle}[1]{
 		\color{name}{\Huge{\titlesfont{#1}}}\par
