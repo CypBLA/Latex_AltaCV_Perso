@@ -167,46 +167,43 @@
 	\renewcommand{\itemmarker}{{\small\textbullet}}
 	\renewcommand{\ratingmarker}{\faCircle}
 	
-	%%%% Personnalisation des couleurs
+	%%%% Personnalisation des listes 
+	\setlist{
+		% Horizontal distances
+		labelindent=0ex,% Space from left margin to left of label box
+		labelwidth=1ex,% Width of label box
+		labelsep=0.5ex,% Space from right of label box to item paragraph first line beginning
+		itemindent=0ex,% Indentation of the first line of item paragraph compared to the following lines
+		leftmargin=!,% Distance from left margin to item paragraph (without item indent)
+		% Vertical distances
+		topsep=0pt,
+		itemsep=0pt,
+		parsep=0.2\baselineskip
+	}
+	% Enumitem symbols :
+	% "!" : Sets which value is to be computed from the others.
+	% "*" : 
+	% itemindent=*, sets the minimal width to that of widest label
 	
-	%% Définition de noms de couleurs
+	% Solutions found there to avoid spaces in itemize : 
+	% https://stackoverflow.com/questions/3275622/latex-remove-spaces-between-items-in-list
+	
+	\setlist[itemize]{label=\itemmarker}
+	
+	%%%% Personnalisation des couleurs
 	
 	% Outils utiles :
 	% * HTML Color Values : https://www.w3schools.com/colors/colors_hex.asp
 	% * Color picker : https://www.w3schools.com/colors/colors_picker.asp
 	
 	% A noter : 
-	% Withinxcolor.sty, the following color names are defined:
+	% * Within xcolor.sty, the following color names are defined:
 	% red,green,blue,cyan,magenta,yellow,black,gray,white,darkgray,lightgray,
 	% brown,lime,olive,orange,pink,purple,teal,violet.
 	%
-	% Option "svgnames" activée dans le paquet "xcolor"
+	% * "svgnames" option activated in the "xcolor" package
 	% De nombreuses teintes de couleur par nom sont donc déjà théoriquement définies.
 	% Toutes celles au lien suivant : https://www.w3schools.com/colors/colors_names.asp
-	
-	%% Teintes grises
-	%\definecolor{SlateGrey}{HTML}{2E2E2E} % Gris sombre
-	%\definecolor{LightGrey}{HTML}{666666} % Gris moyen
-	%\definecolor{Silver}{C0C0C0} % Gris clair
-	%
-	%% Teintes bleues
-	%\definecolor{DeepSkyBlue}{00BFFF}
-	%\definecolor{DodgerBlue}{1E90FF}
-	%
-	%% Teintes vertes
-	%\definecolor{MediumSpringGreen}{00FA9A}
-	%\definecolor{ForestGreen}{228B22}
-	%\definecolor{SeaGreen}{2E8B57}
-	%\definecolor{LimeGreen}{32CD32}
-	%
-	%% Teintes rouges
-	%\definecolor{DarkPastelRed}{HTML}{450808} % Rouge très sombre presque marron
-	%\definecolor{PastelRed}{HTML}{8F0D0D} % Rouge foncé
-	%\definecolor{Tomato}{FF6347} % Rouge pastel
-	%\definecolor{Coral}{FF7F50} % Corail 
-	%
-	%% Teintes jaunes
-	%\definecolor{GoldenEarth}{HTML}{E7D192} % Couleur or/beige
 	
 	%% Définition des champs de couleurs utilisés dans le document.
 	% Change the colours if you want to.
