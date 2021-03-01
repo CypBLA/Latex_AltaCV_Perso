@@ -724,11 +724,20 @@
 	\newcommand{\placeFont}[1]{
 		\color{accent}{\textbf{#1}}
 	}
+
+	\newcommand{\cveventTitle}[1]{
+		\color{emphasis}{\large{#1}}\par
+	}
+
+	\newcommand{\cveventPlacePar}[1]{
+		\color{accent}{\textbf{#1}}\par
+	}
 	
 	%% Command \cvevent
 	% > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
 	\newcommand{\cvevent}[4]{
-		\color{emphasis}{\large{#1}}\par
+		\cveventTitle{#1}
+%		\color{emphasis}{\large{#1}}\par
 %	  	\smallskip
 	  	\ifstrequal{#2}{}
 	  	{} % True case
