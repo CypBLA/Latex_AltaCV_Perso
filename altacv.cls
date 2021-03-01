@@ -307,7 +307,7 @@
 		labelindent=1ex,
 		labelsep=1ex,
 		nosep,% Remove vertical space altogether
-		noitemsep,% Kills the space between items and paragraphs
+%		noitemsep,% Kills the space between items and paragraphs
 %		after=\vspace{0.25\baselineskip}
 	}
 	% Enumitem symbols :
