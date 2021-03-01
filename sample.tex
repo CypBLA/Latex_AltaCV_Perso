@@ -86,6 +86,10 @@
 	\renewcommand{\titlesfont}[1]{
 		\textbf{\merriweathersans{#1}}
 	}
+
+	\newcommand{\titleSkip}{
+		\vspace{2pt}
+	}
 	
 	% Parametrage des differents tailles
 	
@@ -125,27 +129,27 @@
 	%% Command \cvsection
 	% > \cvsection{heading}
 	\renewcommand{\cvsection}[1]{
-%		\smallskip
+		\titleSkip
 		\color{heading}{\LARGE{\titlesfont{#1}}}\\
 %		[-1.2ex]
 		\vspace{-1.5ex}\headingRule\par
-		\smallskip
+		\titleSkip
 	}
 	
 	%% Command \cvsubsection
 	% > \cvsubsection{heading}
 	\renewcommand{\cvsubsection}[1]{
-%		\smallskip
+		\titleSkip
 		\color{subheading}{\uline{\large{\titlesfont{#1}}}}\par
-		\smallskip
+		\titleSkip
 	}
 
 	%% Command \cvsubsubsection
 	% > cvsubsubsection{heading}
 	\renewcommand{\cvsubsubsection}[1]{
-%		\smallskip
+		\titleSkip
 		\uline{\normalsize{\titlesfont{#1}}}\par
-		\smallskip
+		\titleSkip
 	}
 
 	% Command used when declaring the locations in \cvevent
@@ -162,8 +166,9 @@
 	
 	% Separator to place between elements as desired
 	\renewcommand{\divider}{
-		\vspace{-1.4ex}{\color{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
-		\smallskip
+		\titleSkip
+		{\color{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
+		\titleSkip
 	}
 	
 	%% Change the bullets for itemize and rating marker for \cvskill if you want to
