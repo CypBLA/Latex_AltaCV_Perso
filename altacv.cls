@@ -636,8 +636,8 @@
 	% \smallskip
 	% \medskip
 	% \bigskip
-	\newcommand{\nameskip}{\vspace{0mm}}
-	\newcommand{\taglineskip}{\smallskip}
+%	\newcommand{\nameskip}{\vspace{0mm}}
+%	\newcommand{\taglineskip}{\smallskip}
 	
 	%% Command \makecvheader
 	\newcommand{\makecvheader}{
@@ -647,9 +647,9 @@
 		    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width} % \dimexpr starts a <dimen expr> that is optionally closed with a \relax
 	    		\raggedright % Left alignement
 		    	\namefont{\@name}\par % Name as title of the CV
-		    	\nameskip
+		    	\vspace{0mm}
 		    	\taglinefont{\@tagline}\par % Description text
-		    	\taglineskip
+		    	\smallskip
 		    	{\personalinfofont{\@personalinfo}\par} % Personnal infos which are information fields with symbols
 		    \end{minipage}
 	    	\hfill
