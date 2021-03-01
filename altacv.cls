@@ -641,7 +641,7 @@
 	}
 
 	\newcommand{\taglinePar}[1]{
-		\color{tagline}{\large{\titlesfont{#1}}}
+		\color{tagline}{\Large{\titlesfont{#1}}}\par
 		\smallskip
 	}
 
@@ -719,7 +719,7 @@
 	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
 	% Definition of section titles
 	\newcommand{\cvsection}[1]{
-		\color{heading}{\uline{\LARGE{\titlesfont{#1}}}}\\
+		\color{heading}{\uline{\Large{\titlesfont{#1}}}}\\
 		[-1.2ex]\headingRule\par
 		\smallskip
 	}
