@@ -304,7 +304,7 @@
 	% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
 	% 
 	\setlist{
-		labelindent=1ex,
+		labelindent=0ex,
 		labelwidth=1ex,
 		labelsep=0.7ex,
 		itemindent=0ex,
