@@ -22,8 +22,8 @@
 
 %%%%% CONFIGURATIONS INITIALES
 
-\PassOptionsToPackage{svgnames}{xcolor}
-% Sur conseil de : https://tex.stackexchange.com/questions/51488/option-clash-with-xcolor-and-tikz
+%\PassOptionsToPackage{svgnames}{xcolor}
+%% Sur conseil de : https://tex.stackexchange.com/questions/51488/option-clash-with-xcolor-and-tikz
 
 %%%% Appel à la classe utilisée avec les paramètres désirés.
 \documentclass[8pt,a4paper,ragged2e,withhyper,normalphoto]{altacv}
@@ -273,11 +273,10 @@
 
 %%%% CONTENU EN COLONNES
 
-%% Set the left/right column width ratio to 6:4.
-\columnratio{0.6}
-
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
+%% Set the left/right column width ratio to 6:4.
+%\columnratio{0.6}
 %\begin{paracol}{2}
 \begin{multicols*}{2}
 
