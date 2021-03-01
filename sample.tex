@@ -111,6 +111,10 @@
 		\footnotesize{\titlesfont{#1}}
 	}
 
+	\renewcommand{\infoIconFont}[1]{
+		\color{accent}{#1}
+	}
+
 	\renewcommand{\interIconsHSpace}{
 		\hspace{1.8em}
 	}
@@ -221,7 +225,9 @@
 	\addbibresource{sample.bib}
 	
 	%%%% DEFINITION DE NOUVELLES COMMANDES
-	\newcommand{\emphasis}[1]{\bfseries\textcolor{emphasis}{#1}}
+	% > \emphasis{<text>}
+	% Used to emphase Language name in languages section.
+	\newcommand{\emphasis}[1]{\color{emphasis}{\textbf{#1}}}
 
 \ExplSyntaxOff
 
