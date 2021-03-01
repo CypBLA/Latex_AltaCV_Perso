@@ -177,6 +177,7 @@
 \LoadClass{extarticle}
 % Convenient command to build classes from existing ones
  
+%%%%% Special fixing
 %% v1.3.3 Temporary fix for pdfx and biblatex incompatibility
 %% (Thanks to @badetitou for highlighting this issue)
 %% https://github.com/plk/biblatex/issues/1044
