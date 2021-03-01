@@ -720,11 +720,8 @@
 		\smallskip
 	}
 	
-	% Command used when declaring the locations in \cvevent
-	\newcommand{\placeFont}[1]{
-		\color{accent}{\textbf{#1}}
-	}
-
+	%%%% CV event configuration
+	
 	\newcommand{\cveventTitle}[1]{
 		\color{emphasis}{\large{#1}}\par
 	}
@@ -770,6 +767,8 @@
 	% tabularx environment (tabularx package)
 	% > \begin{tabularx}{<width>}[<pos>]{<preamble>}
 	
+	%%%% CV achievment
+	
 	%% Command \cvachievement
 	% > \cvachievement{<symbole>}{<achievement>}{<details_about_achievement>}
 	\newcommand{\cvachievement}[3]{
@@ -780,6 +779,8 @@
 	  	\smallskip
 	}
 
+	%%%% CV skill
+	
 	% \ifnumgreater{〈integer expression〉}{〈integer expression〉}{〈true〉}{〈false〉}
 	% Vient du paquet "etoolbox".
 	
@@ -816,6 +817,7 @@
 		\par
 	}
 
+	%%%% cvref
 	
 	%% Command \cvref
 	% Description of referees
@@ -830,29 +832,8 @@
 		%   \medskip
 	}
 	
-	% ...Environnement ne semblant utilisé nulle part dans le CV...
-	% 
-	% A propos de \parbox : 
-	% A \parbox is a box of specific width formatted in paragraph mode. 
-	% In paragraph mode, text is broken into lines and lines are broken into pages.
-	% > \parbox[pos][height][contentpos]{width}{text} 
-	%
-	% A propos de l'environnement minipage : 
-	% The minipage environment takes the same parameters as a \parbox, and behaves nearly identically to it. 
-	% The difference between a minipage and a \parbox is that a \parbox can only contain a single paragraph and you cannot use all commands and environments inside it, while a minipage may contain multiple paragraphs and, in fact, almost anything.
-	% > \begin{minipage}[<pos>][<height>][<contentpos>]{<width>} text \end{minipage} 
 	
-	%% Environment \begin{cvcolumn}
-	\newenvironment{cvcolumn}[1]
-	{ % Opening
-		\begin{minipage}[t]{#1}
-			\raggedright
-	}
-	{ % Closing
-		\end{minipage}
-	}
-	
-	%% Gestion bibliographie à l'aide du paquet biblatex
+	%%%% Gestion bibliographie à l'aide du paquet biblatex
 	
 	% Je pense qu'il est nécessaire de connaitre en détail le contenu de la librairie "biblatex"
 	
@@ -869,31 +850,8 @@
 	\AtEveryBibitem{\makebox[\bibhang][l]{\itemmarker}} % Pour obtenir une liste de publication à puces ?
 	\setlength{\bibitemsep}{0.25\baselineskip}
 	
-	% v1.1.2: make it easier to add a sidebar aligned with top of next page
 	
-	% Quel utilité pour ces commandes dans ce document ?
-	% \addsidebar{<dimen>}{<}
-	% \addnextpagesidebar
-	
-	%% Command \addsidebar
-	\newcommand{\addsidebar}[2][]{
-		\marginpar{
-			\ifstrequal{#1}{}
-			{} % True case
-			{\vspace*{#1}} % False case
-			\input{#2}
-		}
-	}
-	
-	%% Command \addnextpagesidebar
-	\newcommand{\addnextpagesidebar}[2][]{
-		\afterpage{\addsidebar[#1]{#2}}
-	}
-	
-	% > \afterpage
-	% Command from the "afterpage" package.
-	
-	%%% Actions en début de document
+	%%%% Actions en début de document
 	\AtBeginDocument{%
 		\pagestyle{empty}
 		\color{body}
