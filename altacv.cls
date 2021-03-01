@@ -306,7 +306,7 @@
 	\setlist{
 		labelindent=0ex,
 		labelwidth=1ex,
-		labelsep=0.7ex,
+		labelsep=0.5ex,
 		itemindent=0ex,
 		leftmargin=!,
 		nosep% Remove vertical space altogether
