@@ -533,7 +533,7 @@
 			\else% Cas d'une photo ronde
 				\tikz\path[fill overzoom image={#2}]circle[radius=0.5\linewidth];
 			\fi
-	  	\end{minipage}%
+	  	\end{minipage}
 	}
 	
 	% \appto{〈hook〉}{〈code〉}
