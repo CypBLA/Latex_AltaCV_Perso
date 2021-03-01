@@ -635,6 +635,11 @@
 %		\large{\titlesfont{#1}}
 %	}
 
+	\newcommand{\nameTitle}[1]{
+		\color{name}{\Huge{\titlesfont{#1}}}\par
+		\vspace{0mm}
+	}
+
 	\newcommand{\taglinePar}[1]{
 		\color{tagline}{\large{\titlesfont{#1}}}
 		\smallskip
@@ -668,11 +673,12 @@
 		    \hfill
 		    \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width} % \dimexpr starts a <dimen expr> that is optionally closed with a \relax
 	    		\raggedright % Left alignement
-		    	\namefont{\@name}\par % Name as title of the CV
-		    	\vspace{0mm}
+		    	\nameTitle{\@name} % Name as title of the CV
+%		    	\namefont{\@name}\par % Name as title of the CV
+%		    	\vspace{0mm}
 %		    	\taglinefont{\@tagline}\par % Description text
 %				\smallskip
-				\taglinePar{\@tagline}
+				\taglinePar{\@tagline} % Description text
 		    	\personalInfoPar{\@personalinfo} % Personnal infos which are information fields with symbols
 		    \end{minipage}
 	    	\hfill
