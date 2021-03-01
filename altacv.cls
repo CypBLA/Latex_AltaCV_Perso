@@ -131,6 +131,10 @@
 % multicol – Intermix single and multiple columns
 % https://www.ctan.org/pkg/multicol
 
+%\RequirePackage{paracol}
+%% paracol – Multiple columns with texts “in parallel”
+%% https://www.ctan.org/pkg/paracol
+
 %\RequirePackage[english, noftligs]{selnolig}
 
 %%%%% OPTIONS
