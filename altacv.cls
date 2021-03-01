@@ -609,6 +609,11 @@
 	% \let allows you to copy the content of a command into a new command.  
 	% \let<new-command>[[<spaces>]=]<original-command>
 	
+	% Used for all titles. Change here to impact each title.
+	\newcommand{\titlesfont}[1]{
+		\textbf{#1}
+	}
+	
 	%% Command \namefont
 	\newcommand{\namefont}[1]{
 		\color{name}{\Huge{\titlesfont{#1}}}
@@ -629,6 +634,18 @@
 	\newcommand{\personalinfofont}[1]{
 		\large{\titlesfont{#1}}
 	}
+
+	\newcommand{\personalInfoPar}[1]{
+		\begingroup
+			\linespread{1.3}
+			\large{\titlesfont{#1}}
+		\endgroup
+	}
+	% Changing space between line :
+	% https://tex.stackexchange.com/questions/48741/temporarily-increase-line-spacing
+	% Propositions : 
+	% > \linespread{1}
+	% > \renewcommand\baselinestretch{1}
 	
 	% Vertical blank spaces commands :
 	% \vspace{0mm}
@@ -660,11 +677,6 @@
 	%% Environment \begin{quote}
 	% Adaptation of the quote environment
 	\renewenvironment{quote}{\color{accent}\itshape}{\par}
-	
-	% Used for all titles. Change here tom impact each title.
-	\newcommand{\titlesfont}[1]{
-		\textbf{#1}
-	}
 	
 	% Used in :
 	% * \cvskill
