@@ -298,11 +298,25 @@
 	\newcommand{\itemmarker}{{\small\textbullet}}
 	\newcommand{\ratingmarker}{\faCircle}
 	
-	\setlist{leftmargin=*,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vspace{0.25\baselineskip}}
+%	\setlist{leftmargin=*,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vspace{0.25\baselineskip}}
 	% leftmargin : marge laissée à gauche du paragraphe de l'item par rapport à la frontière gauche du texte dans lequel l'environnement est inséré.
 	% labelsep : espace horizontal entre le label et le paragraphe.
 	% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
 	% 
+	\setlist{
+		leftmargin=1ex,
+		labelsep=1ex,
+		nosep,% Remove vertical space altogether
+		noitemsep,% Kills the space between items and paragraphs
+%		after=\vspace{0.25\baselineskip}
+	}
+	% Enumitem symbols :
+	% "!" : Sets which value is to be computed from the others.
+	% "*" : 
+	% itemindent=*, sets the minimal width to that of widest label
+
+	% Solutions found there to avoid spaces in itemize : 
+	% https://stackoverflow.com/questions/3275622/latex-remove-spaces-between-items-in-list
 	
 	\setlist[itemize]{label=\itemmarker}
 	% > \setlist
