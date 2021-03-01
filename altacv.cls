@@ -806,7 +806,7 @@
 
 	%% Command \skillfive
 	\newcommand{\skillfive}[1]{
-		\hfill
+%		\hfill
 		\foreach \x in {1,...,5}{
 			% OLD : \space
 			\ifnumgreater{\x}{#1}
@@ -814,7 +814,7 @@
 			{\color{accent}} % False case
 			\ratingmarker
 		}
-		\par
+%		\par
 	}
 
 	%%%% cvref
