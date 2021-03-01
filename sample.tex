@@ -58,8 +58,10 @@
 		pdfauthor={Cyprien BLANC}
 	}
 	
-	%%%% Macros for  
-
+	%%%% 
+	
+	%% Command applied for every element we can consider as a kind of title
+	% Put in bold and apply the specific font.
 	\renewcommand{\titlesfont}[1]{
 		\textbf{\merriweathersans{#1}}
 	}
@@ -67,11 +69,14 @@
 	% Rappel de l'échelle des tailles :
 	% \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
 	
+	%%%% Heading macros
+	%% Name configuration
 	\renewcommand{\nameTitle}[1]{
 		\color{name}{\Huge{\titlesfont{#1}}}\par
 		\vspace{0mm}
 	}
 
+	%% Tagline configuration (under the name)
 	\renewcommand{\taglinePar}[1]{
 		\color{tagline}{\Large{\titlesfont{#1}}}\par
 		\smallskip
@@ -94,12 +99,13 @@
 	\renewcommand{\interIconsHSpace}{
 		\hspace{1.8em}
 	}
-
+	
+	%%%% CV sections macros
 	\renewcommand{\headingRule}{
 		\color{headingrule}{\rule{\linewidth}{1pt}}
 	}
 	
-	%%%% Macro configuration for cv sections
+	%% vspace applied on every section title
 	\newcommand{\titleSkip}{
 		\vspace{1.5pt}
 	}
@@ -109,8 +115,8 @@
 	\renewcommand{\cvsection}[1]{
 		\titleSkip
 		\color{heading}{\LARGE{\titlesfont{#1}}}\\
-%		[-1.2ex]
-		\vspace{-1.5ex}\headingRule\par
+		\vspace{-1.5ex}
+		\headingRule\par
 		\titleSkip
 	}
 	
@@ -130,10 +136,29 @@
 		\titleSkip
 	}
 
-	% Command used when declaring the locations in \cvevent
-	\renewcommand{\placeFont}[1]{
-		\color{accent}{\textbf{#1}}
+	%%%% CV event configuration
+	
+	\renewcommand{\cveventTitle}[1]{
+		\color{emphasis}{\large{#1}}\par
 	}
+	
+	\renewcommand{\cveventPlacePar}[1]{
+		\color{accent}{\textbf{#1}}\par
+	}
+	
+	\renewcommand{\cveventCalendarBox}[1]{
+		\makebox[0.5\linewidth][l]{
+			\small{\faCalendar~#1}
+		}
+	}
+	
+	\renewcommand{\cveventMapBox}[1]{
+		\makebox[0.5\linewidth][l]{
+			\small{\faMapMarker~#1}
+		}
+	}
+	
+	%%%% 
 
 	% Used in :
 	% * \cvskill
@@ -142,25 +167,29 @@
 		\color{emphasis}{\textbf{#1}}
 	}
 	
-	% Separator to place between elements as desired
+	%%%%
+	
+	%% Divider config
+	% Separator placed between elements as desired
 	\renewcommand{\divider}{
-%		\titleSkip
 		\vspace{-0.8em}
 		{\color{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
 		\titleSkip
 	}
-
-	%%%%
+	
+	\renewcommand{\ratingmarker}{\faCircle}
+	
+	%%%% 
 
 	%% Environment \begin{quote}
 	% Adaptation of the quote environment
 	\renewenvironment{quote}{\color{accent}\itshape}{\par}
 	
+	%%%% Lists configuration
+	
 	%% Change the bullets for itemize and rating marker for \cvskill if you want to
 	\renewcommand{\itemmarker}{{\small\textbullet}}
-	\renewcommand{\ratingmarker}{\faCircle}
 	
-	%%%% Personnalisation des listes 
 	\setlist{
 		% Horizontal distances
 		labelindent=0ex,% Space from left margin to left of label box
