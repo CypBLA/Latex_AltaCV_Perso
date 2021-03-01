@@ -631,8 +631,13 @@
 		\color{tagline}{\large{\titlesfont{#1}}}
 	}
 	
-	\newcommand{\personalinfofont}[1]{
-		\large{\titlesfont{#1}}
+%	\newcommand{\personalinfofont}[1]{
+%		\large{\titlesfont{#1}}
+%	}
+
+	\newcommand{\taglinePar}[1]{
+		\color{tagline}{\large{\titlesfont{#1}}}
+		\smallskip
 	}
 
 	\newcommand{\personalInfoPar}[1]{
@@ -665,9 +670,10 @@
 	    		\raggedright % Left alignement
 		    	\namefont{\@name}\par % Name as title of the CV
 		    	\vspace{0mm}
-		    	\taglinefont{\@tagline}\par % Description text
-		    	\smallskip
-		    	{\personalinfofont{\@personalinfo}\par} % Personnal infos which are information fields with symbols
+%		    	\taglinefont{\@tagline}\par % Description text
+%				\smallskip
+				\taglinePar{\@tagline}
+		    	\personalInfoPar{\@personalinfo} % Personnal infos which are information fields with symbols
 		    \end{minipage}
 	    	\hfill
 		    \altacv@right@photos\par % Right side photo insertion
