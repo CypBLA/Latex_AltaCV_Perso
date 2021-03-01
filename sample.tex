@@ -92,23 +92,28 @@
 	% Rappel de l'échelle des tailles :
 	% \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
 	
-	%% Change some fonts, if necessary
-	\renewcommand{\namefont}[1]{
-		\color{name}{\Huge{\titlesfont{#1}}}
+	\newcommand{\nameTitle}[1]{
+		\color{name}{\Huge{\titlesfont{#1}}}\par
+		\vspace{0mm}
 	}
-	
-	\renewcommand{\taglinefont}[1]{
-		\color{tagline}{\large{\titlesfont{#1}}}
+
+	\newcommand{\taglinePar}[1]{
+		\color{tagline}{\Large{\titlesfont{#1}}}\par
+		\smallskip
 	}
-	
-	\renewcommand{\personalinfofont}[1]{
-		\large{\titlesfont{#1}}
+
+	\newcommand{\personalInfoPar}[1]{
+		\begingroup
+			\linespread{1.3}
+			\large{\titlesfont{#1}}\par
+		\endgroup
 	}
 
 	\renewcommand{\infoIconFont}[1]{
 		\color{accent}{#1}
 	}
-
+	
+	% Spacing between personnal info fields in the head
 	\renewcommand{\interIconsHSpace}{
 		\hspace{1.8em}
 	}
