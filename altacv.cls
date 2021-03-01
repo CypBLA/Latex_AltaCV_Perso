@@ -304,7 +304,7 @@
 	% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
 	% 
 	\setlist{
-		leftmargin=1ex,
+		labelindent=1ex,
 		labelsep=1ex,
 		nosep,% Remove vertical space altogether
 		noitemsep,% Kills the space between items and paragraphs
