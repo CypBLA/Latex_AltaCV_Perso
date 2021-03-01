@@ -52,46 +52,17 @@
 	% Change the page layout if you need to
 	\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=1.2cm}
 	
-	%%%% Options des liens et du PDF
+	%%%% Options for links and pdf
 	\hypersetup{
 		pdftitle={CV - Cyprien  BLANC},
 		pdfauthor={Cyprien BLANC}
 	}
 	
-	%%%% Parametrage des fonts, polices, etc. 
-	% CypBLA : Finalement pas besoin car définies à l'aide de l'appel aux paquets !
-	
-	% \usepackage[OT1]{fontenc}
-	% Nécessaire ?
-	
-	% \renewcommand{\familydefault}{\sfdefault}
-	% Normalement plus nécessaire comme OpenSans déclarée comme "default"
-	
-	%% CypBLA : Commenté car je ne vois pas de raisons de faire une distinction conditionnelle...
-	%% Change the font if you want to, depending on whether
-	%% you're using pdflatex or xelatex/lualatex
-	%\ifxetexorluatex
-	%  % If using xelatex or lualatex:
-	%  \setmainfont{Roboto Slab}
-	%  \setsansfont{Lato}
-	%  \renewcommand{\familydefault}{\sfdefault}
-	%\else
-	%  % If using pdflatex:
-	%  \usepackage[rm]{roboto}
-	%  \usepackage[defaultsans]{lato}
-	%  % \usepackage{sourcesanspro}
-	%  \renewcommand{\familydefault}{\sfdefault}
-	%\fi
-	
+	%%%% Macros for  
+
 	\renewcommand{\titlesfont}[1]{
 		\textbf{\merriweathersans{#1}}
 	}
-
-	\newcommand{\titleSkip}{
-		\vspace{1.5pt}
-	}
-	
-	% Parametrage des differents tailles
 	
 	% Rappel de l'échelle des tailles :
 	% \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
@@ -105,25 +76,32 @@
 		\color{tagline}{\Large{\titlesfont{#1}}}\par
 		\smallskip
 	}
-
+	
+	%% Configuration of the personal information listing look (made with \printinfo)
 	\renewcommand{\personalInfoPar}[1]{
 		\begingroup
 			\linespread{1.3}
 			\large{\titlesfont{#1}}\par
 		\endgroup
 	}
-
+	
+	%% Icons color in the heading.
 	\renewcommand{\infoIconFont}[1]{
 		\color{accent}{#1}
 	}
 	
-	% Spacing between personnal info fields in the head
+	%% Spacing between personnal info fields in the head
 	\renewcommand{\interIconsHSpace}{
 		\hspace{1.8em}
 	}
 
 	\renewcommand{\headingRule}{
 		\color{headingrule}{\rule{\linewidth}{1pt}}
+	}
+	
+	%%%% Macro configuration for cv sections
+	\newcommand{\titleSkip}{
+		\vspace{1.5pt}
 	}
 	
 	%% Command \cvsection
@@ -171,6 +149,8 @@
 		{\color{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
 		\titleSkip
 	}
+
+	%%%%
 
 	%% Environment \begin{quote}
 	% Adaptation of the quote environment
