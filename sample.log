@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  28 FEB 2021 22:33
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  1 MAR 2021 13:42
  restricted system commands enabled.
 **sample.tex
 (./sample.tex
@@ -2074,31 +2074,31 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 (./sample.aux)
 \openout1 = sample.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 232.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 229.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-32.
+29.
  ("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 232.
-LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 229.
+LaTeX Font Info:    ... okay on input line 229.
 
 ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2118,7 +2118,7 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-Package hyperref Info: Link coloring OFF on input line 232.
+Package hyperref Info: Link coloring OFF on input line 229.
 
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2132,9 +2132,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count451
 )
-LaTeX Info: Redefining \ref on input line 232.
-LaTeX Info: Redefining \pageref on input line 232.
-LaTeX Info: Redefining \nameref on input line 232.
+LaTeX Info: Redefining \ref on input line 229.
+LaTeX Info: Redefining \pageref on input line 229.
+LaTeX Info: Redefining \nameref on input line 229.
  (./sample.out) (./sample.out)
 \@outlinefile=\write8
 
@@ -2180,64 +2180,64 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 232.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 232.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 232.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 232.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 232.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 232.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 232.
-LaTeX Font Info:    Redeclaring math accent \check on input line 232.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 232.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 232.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 232.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 232.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 232.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 229.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 229.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 229.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 229.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 229.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 229.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 229.
+LaTeX Font Info:    Redeclaring math accent \check on input line 229.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 229.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 229.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 229.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 229.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 232.
+(Font)              `operators' in the math version `normal' on input line 229.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 232.
+(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 229.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 232.
+(Font)              `operators' in the math version `bold' on input line 229.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 232.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 229.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/m/n on input line
- 232.
+ 229.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 232.
+(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 229.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 232.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 229.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/MerriweatherSans(0)/m/n on input li
-ne 232.
+ne 229.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 232.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 229.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/b/n on input line
- 232.
+ 229.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 232
+(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 229
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/MerriweatherSans(0)/b/n on input l
-ine 232.
+ine 229.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 232.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 229.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/english.lbx"
@@ -2262,95 +2262,95 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'sample.bbl' not found.
 
 No file sample.bbl.
-Package biblatex Info: Reference section=0 on input line 232.
-Package biblatex Info: Reference segment=0 on input line 232.
+Package biblatex Info: Reference section=0 on input line 229.
+Package biblatex Info: Reference segment=0 on input line 229.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 232.
+LaTeX Info: Redefining \selectfont on input line 229.
 \c@mv@tabular=\count452
 \c@mv@boldtabular=\count453
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 267.
+(Font)              scaled to size 24.88pt on input line 264.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 267.
+(Font)              scaled to size 24.88pt on input line 264.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 267.
+(Font)              scaled to size 24.88pt on input line 264.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 267.
+(Font)              scaled to size 12.0pt on input line 264.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 267.
+(Font)              scaled to size 12.0pt on input line 264.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 267.
+(Font)              scaled to size 12.0pt on input line 264.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 267.
+(Font)              scaled to size 8.0pt on input line 264.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 267.
+(Font)              scaled to size 8.0pt on input line 264.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 267.
+(Font)              scaled to size 8.0pt on input line 264.
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
 [][][] [][] [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 267.
+(Font)              scaled to size 7.0pt on input line 264.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 267.
+(Font)              scaled to size 5.0pt on input line 264.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 267.
+(Font)              <7> on input line 264.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 267.
+(Font)              <5> on input line 264.
 <CypBLA_Square_500x500.jpg, id=12, 521.95pt x 529.98pt>
 File: CypBLA_Square_500x500.jpg Graphic file (type jpg)
 <use CypBLA_Square_500x500.jpg>
-Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 267.
+Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 264.
 (luatex.def)             Requested size: 79.6678pt x 80.89258pt.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 281.
+(Font)              scaled to size 17.28pt on input line 278.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 281.
+(Font)              scaled to size 17.28pt on input line 278.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 281.
+(Font)              scaled to size 17.28pt on input line 278.
 luaotfload | aux : font no 69 (nil) does not define feature sups for script latn
  with language dflt
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 283.
+(Font)              scaled to size 6.0pt on input line 280.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 283.
+(Font)              <12> on input line 280.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 283.
+(Font)              <8> on input line 280.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 283.
+(Font)              <6> on input line 280.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 283.
+(Font)              scaled to size 10.0pt on input line 280.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 283.
+(Font)              scaled to size 9.0pt on input line 280.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 366.
+(Font)              scaled to size 10.0pt on input line 364.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 423.
+(Font)              scaled to size 10.0pt on input line 421.
 
-Overfull \hbox (10.28824pt too wide) in paragraph at lines 429--436
+Overfull \hbox (10.28824pt too wide) in paragraph at lines 427--434
 [][]  []  []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--466
+Underfull \hbox (badness 10000) in paragraph at lines 464--464
 []\TU/OpenSans(0)/m/n/10 Lec-ture et vi-sion-nage régulier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--466
+Underfull \hbox (badness 10000) in paragraph at lines 464--464
 \TU/OpenSans(0)/m/n/10 de mé-dia en en langue
  []
 
 
-Overfull \hbox (6.38358pt too wide) in paragraph at lines 476--477
+Overfull \hbox (6.02713pt too wide) in paragraph at lines 474--475
 []\TU/OpenSans(0)/m/it/10 Me dé-passer et af-fron-ter des ob-sta-cles tou-jours
  plus dif-fi-ciles en sachant 
  []
 
 
-Overfull \hbox (17.79959pt too wide) in paragraph at lines 476--477
+Overfull \hbox (17.44315pt too wide) in paragraph at lines 474--475
 \TU/OpenSans(0)/m/it/10 pou-voir tou-jours compter sur mon binôme pour m’as-s
 urer et me prodiguer 
  []
@@ -2371,7 +2371,7 @@ Here is how much of LuaTeX's memory you used:
  2566 words of node memory still in use:
    3 hlist, 53 vlist, 1 rule, 68 glue, 3 kern, 1 glyph, 124 attribute, 87 glue_s
 pec, 124 attribute_list, 2 write, 138 pdf_colorstack nodes
-   avail lists: 1:5,2:3665,3:1235,4:612,5:191,6:193,7:9561,8:11,9:1076,10:7,11:6
+   avail lists: 1:4,2:3563,3:1219,4:616,5:191,6:195,7:9605,8:11,9:1105,10:7,11:6
 29
  59595 multiletter control sequences out of 65536+200000
  107 fonts using 15112975 bytes
@@ -2382,7 +2382,7 @@ ng/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Brands-Regular-400.otf>
 <C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/opentype/public/fontawesome5/
 FontAwesome5Free-Solid-900.otf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/font
 s/opentype/sorkin/merriweather/MerriweatherSans-Bold.otf>
-Output written on sample.pdf (3 pages, 233111 bytes).
+Output written on sample.pdf (3 pages, 233237 bytes).
 
 PDF statistics: 72 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 131072)
