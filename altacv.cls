@@ -128,9 +128,6 @@
 
 %%%%% OPTIONS
 
-%% v1.1: Optionally load academicons
-\newif\if@academicons 
-
 % The \newif macro creates three new macros from the argument \if<name>
 % > \if<name>, a switch to be used in tests;
 % > \<name>true, which sets the switch logically true;
@@ -146,6 +143,8 @@
 %
 % More information : https://tex.stackexchange.com/questions/27803/when-to-use-in-an-if-statement?newreg=b481381bef3c45178808e2d340ef623a
 
+%% Optionally load academicons
+\newif\if@academicons
 \DeclareOption{academicons}{\@academiconstrue}
 % Regarde si l'option "academicons" a été passé lors de l'appel à la classe
 
