@@ -670,10 +670,6 @@
 	  	\endgroup
 	}
 	
-	%% Environment \begin{quote}
-	% Adaptation of the quote environment
-	\renewenvironment{quote}{\color{accent}\itshape}{\par}
-	
 	% Used in :
 	% * \cvskill
 	% * \cvref
@@ -697,7 +693,7 @@
 	
 	%% Commands for heading rule, as separator
 	\newcommand{\headingRule}{
-		\color{headingrule}{\rule{\linewidth}{2pt}}
+		\color{headingrule}{\rule{\linewidth}{1pt}}
 	}
 	
 	%% Commands for fonts of cv sectionning : \cvsectionfont \cvsubsectionfont
