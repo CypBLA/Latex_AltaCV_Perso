@@ -116,6 +116,10 @@
 % https://www.ctan.org/pkg/ulem
 % The ulem package provides various types of underlining that canstretch between words and be broken across lines
 
+\RequirePackage{layouts}
+% layouts – Display various elements of a document's layout
+% https://www.ctan.org/pkg/layouts
+
 %\RequirePackage[english, noftligs]{selnolig}
 
 %%%%% OPTIONS
