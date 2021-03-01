@@ -304,12 +304,18 @@
 	% itemsep : espace vertical entre les items (en plus de la séparation de paragraphe).
 	% 
 	\setlist{
-		labelindent=0ex,
-		labelwidth=1ex,
-		labelsep=0.5ex,
-		itemindent=0ex,
-		leftmargin=!,
-		nosep% Remove vertical space altogether
+		% Horizontal distances
+		labelindent=0ex,% Space from left margin to left of label box
+		labelwidth=1ex,% Width of label box
+		labelsep=0.5ex,% Space from right of label box to item paragraph first line beginning
+		itemindent=0ex,% Indentation of the first line of item paragraph compared to the following lines
+		leftmargin=!,% Distance from left margin to item paragraph (without item indent)
+		% Vertical distances
+		topsep=0pt,
+		parskip=0pt,
+		itemsep=0pt,
+		parsep=0.2\baselineskip
+%		nosep% Remove vertical space altogether
 %		noitemsep,% Kills the space between items and paragraphs
 %		after=\vspace{0.25\baselineskip}
 	}
