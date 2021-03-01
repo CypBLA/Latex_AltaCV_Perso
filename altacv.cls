@@ -613,32 +613,16 @@
 	\newcommand{\titlesfont}[1]{
 		\textbf{#1}
 	}
-	
-	%% Command \namefont
-	\newcommand{\namefont}[1]{
-		\color{name}{\Huge{\titlesfont{#1}}}
-	}
-	% > \bfseries
-	% Pass the text to bold font.
-	%
-	% > Huge
-	% Commande créant automatiquement la plus grande taille de polices.
-	% Dans l'ordre croissant : 
-	% \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
-	
-	%% Commands to shape the cv header : \taglinefont \personalinfofont
-	\newcommand{\taglinefont}[1]{
-		\color{tagline}{\large{\titlesfont{#1}}}
-	}
-	
-	\newcommand{\personalinfofont}[1]{
-		\large{\titlesfont{#1}}
-	}
 
 	\newcommand{\nameTitle}[1]{
 		\color{name}{\Huge{\titlesfont{#1}}}\par
 		\vspace{0mm}
 	}
+
+	% > Huge
+	% Command which create the biggest font size.
+	% In growing order : 
+	% \tiny \scriptsize \footnotesize \small \normalsize \large \Large \LARGE \huge \Huge
 
 	\newcommand{\taglinePar}[1]{
 		\color{tagline}{\Large{\titlesfont{#1}}}\par
