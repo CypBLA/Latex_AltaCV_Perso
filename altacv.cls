@@ -732,32 +732,37 @@
 	\newcommand{\cveventPlacePar}[1]{
 		\color{accent}{\textbf{#1}}\par
 	}
+
+	\newcommand{\cveventCalendarBox}[1]{
+		\makebox[0.5\linewidth][l]{
+			\small{\faCalendar~#1}
+		}
+	}
+
+	\newcommand{\cveventMapBox}[1]{
+		\makebox[0.5\linewidth][l]{
+			\small{\faMapMarker~#1}
+		}
+	}
 	
 	%% Command \cvevent
 	% > cvevent{Niveau_&_discipline}{Université}{Date}{Lieu_géographique}
 	\newcommand{\cvevent}[4]{
-		\cveventTitle{#1}
-%		\color{emphasis}{\large{#1}}\par
-%	  	\smallskip
+		\cveventTitle{#1} % Event title writing
 	  	\ifstrequal{#2}{}
 	  	{} % True case
 	  	{ % False case
-			\placeFont{#2}\par % Text insertion for the place of the cv event.
-%	  		\smallskip
+	  		\cveventPlacePar{#2} % Event place writing
 		}
 		\ifstrequal{#3}{}
 		{} % True case
 		{
-			\makebox[0.5\linewidth][l]{
-				\small{\faCalendar~#3}
-			}
+			\cveventCalendarBox{#3} % Event duration, dates
 		}
 	  	\ifstrequal{#4}{}
 	  	{} % True case
 	  	{ % False case
-			\makebox[0.5\linewidth][l]{
-				\small{\faMapMarker~#4}
-			}
+  			\cveventMapBox{#4} % Event location
 		}
 		\par
 %	  	\smallskip
