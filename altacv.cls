@@ -307,7 +307,8 @@
 		labelindent=1ex,
 		labelsep=1ex,
 		itemindent=0ex,
-		nosep,% Remove vertical space altogether
+		leftmargin=3ex
+		nosep% Remove vertical space altogether
 %		noitemsep,% Kills the space between items and paragraphs
 %		after=\vspace{0.25\baselineskip}
 	}
