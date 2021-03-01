@@ -96,17 +96,17 @@
 	% Rappel de l'échelle des tailles :
 	% \tiny	\scriptsize	\footnotesize	\small	\normalsize	\large	\Large	\LARGE	\huge	\Huge
 	
-	\newcommand{\nameTitle}[1]{
+	\renewcommand{\nameTitle}[1]{
 		\color{name}{\Huge{\titlesfont{#1}}}\par
 		\vspace{0mm}
 	}
 
-	\newcommand{\taglinePar}[1]{
+	\renewcommand{\taglinePar}[1]{
 		\color{tagline}{\Large{\titlesfont{#1}}}\par
 		\smallskip
 	}
 
-	\newcommand{\personalInfoPar}[1]{
+	\renewcommand{\personalInfoPar}[1]{
 		\begingroup
 			\linespread{1.3}
 			\large{\titlesfont{#1}}\par
