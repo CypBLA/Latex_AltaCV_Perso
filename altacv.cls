@@ -19,7 +19,7 @@
 
 %%%%% IDENTIFICATION 
 \NeedsTeXFormat{LaTeX2e}%[1995/12/01]
-\ProvidesClass{altacv}[Based on AltaCV v1.3.3, yet another alternative class for a resume/curriculum vitae.]
+\ProvidesClass{altacv}[2021/03/01 Based on AltaCV v1.3.3 - yet another alternative class for a resume/curriculum vitae.]
 
 %%%%% EXTERNAL PACKAGES
 
