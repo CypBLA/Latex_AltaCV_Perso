@@ -33,9 +33,11 @@
 \RequirePackage[fixed]{fontawesome5}
 % fontawesome5 – Font Awesome 5 with LaTeX support : https://www.ctan.org/pkg/fontawesome5
 
-\RequirePackage{ifxetex,ifluatex}
-% ifluatex – Provides the \ifluatex switch : https://www.ctan.org/pkg/ifluatex
+\RequirePackage{ifxetex}
 % ifxetex – Am I running under XeTeX? : https://www.ctan.org/pkg/ifxetex
+
+\RequirePackage{ifluatex}
+% ifluatex – Provides the \ifluatex switch : https://www.ctan.org/pkg/ifluatex
 
 \RequirePackage{scrlfile}
 % scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
@@ -85,10 +87,11 @@
 % dashrule – Draw dashed rules
 % https://www.ctan.org/pkg/dashrule
 
-\RequirePackage{multirow,tabularx}
+\RequirePackage{multirow}
 % multirow – Create tabular cells spanning multiple rows
 % https://www.ctan.org/pkg/multirow
-%
+
+\RequirePackage{tabularx}
 % tabularx – Tabulars with adjustable-width columns
 % https://www.ctan.org/pkg/tabularx
 
@@ -123,6 +126,10 @@
 \RequirePackage{extsizes}
 % extsizes – Extend the standard classes’ size options
 % https://www.ctan.org/pkg/extsizes
+
+\RequirePackage{multicol}
+% multicol – Intermix single and multiple columns
+% https://www.ctan.org/pkg/multicol
 
 %\RequirePackage[english, noftligs]{selnolig}
 
