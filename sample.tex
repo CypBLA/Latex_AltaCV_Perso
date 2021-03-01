@@ -22,7 +22,7 @@
 
 %%%%% CONFIGURATIONS INITIALES
 
-\PassOptionsToPackage{svgnames}{xcolor}
+%\PassOptionsToPackage{svgnames}{xcolor}
 % Sur conseil de : https://tex.stackexchange.com/questions/51488/option-clash-with-xcolor-and-tikz
 
 %%%% Appel à la classe utilisée avec les paramètres désirés.
@@ -32,9 +32,6 @@
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
 
 %%%% Appel aux paquets supplémentaires nécessaires (non-inclus dans la classe)
-
-% The paracol package lets you typeset columns of text in parallel
-\usepackage{paracol}
 
 % Opensans package
 \usepackage[default,oldstyle,scale=1]{opensans}
@@ -48,9 +45,6 @@
 % [sf] to activate MerriweatherSans (sans serif) without Merriweather (serif)
 % Commands \merriweather and \merriweathersans select the Merriweather and MerriweatherSans families, respectively
 % Commands \merriweatherlight, \merriweatherblack, \merriweathersanslight, and \merriweathersansblack allow for localized use of light or black variants.
-
-%\usepackage[sfdefault]{roboto}
-% \usepackage[defaultsans]{lato}
 
 \ExplSyntaxOn
 	
@@ -194,6 +188,9 @@
 	
 	\setlist[itemize]{label=\itemmarker}
 	
+	%% Personnalisation espace entre colonne dans environnement multicol
+	\setlength{\columnsep}{0.3cm}
+	
 	%%%% Personnalisation des couleurs
 	
 	% Outils utiles :
@@ -228,6 +225,7 @@
 	% > \emphasis{<text>}
 	% Used to emphase Language name in languages section.
 	\newcommand{\emphasis}[1]{\color{emphasis}{\textbf{#1}}}
+	
 
 \ExplSyntaxOff
 
@@ -278,7 +276,8 @@
 
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
-\begin{paracol}{2}
+%\begin{paracol}{2}
+\begin{multicols}{2}
 
 	%%% FORMATION
 	\cvsection{Formation}
@@ -502,6 +501,7 @@
 	% ONLY the current column
 	\newpage
 
-\end{paracol}
+\end{multicols}
+%\end{paracol}
 
 \end{document}
