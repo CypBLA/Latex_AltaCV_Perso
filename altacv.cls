@@ -131,6 +131,10 @@
 % multicol – Intermix single and multiple columns
 % https://www.ctan.org/pkg/multicol
 
+\usepackage{array}
+% array – Extending the array and tabular environments
+% https://ctan.org/pkg/array
+
 %\RequirePackage{paracol}
 %% paracol – Multiple columns with texts “in parallel”
 %% https://www.ctan.org/pkg/paracol
