@@ -110,6 +110,8 @@
 		\vspace{1.5pt}
 	}
 	
+	\dim_set:Nn \c_titlesIndentRef_dim {1ex}
+	
 	%% Command \cvsection
 	% > \cvsection{heading}
 	\renewcommand{\cvsection}[1]{
@@ -120,13 +122,14 @@
 		\titleSkip
 	}
 	
-	\dim_set:Nn \c_titlesIndentRef_dim {1ex}
-	
 	%% Command \cvsubsection
 	% > \cvsubsection{heading}
 	\renewcommand{\cvsubsection}[1]{
 		\titleSkip
-		\hspace{1em}\color{subheading}{\uline{\large{\titlesfont{#1}}}}\par
+		\hspace{
+			\fp_eval:n {1 * \c_titlesIndentRef_dim} pt
+		}
+		\color{subheading}{\uline{\large{\titlesfont{#1}}}}\par
 		\titleSkip
 	}
 
@@ -134,7 +137,10 @@
 	% > cvsubsubsection{heading}
 	\renewcommand{\cvsubsubsection}[1]{
 		\titleSkip
-		\hspace{2em}\color{subsubheading}{\uline{\normalsize{\titlesfont{#1}}}}\par
+		\hspace{
+			\fp_eval:n {2 * \c_titlesIndentRef_dim} pt
+		}
+		\color{subsubheading}{\uline{\normalsize{\titlesfont{#1}}}}\par
 		\titleSkip
 	}
 
