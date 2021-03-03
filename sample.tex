@@ -233,18 +233,24 @@
 	% De nombreuses teintes de couleur par nom sont donc déjà théoriquement définies.
 	% Toutes celles au lien suivant : https://www.w3schools.com/colors/colors_names.asp
 	
-	\str_set:Nn \l_colorSelect_str {greyShades}
+	%% To modify to choose the switch-case option
+	\str_set:Nn \l_colorHueSelection_str {greyHue}
 	
-%	xcolor color models : natural, rgb, cmy, cmyk, hsb, gray, RGB, HTML, HSB, Gray
-%	* \color[rgb]{.1,.2,.3})
-%   * \color[Gray]{15}
+	% String to verify if the switch case worked
+	\str_new:N \l_effectiveColorHue_str
 	
+	%	xcolor color models : natural, rgb, cmy, cmyk, hsb, gray, RGB, HTML, HSB, Gray
+	%	* \color[rgb]{.1,.2,.3})
+	%   * \color[Gray]{15}
+	
+	% Options selection
+	\str_set:Nn \l_greyColorHue_str{greyHue}
+	\str_set:Nn \l_blueColorHue_str{blueHue}
 	
 	%% Color fields definition
 	\str_case:nn {\l_colorSelect_str}
 	{
-	
-		{greyShades} {
+		{\l_greyColorHue_str} {
 			\colorlet{name}{\color[Gray]{15}} % Used for : \name
 			\colorlet{tagline}{\color[Gray]{13}} % Used for : \tagline
 			\colorlet{heading}{\color[Gray]{13}} % Used for : \cvsection
@@ -252,18 +258,22 @@
 			\colorlet{subheading}{\color[Gray]{13}} % Used for : \cvsubsection, \cvsubsubsection
 			\colorlet{accent}{\color[Gray]{10}} % Used for : \cvref(#1), \cvskill(#1), \skillfive, \cvachievment(#1), \cvevent(#1), \quote, \printinfo(#1)
 			\colorlet{emphasis}{\color[Gray]{9}} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
-			\colorlet{body}{\color[Gray]{15}} % Used for : all text color			
+			\colorlet{body}{\color[Gray]{15}} % Used for : all text color
+			
+			\str_set_eq:NN \l_effectiveColorHue_str \l_greyColorHue_str
 		}
 	
-		{blueShades} {
-%			\colorlet{name}{black} % Used for : \name
-%			\colorlet{tagline}{RoyalBlue} % Used for : \tagline
-%			\colorlet{heading}{RoyalBlue} % Used for : \cvsection
-%			\colorlet{headingrule}{black} % Used for : \rule
-%			\colorlet{subheading}{Navy} % Used for : \cvsubsection, \cvsubsubsection
-%			\colorlet{accent}{MediumBlue} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
-%			\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
-%			\colorlet{body}{black} % Used for : all text color
+		{\l_blueColorHue_str} {
+			\colorlet{name}{black} % Used for : \name
+			\colorlet{tagline}{RoyalBlue} % Used for : \tagline
+			\colorlet{heading}{RoyalBlue} % Used for : \cvsection
+			\colorlet{headingrule}{black} % Used for : \rule
+			\colorlet{subheading}{Navy} % Used for : \cvsubsection, \cvsubsubsection
+			\colorlet{accent}{MediumBlue} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
+			\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+			\colorlet{body}{black} % Used for : all text color
+
+			\str_set_eq:NN \l_effectiveColorHue_str \l_blueColorHue_str
 		}
 	}
 	
@@ -316,7 +326,7 @@
 
 \makecvheader
 
-Selected coloration : \str_use:N \l_colorSelect_str
+Selected coloration : \str_use:N \l_effectiveColorHue_str
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 % \AtBeginEnvironment{itemize}{\small}
