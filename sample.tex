@@ -261,7 +261,7 @@
 			\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 			\colorlet{body}{black} % Used for : all text color
 			
-			\str_set_eq:NN \l_effectiveColorHue_str \l_greyColorHue_str
+%			\str_set_eq:NN \l_effectiveColorHue_str \l_greyColorHue_str
 		}
 	
 		{\l_blueColorHue_str} {
@@ -275,10 +275,10 @@
 			\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 			\colorlet{body}{black} % Used for : all text color
 
-			\str_set_eq:NN \l_effectiveColorHue_str \l_blueColorHue_str
+%			\str_set_eq:NN \l_effectiveColorHue_str \l_blueColorHue_str
 		}
 	
-		{}{
+		{\l_goldenAndRed_str}{
 			\definecolor{SlateGrey}{HTML}{2E2E2E}
 			\definecolor{LightGrey}{HTML}{666666}
 			\definecolor{DarkPastelRed}{HTML}{450808}
