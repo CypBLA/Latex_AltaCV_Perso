@@ -233,19 +233,39 @@
 	% De nombreuses teintes de couleur par nom sont donc déjà théoriquement définies.
 	% Toutes celles au lien suivant : https://www.w3schools.com/colors/colors_names.asp
 	
-	\newcommand{\colorSelect}{grey}
+	\str_set:Nn \l_colorSelect_str {greyShades}
 	
-	\str_case:nn {##1} {
+%	xcolor color models : natural, rgb, cmy, cmyk, hsb, gray, RGB, HTML, HSB, Gray
+%	* \color[rgb]{.1,.2,.3})
+%   * \color[Gray]{15}
+	
+	
 	%% Color fields definition
-	% Change the colours if you want to.
-	\colorlet{name}{black} % Used for : \name
-	\colorlet{tagline}{RoyalBlue} % Used for : \tagline
-	\colorlet{heading}{RoyalBlue} % Used for : \cvsection
-	\colorlet{headingrule}{black} % Used for : \rule
-	\colorlet{subheading}{Navy} % Used for : \cvsubsection, \cvsubsubsection
-	\colorlet{accent}{MediumBlue} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
-	\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
-	\colorlet{body}{black} % Used for : all text color
+	\str_case:nn {\l_colorSelect_str}
+	{
+	
+		{greyShades} {
+			\colorlet{name}{\color[Gray]{15}} % Used for : \name
+			\colorlet{tagline}{\color[Gray]{13}} % Used for : \tagline
+			\colorlet{heading}{\color[Gray]{13}} % Used for : \cvsection
+			\colorlet{headingrule}{\color[Gray]{15}} % Used for : \rule
+			\colorlet{subheading}{\color[Gray]{13}} % Used for : \cvsubsection, \cvsubsubsection
+			\colorlet{accent}{\color[Gray]{10}} % Used for : \cvref(#1), \cvskill(#1), \skillfive, \cvachievment(#1), \cvevent(#1), \quote, \printinfo(#1)
+			\colorlet{emphasis}{\color[Gray]{9}} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+			\colorlet{body}{black} % Used for : all text color			
+		}
+	
+		{blueShades} {
+			\colorlet{name}{black} % Used for : \name
+			\colorlet{tagline}{RoyalBlue} % Used for : \tagline
+			\colorlet{heading}{RoyalBlue} % Used for : \cvsection
+			\colorlet{headingrule}{black} % Used for : \rule
+			\colorlet{subheading}{Navy} % Used for : \cvsubsection, \cvsubsubsection
+			\colorlet{accent}{MediumBlue} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
+			\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
+			\colorlet{body}{black} % Used for : all text color
+		}
+	}
 	
 	%%%% Définitions de l'emplacement du fichier .bib de bibliographie
 	%% sample.bib contains your publications
@@ -256,7 +276,6 @@
 	% Used to emphase Language name in languages section.
 	\newcommand{\emphasis}[1]{\color{emphasis}{\textbf{#1}}}
 	
-
 \ExplSyntaxOff
 
 %%%%% CONTENU
