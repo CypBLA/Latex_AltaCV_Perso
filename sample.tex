@@ -240,9 +240,10 @@
 	% Available options
 	\str_const:Nn \l_greyColorHue_str {greyHue}
 	\str_const:Nn \l_blueColorHue_str {blueHue}
+	\str_const:Nn \l_goldenAndRed_str {goldenAndRed}
 	
 	% To modify to choose the switch-case option
-	\str_set_eq:NN \l_colorHueSelection_str \l_greyColorHue_str
+	\str_set_eq:NN \l_colorHueSelection_str \l_goldenAndRed_str
 	
 	% String to verify if the switch case worked
 	\str_new:N \l_effectiveColorHue_str
@@ -275,6 +276,22 @@
 			\colorlet{body}{black} % Used for : all text color
 
 			\str_set_eq:NN \l_effectiveColorHue_str \l_blueColorHue_str
+		}
+	
+		{}{
+			\definecolor{SlateGrey}{HTML}{2E2E2E}
+			\definecolor{LightGrey}{HTML}{666666}
+			\definecolor{DarkPastelRed}{HTML}{450808}
+			\definecolor{PastelRed}{HTML}{8F0D0D}
+			\definecolor{GoldenEarth}{HTML}{E7D192}
+			\colorlet{name}{black}
+			\colorlet{tagline}{PastelRed}
+			\colorlet{heading}{DarkPastelRed}
+			\colorlet{headingrule}{GoldenEarth}
+			\colorlet{subheading}{PastelRed}
+			\colorlet{accent}{PastelRed}
+			\colorlet{emphasis}{SlateGrey}
+			\colorlet{body}{LightGrey}
 		}
 	}
 	
