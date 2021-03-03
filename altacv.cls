@@ -312,7 +312,8 @@
 	\colorlet{tagline}{blue!70!black} % Used for : \tagline
 	\colorlet{heading}{black} % Used for : \cvsection
 	\colorlet{headingrule}{black} % Used for : \rule
-	\colorlet{subheading}{black} % Used for : \cvsubsection, \cvsubsubsection
+	\colorlet{subheading}{black} % Used for : \cvsubsection
+	\colorlet{subsubheading}{black} % Used for : \cvsubsubsection
 	\colorlet{accent}{blue!70!black} % Used for : \cvref(#2), \cvskill(#2), \skillfive, \cvachievment(#1), \cvevent(#2), \quote, \printinfo(#1)
 	\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 	\colorlet{body}{black} % Used for : all text color
@@ -720,7 +721,7 @@
 	% > cvsubsubsection{heading}
 	\newcommand{\cvsubsubsection}[1]{
 		\smallskip
-		\uline{\normalsize{\titlesfont{#1}}}\par
+		\color{subsubheading}{\uline{\normalsize{\titlesfont{#1}}}}\par
 		\smallskip
 	}
 	
@@ -731,7 +732,7 @@
 	}
 
 	\newcommand{\cveventPlacePar}[1]{
-		\color{accent}{\textbf{#1}}\par
+		\color{emphasis}{\textbf{#1}}\par
 	}
 
 	\newcommand{\cveventCalendarBox}[1]{
