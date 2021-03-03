@@ -233,19 +233,19 @@
 	% De nombreuses teintes de couleur par nom sont donc déjà théoriquement définies.
 	% Toutes celles au lien suivant : https://www.w3schools.com/colors/colors_names.asp
 	
-	%% To modify to choose the switch-case option
-	\str_set:Nn \l_colorHueSelection_str {greyHue}
-	
-	% String to verify if the switch case worked
-	\str_new:N \l_effectiveColorHue_str
-	
 	%	xcolor color models : natural, rgb, cmy, cmyk, hsb, gray, RGB, HTML, HSB, Gray
 	%	* \color[rgb]{.1,.2,.3})
 	%   * \color[Gray]{15}
 	
-	% Options selection
-	\str_set:Nn \l_greyColorHue_str{greyHue}
-	\str_set:Nn \l_blueColorHue_str{blueHue}
+	% Options available
+	\str_const:Nn \l_greyColorHue_str {greyHue}
+	\str_const:Nn \l_blueColorHue_str {blueHue}
+	
+	% To modify to choose the switch-case option
+	\str_set_eq:NN \l_colorHueSelection_str \l_greyColorHue_str
+	
+	% String to verify if the switch case worked
+	\str_new:N \l_effectiveColorHue_str
 	
 	%% Color fields definition
 	\str_case:nn {\l_colorHueSelection_str}
