@@ -308,7 +308,7 @@
 % Macro \AtBeginDocument has its content expanded right after \begin{document}
 \if@withhyper
   	\AtBeginDocument{%
-    	\RequirePackage[debug]{hyperref}
+    	\RequirePackage{hyperref}
 %		General options : 
 %    	* draft : all hypertext options are turned off
 % 		* final : all hypertext options are turned on
@@ -317,6 +317,7 @@
 %    debug boolean false extra diagnostic messages are printed in
 %    the log file
     % \hypersetup{hidelinks}
+    	\hypersetup{debug}
     % CypBLA : Commented to see where a links in the PDF.
     
     % \urlstyle{same}
