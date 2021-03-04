@@ -109,7 +109,7 @@
 	
 	%% Thick line put under the cv section title
 	\renewcommand{\headingRule}{
-		\color{headingrule}{\rule{\linewidth}{1pt}}
+		{\color{headingrule}{\rule{\linewidth}{1pt}}}
 	}
 	
 	%% vspace applied on every section title
@@ -124,7 +124,7 @@
 	% > \cvsection{heading}
 	\renewcommand{\cvsection}[1]{
 		\titleSkip
-		\color{heading}{\LARGE{\titlesfont{#1}}}\\
+		{\color{heading}{\LARGE{\titlesfont{#1}}}}\\
 		\vspace{-1.5ex}
 		\headingRule\par
 		\titleSkip
@@ -137,7 +137,7 @@
 		\hspace{
 			\fp_eval:n {1 * \c_titlesIndentRef_dim} pt
 		}
-		\color{subheading}{\uline{\large{\titlesfont{#1}}}}\par
+		{\color{subheading}{\uline{\large{\titlesfont{#1}}}}}\par
 		\titleSkip
 	}
 
@@ -148,7 +148,7 @@
 		\hspace{
 			\fp_eval:n {2 * \c_titlesIndentRef_dim} pt
 		}
-		\color{subsubheading}{\uline{\normalsize{\titlesfont{#1}}}}\par
+		{\color{subsubheading}{\uline{\normalsize{\titlesfont{#1}}}}}\par
 		\titleSkip
 	}
 
