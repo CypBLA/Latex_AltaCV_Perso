@@ -385,8 +385,11 @@
 
 \makecvheader
 
-\printinfo{\faBaby}{Hey !}[https://linkedin.com/in/cyprienblanc]
-\href{https://linkedin.com/in/cyprienblanc}{Mon lien bidon}
+\csdef{truc hyperprefix}{https://linkedin.com/in/}
+
+\printinfo{\faBaby}{Hey !}[https://linkedin.com/in/cyprienblanc] \par
+\href{https://linkedin.com/in/cyprienblanc}{Mon lien bidon} \par
+\printinfo{\faBaby}{Deuxième essai}[\csuse{truc hyperprefix} cyprienblanc]
 
 %\ExplSyntaxOn
 %	Selected~coloration~: \\
