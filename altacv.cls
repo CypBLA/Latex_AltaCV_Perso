@@ -201,7 +201,7 @@
 %%%%% DECLARATIONS DEPENDING ON SELECTED OPTIONS
 
 \AtBeginDocument{
-	\RequirePackage[final,unicode]{hyperref
+	\RequirePackage[final,unicode]{hyperref}
 }
 
 %% Macro \AtBeginDocument has its content expanded right after \begin{document}
