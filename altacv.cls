@@ -63,9 +63,9 @@
 % 
 \RequirePackage{xparse}
 \RequirePackage{xfp}
-\RequirePackage{xtemplate}
-\RequirePackage{l3keys2e}
-\RequirePackage{xfrac}
+%\RequirePackage{xtemplate}
+%\RequirePackage{l3keys2e}
+%\RequirePackage{xfrac}
 
 % CypBLA : Commented to be replaced by the meta-package "l3packages"
 %\RequirePackage{xparse}
