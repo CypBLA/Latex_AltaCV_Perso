@@ -204,7 +204,6 @@
 
 \AtBeginDocument{
 	\RequirePackage[unicode]{hyperref}
-	
 %	\hypersetup{final,unicode}
 }
 
