@@ -43,7 +43,8 @@
 % scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
 % The package provides hooks for the execution of commands before or after loading files, classes or packages.
 
-\RequirePackage{l3kernel}
+%\RequirePackage{l3kernel}
+\RequirePackage{expl3}
 % l3kernel – LaTeX3 programming conventions : https://ctan.org/pkg/l3kernel
 
 \RequirePackage{l3packages}
