@@ -308,8 +308,14 @@
 % Macro \AtBeginDocument has its content expanded right after \begin{document}
 \if@withhyper
   	\AtBeginDocument{%
-    	\RequirePackage{hyperref}
-    
+    	\RequirePackage[hypertexnames=false, debug=true, breaklinks= true]{hyperref}
+%		General options : 
+%    	* draft : all hypertext options are turned off
+% 		* final : all hypertext options are turned on
+%		* debug : extra diagnostic messages are printed in the log file
+%    final boolean true all hypertext options are turned on
+%    debug boolean false extra diagnostic messages are printed in
+%    the log file
     % \hypersetup{hidelinks}
     % CypBLA : Commented to see where a links in the PDF.
     
