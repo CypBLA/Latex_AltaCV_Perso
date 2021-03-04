@@ -543,7 +543,7 @@
 	\newcommand{\personalinfo}[1]{\def\@personalinfo{#1}} % > \personalinfo{<personalinfo>}
 	
 	%% Champs d'information à symbole.
-	\NewInfoField{email}{\faAt}[mailto:] % Adresse mail
+	\NewInfoField{email}{\faAt}[bullshit:] % Adresse mail
 	\NewInfoField{mailaddress}{\faEnvelope} % Adresse postale
 	\NewInfoField{phone}{\faPhone} % Numéro de téléphone
 	\NewInfoField{homepage}{\faGlobe}[https://] % Site internet
