@@ -522,7 +522,7 @@
 					% ##1 : <text>, will be filled when the command > \<fieldname>{<text>} < will be used.
 				}
 	      		{% False case
-	      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
+	      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}{##1}]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
 	      		}
 	    	\else
 				\printinfo{\csuse{#1 symbol}}{##1}
