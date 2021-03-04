@@ -659,13 +659,13 @@
 	}
 
 	\newcommand{\cveventCalendarBox}[1]{
-		\makebox[0.5\linewidth][l]{
+		\makebox[0.4\linewidth][l]{
 			\small{\faCalendar~#1}
 		}
 	}
 
 	\newcommand{\cveventMapBox}[1]{
-		\makebox[0.5\linewidth][l]{
+		\makebox[0.4\linewidth][l]{
 			\small{\faMapMarker~#1}
 		}
 	}
