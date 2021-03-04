@@ -43,8 +43,11 @@
 % scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
 % The package provides hooks for the execution of commands before or after loading files, classes or packages.
 
-%\RequirePackage{l3packages}
-%% l3packages – High-level LaTeX3 concepts : https://www.ctan.org/pkg/l3packages
+\RequirePackage{l3kernel}
+% l3kernel – LaTeX3 programming conventions : https://ctan.org/pkg/l3kernel
+
+\RequirePackage{l3packages}
+% l3packages – High-level LaTeX3 concepts : https://www.ctan.org/pkg/l3packages
 
 % CypBLA : Commented to be replaced by the meta-package "l3packages"
 %\RequirePackage{xparse}
