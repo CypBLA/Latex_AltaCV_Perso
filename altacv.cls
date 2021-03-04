@@ -202,10 +202,10 @@
 
 %%%%% DECLARATIONS DEPENDING ON SELECTED OPTIONS
 
-\AtBeginDocument{
-	\RequirePackage[unicode]{hyperref}
-%	\hypersetup{final,unicode}
-}
+%\AtBeginDocument{
+%	\RequirePackage[unicode]{hyperref}
+%%	\hypersetup{final,unicode}
+%}
 
 %% Macro \AtBeginDocument has its content expanded right after \begin{document}
 %\if@withhyper
