@@ -77,13 +77,13 @@
 	
 	%% Name configuration
 	\renewcommand{\nameTitle}[1]{
-		\color{name}{\Huge{\titlesfont{#1}}}\par
+		{\color{name}{\Huge{\titlesfont{#1}}}}\par
 		\vspace{0mm}
 	}
 
 	%% Tagline configuration (under the name)
 	\renewcommand{\taglinePar}[1]{
-		\color{tagline}{\Large{\titlesfont{#1}}}\par
+		{\color{tagline}{\Large{\titlesfont{#1}}}}\par
 		\smallskip
 	}
 	
@@ -97,7 +97,7 @@
 	
 	%% Icons color in the heading.
 	\renewcommand{\infoIconFont}[1]{
-		\color{accent}{#1}
+		{\color{accent}{#1}}
 	}
 	
 	%% Spacing between personnal info fields in the head
@@ -155,11 +155,11 @@
 	%%%% CV event configuration
 	
 	\renewcommand{\cveventTitle}[1]{
-		\color{emphasis}{\large{#1}}\par
+		{\color{emphasis}{\large{#1}}}\par
 	}
 	
 	\renewcommand{\cveventPlacePar}[1]{
-		\color{emphasis}{\textbf{#1}}\par
+		{\color{emphasis}{\textbf{#1}}}\par
 	}
 	
 	\renewcommand{\cveventCalendarBox}[1]{
@@ -180,7 +180,7 @@
 	% * \cvskill
 	% * \cvref
 	\renewcommand{\textEmph}[1]{
-		\color{emphasis}{\textbf{#1}}
+		{\color{emphasis}{\textbf{#1}}}
 	}
 	
 	%%%%
@@ -189,7 +189,7 @@
 	% Separator placed between elements as desired
 	\renewcommand{\divider}{
 		\vspace{-0.5em}
-		\color{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}
+		{\color{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}}
 		\titleSkip
 	}
 	
