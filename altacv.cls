@@ -209,9 +209,7 @@
 %%%%% DECLARATIONS DEPENDING ON SELECTED OPTIONS
 
 \AtBeginDocument{
-	\RequirePackage{hyperref}
-	
-	\hypersetup{debug}
+	\RequirePackage[final,unicode]{hyperref
 }
 
 %% Macro \AtBeginDocument has its content expanded right after \begin{document}
