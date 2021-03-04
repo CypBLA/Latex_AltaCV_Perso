@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.2.22)  1 MAR 2021 22:45
+This is LuaHBTeX, Version 1.13.0 (MiKTeX 21.1) (format=lualatex 2021.3.4)  4 MAR 2021 18:22
  restricted system commands enabled.
-**sample.tex
-(./sample.tex
+**CV_Cyprien_BLANC.tex
+(./CV_Cyprien_BLANC.tex
 LaTeX2e <2020-10-01> patch level 4
 Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
 Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
@@ -271,7 +271,7 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 )
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/pdfx/AdobeColorProfiles.
 tex)
-** pdfx: No file sample.xmpdata . Metadata will be incomplete!
+** pdfx: No file CV_Cyprien_BLANC.xmpdata . Metadata will be incomplete!
 <<sRGB.icc>>
 Package hyperref Info: Option `unicode' set `true' on input line 2411.
 Package hyperref Info: Option `unicode' set `true' on input line 2412.
@@ -368,7 +368,9 @@ Package: scrlfile-hook 2020/09/21 v3.32 KOMA-Script package (using LaTeX hooks)
 
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/koma-script/scrlogo.sty
 Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
-)))
+))) ("C:/Program Files/MiKTeX/tex/latex/l3packages/xfp/xfp.sty"
+Package: xfp 2020-10-27 L3 Floating point unit
+)
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/realscripts/realscripts.
 sty
 Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
@@ -1293,6 +1295,29 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \colbreak@box=\box122
 \mc@col@check@num=\count483
 )
+("C:/Program Files/MiKTeX/tex/latex/ragged2e/ragged2e.sty"
+Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+
+(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/everysel/everysel.sty
+Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
+
+(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/everysel/everysel-2011-1
+0-28.sty))
+\CenteringLeftskip=\skip104
+\RaggedLeftLeftskip=\skip105
+\RaggedRightLeftskip=\skip106
+\CenteringRightskip=\skip107
+\RaggedLeftRightskip=\skip108
+\RaggedRightRightskip=\skip109
+\CenteringParfillskip=\skip110
+\RaggedLeftParfillskip=\skip111
+\RaggedRightParfillskip=\skip112
+\JustifyingParfillskip=\skip113
+\CenteringParindent=\skip114
+\RaggedLeftParindent=\skip115
+\RaggedRightParindent=\skip116
+\JustifyingParindent=\skip117
+)
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
 
@@ -1497,36 +1522,22 @@ or  <return>  to continue without it.
 
 \c@figure=\count490
 \c@table=\count491
-\abovecaptionskip=\skip104
-\belowcaptionskip=\skip105
+\abovecaptionskip=\skip118
+\belowcaptionskip=\skip119
 \bibindent=\dimen284
-) ("C:/Program Files/MiKTeX/tex/latex/ragged2e/ragged2e.sty"
-Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+))
+Runaway argument?
+{ \RequirePackage [final,unicode]{hyperref } \par \par \par \ExplSyntaxOn \ETC.
+! File ended while scanning use of \AddToHook .
+<inserted text> 
+\par 
+l.33 
+   
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
 
-(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/everysel/everysel.sty
-Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
-
-(C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/everysel/everysel-2011-1
-0-28.sty))
-\CenteringLeftskip=\skip106
-\RaggedLeftLeftskip=\skip107
-\RaggedRightLeftskip=\skip108
-\CenteringRightskip=\skip109
-\RaggedLeftRightskip=\skip110
-\RaggedRightRightskip=\skip111
-\CenteringParfillskip=\skip112
-\RaggedLeftParfillskip=\skip113
-\RaggedRightParfillskip=\skip114
-\JustifyingParfillskip=\skip115
-\CenteringParindent=\skip116
-\RaggedLeftParindent=\skip117
-\RaggedRightParindent=\skip118
-\JustifyingParindent=\skip119
-)
-\altacv@photos@width=\skip120
-\altacv@photo@diam@left=\skip121
-\altacv@photo@diam@right=\skip122
-)
 (C:/Users/impishwhite/AppData/Roaming/MiKTeX/tex/latex/opensans/opensans.sty
 Package: opensans 2019/06/20 Style file for Open Sans.
 
@@ -2344,54 +2355,263 @@ e;script=latn;language=dflt;+tlig;+pnum;+onum;+smcp;"
 
 )
 
-Package hyperref Warning: Option `pdftitle' has already been used,
-(hyperref)                setting the option has no effect on input line 59.
+! LaTeX Error: Command \titlesfont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 	\renewcommand{\titlesfont}
+                              [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 59.
+! LaTeX Error: Command \nameTitle undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 	\renewcommand{\nameTitle}
+                             [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \taglinePar undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 	\renewcommand{\taglinePar}
+                              [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \personalInfoPar undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 	\renewcommand{\personalInfoPar}
+                                   [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \infoIconFont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 	\renewcommand{\infoIconFont}
+                                [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \interIconsHSpace undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 	\renewcommand{\interIconsHSpace}
+                                     {
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \headingRule undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 	\renewcommand{\headingRule}
+                                {
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c_titlesIndentRef_dim=\dimen285
+
+! LaTeX Error: Command \cvsection undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 	\renewcommand{\cvsection}
+                              [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \cvsubsection undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 	\renewcommand{\cvsubsection}
+                                 [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \cvsubsubsection undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 	\renewcommand{\cvsubsubsection}
+                                    [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \cveventTitle undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 	\renewcommand{\cveventTitle}
+                                 [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \cveventPlacePar undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 	\renewcommand{\cveventPlacePar}
+                                    [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \cveventCalendarBox undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 	\renewcommand{\cveventCalendarBox}
+                                       [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \cveventMapBox undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 	\renewcommand{\cveventMapBox}
+                                  [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \textEmph undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 	\renewcommand{\textEmph}
+                             [1]{
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \divider undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 	\renewcommand{\divider}
+                            {
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \ratingmarker undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 	\renewcommand{\ratingmarker}
+                                 {\faCircle}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \itemmarker undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 	\renewcommand{\itemmarker}
+                               {{\small\textbullet}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 \@quotelevel=\count493
 \@quotereset=\count494
-(./sample.aux)
-\openout1 = sample.aux
+(./CV_Cyprien_BLANC.aux)
+\openout1 = CV_Cyprien_BLANC.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 262.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 351.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+51.
  ("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 262.
-LaTeX Font Info:    ... okay on input line 262.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
 
 ("C:/Program Files/MiKTeX/tex/context/base/mkii/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count495
-\scratchdimen=\dimen285
+\scratchdimen=\dimen286
 \scratchbox=\box123
 \nofMPsegments=\count496
 \nofMParguments=\count497
 \everyMPshowfont=\toks43
 \MPscratchCnt=\count498
-\MPscratchDim=\dimen286
+\MPscratchDim=\dimen287
 \MPnumerator=\count499
 \makeMPintoPDFobject=\count500
 \everyMPtoPDFconversion=\toks44
@@ -2404,7 +2624,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package hyperref Warning: Height of page (\stockheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring OFF on input line 262.
+Package hyperref Info: Link coloring OFF on input line 351.
 ("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -2417,13 +2637,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count501
 )
-LaTeX Info: Redefining \ref on input line 262.
-LaTeX Info: Redefining \pageref on input line 262.
-LaTeX Info: Redefining \nameref on input line 262.
- (./sample.out) (./sample.out)
+LaTeX Info: Redefining \ref on input line 351.
+LaTeX Info: Redefining \pageref on input line 351.
+LaTeX Info: Redefining \nameref on input line 351.
+ (./CV_Cyprien_BLANC.out) (./CV_Cyprien_BLANC.out)
 \@outlinefile=\write8
 
-\openout8 = sample.out
+\openout8 = CV_Cyprien_BLANC.out
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -2465,64 +2685,64 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 262.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 262.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 262.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 262.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 262.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 262.
-LaTeX Font Info:    Redeclaring math accent \check on input line 262.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 262.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 262.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 262.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 262.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 262.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 351.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 351.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 351.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 351.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 351.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 351.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 351.
+LaTeX Font Info:    Redeclaring math accent \check on input line 351.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 351.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 351.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 351.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 351.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 351.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 262.
+(Font)              `operators' in the math version `normal' on input line 351.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 262.
+(Font)                  OT1/cmr/m/n --> TU/OpenSans(0)/m/n on input line 351.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 262.
+(Font)              `operators' in the math version `bold' on input line 351.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 262.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/m/n on input line 351.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/m/n on input line
- 262.
+ 351.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 262.
+(Font)                  OT1/cmr/m/it --> TU/OpenSans(0)/m/it on input line 351.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 262.
+(Font)                  OT1/cmr/bx/n --> TU/OpenSans(0)/b/n on input line 351.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/MerriweatherSans(0)/m/n on input li
-ne 262.
+ne 351.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 262.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 351.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/OpenSans(0)/m/n --> TU/OpenSans(0)/b/n on input line
- 262.
+ 351.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 262
+(Font)                  OT1/cmr/bx/it --> TU/OpenSans(0)/b/it on input line 351
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/MerriweatherSans(0)/b/n on input l
-ine 262.
+ine 351.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 262.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 351.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/lbx/english.lbx"
@@ -2541,121 +2761,475 @@ Package biblatex Info: ... and expl3
 ("C:/Program Files/MiKTeX/tex/latex/biblatex/blx-case-expl3.sty"
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout7 = sample.bcf
+\openout7 = CV_Cyprien_BLANC.bcf
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'sample.bbl' not found.
+Package biblatex Info: ... file 'CV_Cyprien_BLANC.bbl' not found.
 
-No file sample.bbl.
-Package biblatex Info: Reference section=0 on input line 262.
-Package biblatex Info: Reference segment=0 on input line 262.
+No file CV_Cyprien_BLANC.bbl.
+Package biblatex Info: Reference section=0 on input line 351.
+Package biblatex Info: Reference segment=0 on input line 351.
 
-Package layouts Warning: Layout scale set to 0.5 on input line 262.
+Package layouts Warning: Layout scale set to 0.5 on input line 351.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 262.
+LaTeX Info: Redefining \selectfont on input line 351.
 \c@mv@tabular=\count502
 \c@mv@boldtabular=\count503
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 297.
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 297.
-LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 297.
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 297.
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 297.
-LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 297.
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 297.
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 297.
-LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 297.
 
-Underfull \hbox (badness 4242) in paragraph at lines 297--297
-[][][] [][] [][] 
- []
+! Undefined control sequence.
+l.365 \name
+         {Cyprien BLANC}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
+! Undefined control sequence.
+l.367 \tagline
+            {Jeune diplômé ingénieur, spécialisé en automobile et trans...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
-[][] [][] 
- []
+! Undefined control sequence.
+l.370 \photoR
+           {2.8cm}{CypBLA_Square_500x500}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.370 \photoR{2.8cm}{CypBLA_
+                          Square_500x500}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 297.
+(Font)              scaled to size 6.0pt on input line 370.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 297.
+(Font)              scaled to size 5.0pt on input line 370.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 297.
+(Font)              <6> on input line 370.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 297.
-<CypBLA_Square_500x500.jpg, id=12, 521.95pt x 529.98pt>
-File: CypBLA_Square_500x500.jpg Graphic file (type jpg)
-<use CypBLA_Square_500x500.jpg>
-Package luatex.def Info: CypBLA_Square_500x500.jpg  used on input line 297.
-(luatex.def)             Requested size: 79.6678pt x 80.89258pt.
+(Font)              <5> on input line 370.
+! Extra }, or forgotten $.
+l.370 \photoR{2.8cm}{CypBLA_Square_500x500}
+                                         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.372 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.373 \personalinfo
+                 {%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.375 	\printinfo
+               {\faBaby}{24/05/1995, 25 ans} % Birthday and age
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.376 	\printinfo
+               {\faPhone}{(+33)6 98 13 97 81} % Phone number
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.377 	\printinfo
+               {\faAt}{cyprien.blanc@zaclys.net}[mailto:cyprien.blanc@zaclys...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.378 	\printinfo
+               {\faEnvelope}{19 allée George Sand 69330 Jonage} % Mail adress
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.379 	\printinfo
+               {\faCar}{Permis A et B -- véhicule personnel} % Driving license
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.380 	\printinfo
+               {\faLinkedin}{cyprienblanc}[https://linkedin.com/in/cyprienbl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.381 	\printinfo
+               {\faGithub}{CypBLA}[https://github.com/CypBLA] % Github account
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.413 \makecvheader
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 311.
+(Font)              scaled to size 12.0pt on input line 434.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 311.
+(Font)              scaled to size 12.0pt on input line 434.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 311.
-luaotfload | aux : font no 73 (nil) does not define feature sups for script latn
+(Font)              scaled to size 12.0pt on input line 434.
+! Undefined control sequence.
+l.436 	\cvevent
+             {Diplôme universitaire - Formation Adaptée Enseignement (FAE)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+luaotfload | aux : font no 44 (nil) does not define feature sups for script latn
  with language dflt
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 313.
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 313.
+(Font)              scaled to size 7.0pt on input line 440.
+! Undefined control sequence.
+l.445 	\cvevent
+             {Master 1 - Métiers de l'enseignement, de l'Education et de la...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.450 	\cvevent
+             {Cursus ingénieur complet}{Institut Supérieur de l'Automobile...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.458 	\cvevent
+             {Semestre d'études Erasmus - Automation and Control Engineerin...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.465 	\cvevent
+             {Terminale Scientifique - Spé. Sciences de l'ingénieur}{Lycé...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 482.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 313.
-LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 397.
+(Font)              scaled to size 10.0pt on input line 482.
 LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 454.
-! Misplaced \cr.
-\reserved@c ->\cr 
-                  \ignorespaces 
-l.501 		}
-        \\
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+(Font)              scaled to size 10.0pt on input line 482.
+! Undefined control sequence.
+l.490 	\cvevent
+             {Professeur des écoles stagiaire}{Education nationale}{2019 --...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.498 	\cvevent
+             {Adjoint territorial d'animation}{Mairie de Meyzieu}{07/19}{Mey...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.506 	\cvevent
+             {Stage ingénieur - Développement Matlab - Logiciel de post-tr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.514 	\cvevent
+             {Stage ingénieur - Développement Matlab - Outils d'analyse de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 516.
+! Undefined control sequence.
+l.526 	\cvevent
+             {Missions ponctuelles d'intérim}{Agences d'intérim}{2014 {\te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (1.3854pt too wide) in paragraph at lines 547--547
+[][] [] 
+ []
+
+LaTeX Font Info:    Font shape `TU/OpenSans(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 548.
+! Undefined control sequence.
+l.566 	\cvevent
+             {Encadrement de camp scout}{Scouts et Guides de France}{07/18}{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (1.3854pt too wide) in paragraph at lines 574--574
+[][] [] 
+ []
+
+LaTeX Font Info:    Font shape `TU/MerriweatherSans(1)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 598.
+! Undefined control sequence.
+l.599 	\cvtag
+           {Modelica}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.600 	\cvtag
+           {Simulink}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.604 	\cvtag
+           {Programmation Orientée Objets}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.605 	\cvtag
+           {Matlab}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.606 	\cvtag
+           {Labview}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.607 	\cvtag
+           {VBA (Excel)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.608 	\cvtag
+           {Langages web (HTML, CSS, PHP, SQL)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.609 	\cvtag
+           {C}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.610 	\cvtag
+           {Python}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.614 	\cvtag
+           {Windows}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.615 	\cvtag
+           {GNU/Linux}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.621 			\cvtag
+             {Microsoft Office}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.622 			\cvtag
+             {LibreOffice}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.630 		\emphasis{Français}\par & \skillfive
+                                           {5}\par \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.632 		\emphasis{Anglais}\par & \skillfive
+                                         {4}\par \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.644 		\emphasis{Italien}\par & \skillfive
+                                         {2}\par \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [1
 
-<./CypBLA_Square_500x500.jpg>] [2] (./sample.aux)
-Package rerunfilecheck Info: File `sample.out' has not changed.
+] [2] (./CV_Cyprien_BLANC.aux)
+Package rerunfilecheck Info: File `CV_Cyprien_BLANC.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'sample.run.xml'.
+Package logreq Info: Writing requests to 'CV_Cyprien_BLANC.run.xml'.
 
-\openout1 = sample.run.xml
+\openout1 = CV_Cyprien_BLANC.run.xml
 )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 370 ({)
+### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 40770 strings out of 478819
- 156269,1977958 words of node,token memory allocated
- 846 words of node memory still in use:
-   4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 7 attribute, 88 glue_spec,
- 7 attribute_list, 2 write, 54 pdf_colorstack nodes
-   avail lists: 1:5,2:3100,3:1392,4:295,5:282,6:235,7:12691,8:11,9:1385,10:8,11:
-835
- 59012 multiletter control sequences out of 65536+200000
- 103 fonts using 14716983 bytes
- 113i,11n,122p,1130b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
-<//?/c:/windows/fonts/opensans-italic.ttf><//?/c:/windows/fonts/opensans-bold.tt
-f><//?/c:/windows/fonts/opensans-regular.ttf><C:/Users/impishwhite/AppData/Roami
-ng/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Brands-Regular-400.otf>
-<C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/opentype/public/fontawesome5/
-FontAwesome5Free-Solid-900.otf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/font
-s/opentype/sorkin/merriweather/MerriweatherSans-Bold.otf>
-Output written on sample.pdf (2 pages, 231925 bytes).
+ 40678 strings out of 478819
+ 125007,1977958 words of node,token memory allocated
+ 601 words of node memory still in use:
+   4 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 6 attribute, 83 glue_spec,
+ 6 attribute_list, 2 write nodes
+   avail lists: 1:2,2:1439,3:480,4:278,5:215,6:170,7:12464,8:14,9:842,10:10,11:9
+16
+ 58919 multiletter control sequences out of 65536+200000
+ 92 fonts using 13447503 bytes
+ 113i,11n,122p,1140b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
+<//?/c:/windows/fonts/opensans-bold.ttf><//?/c:/windows/fonts/opensans-italic.tt
+f><C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/opentype/sorkin/merriweathe
+r/MerriweatherSans-Bold.otf><C:/Users/impishwhite/AppData/Roaming/MiKTeX/fonts/o
+pentype/public/fontawesome5/FontAwesome5Brands-Regular-400.otf><C:/Users/impishw
+hite/AppData/Roaming/MiKTeX/fonts/opentype/public/fontawesome5/FontAwesome5Free-
+Solid-900.otf><//?/c:/windows/fonts/opensans-regular.ttf><C:/Program Files/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on CV_Cyprien_BLANC.pdf (2 pages, 97303 bytes).
 
-PDF statistics: 68 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 131072)
  31 words of extra memory for PDF output out of 10000 (max. 100000000)
 

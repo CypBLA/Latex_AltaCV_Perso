@@ -20,7 +20,11 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
+\ExplSyntaxOn
+
 %%%%% CONFIGURATIONS INITIALES
+
+\PassOptionsToPackage{final,unicode}{hyperref} 
 
 \PassOptionsToPackage{svgnames}{xcolor}
 % Sur conseil de : https://tex.stackexchange.com/questions/51488/option-clash-with-xcolor-and-tikz
@@ -30,6 +34,11 @@
 %% AltaCV uses the fontawesome5 and academicons fonts
 %% and packages.
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+%%%% Option pour désactiver les messages de warning désirés
+% Package silence – Selective filtering of error messages and warnings
+% https://www.ctan.org/pkg/silence
+%\WarningsOn
 
 %%%% Appel aux paquets supplémentaires nécessaires (non-inclus dans la classe)
 
@@ -45,21 +54,12 @@
 % [sf] to activate MerriweatherSans (sans serif) without Merriweather (serif)
 % Commands \merriweather and \merriweathersans select the Merriweather and MerriweatherSans families, respectively
 % Commands \merriweatherlight, \merriweatherblack, \merriweathersanslight, and \merriweathersansblack allow for localized use of light or black variants.
-
-\ExplSyntaxOn
 	
-	%%%% Paramétrage des dimensions
-	% Change the page layout if you need to
-	\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=1.2cm}
+%%%% Paramétrage des dimensions
+% Change the page layout if you need to
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=1.2cm}
 	
-	%%%% Options for links and pdf
-%	\hypersetup{
-%		pdftitle={CV - Cyprien  BLANC},
-%		pdfauthor={Cyprien BLANC}
-%	}
-	
-	%%%% 
-	
+%%%% 
 	%% Command applied for every element we can consider as a kind of title
 	% Put in bold and apply the specific font.
 	\renewcommand{\titlesfont}[1]{
@@ -163,13 +163,13 @@
 	}
 	
 	\renewcommand{\cveventCalendarBox}[1]{
-		\makebox[0.5\linewidth][l]{
+		\makebox[0.3\linewidth][l]{
 			\small{\faCalendar~#1}
 		}
 	}
 	
 	\renewcommand{\cveventMapBox}[1]{
-		\makebox[0.5\linewidth][l]{
+		\makebox[0.3\linewidth][l]{
 			\small{\faMapMarker~#1}
 		}
 	}
@@ -266,12 +266,12 @@
 	%   * \color[Gray]{15}
 	
 	% Available options
-	\str_const:Nn \l_greyColorHue_str {greyHue}
-	\str_const:Nn \l_blueColorHue_str {blueHue}
-	\str_const:Nn \l_goldenAndRed_str {goldenAndRed}
+	\str_const:Nn \c_greyColorHue_str {greyHue}
+	\str_const:Nn \c_blueColorHue_str {blueHue}
+	\str_const:Nn \c_goldenAndRed_str {goldenAndRed}
 	
 	% To modify to choose the switch-case option
-	\str_set_eq:NN \l_colorHueSelection_str \l_greyColorHue_str
+	\str_set_eq:NN \l_colorHueSelection_str \c_greyColorHue_str
 	
 	% String to verify if the switch case worked
 	\str_new:N \l_effectiveColorHue_str
@@ -279,7 +279,7 @@
 	%% Color fields definition
 	\str_case_e:nn {\l_colorHueSelection_str}
 	{
-		{\l_greyColorHue_str} {
+		{\c_greyColorHue_str} {
 			\colorlet{name}{black} % Used for : \name
 			\colorlet{tagline}{black!85} % Used for : \tagline
 			\colorlet{heading}{black!85} % Used for : \cvsection
@@ -290,10 +290,10 @@
 			\colorlet{emphasis}{black} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 			\colorlet{body}{black} % Used for : all text color
 			
-%			\str_set_eq:NN \l_effectiveColorHue_str \l_greyColorHue_str
+%			\str_set_eq:NN \l_effectiveColorHue_str \c_greyColorHue_str
 		}
 	
-		{\l_blueColorHue_str} {
+		{\c_blueColorHue_str} {
 			%% A AMELIORER %%
 			\colorlet{name}{black} % Used for : \name
 			\colorlet{tagline}{RoyalBlue} % Used for : \tagline
@@ -305,10 +305,10 @@
 			\colorlet{emphasis}{MidnightBlue} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
 			\colorlet{body}{black} % Used for : all text color
 
-%			\str_set_eq:NN \l_effectiveColorHue_str \l_blueColorHue_str
+%			\str_set_eq:NN \l_effectiveColorHue_str \c_blueColorHue_str
 		}
 	
-		{\l_goldenAndRed_str}{
+		{\c_goldenAndRed_str}{
 			\definecolor{SlateGrey}{HTML}{2E2E2E}
 			\definecolor{LightGrey}{HTML}{666666}
 			\definecolor{DarkPastelRed}{HTML}{450808}
@@ -326,32 +326,44 @@
 		}
 	}
 	
-	
-%	\colorlet{name}{\color[Gray]{15}} % Used for : \name
-%	\colorlet{tagline}{\color[Gray]{13}} % Used for : \tagline
-%	\colorlet{heading}{\color[Gray]{13}} % Used for : \cvsection
-%	\colorlet{headingrule}{\color[Gray]{15}} % Used for : \rule
-%	\colorlet{subheading}{\color[Gray]{13}} % Used for : \cvsubsection, \cvsubsubsection
-%	\colorlet{accent}{\color[Gray]{10}} % Used for : \cvref(#1), \cvskill(#1), \skillfive, \cvachievment(#1), \cvevent(#1), \quote, \printinfo(#1)
-%	\colorlet{emphasis}{\color[Gray]{9}} % Used for : \cvref(#1), \cvskill(#1) \cvachievment(#2), \cvevent(#1)
-%	\colorlet{body}{\color[Gray]{15}} % Used for : all text color
-	
 	%%%% Définitions de l'emplacement du fichier .bib de bibliographie
 	%% sample.bib contains your publications
-	\addbibresource{sample.bib}
+%	\addbibresource{sample.bib}
 	
 	%%%% New commands definition
 	% > \emphasis{<text>}
 	% Used to emphase Language name in languages section.
 	\newcommand{\emphasis}[1]{\color{emphasis}{\textbf{#1}}}
 	
+	%%%% Definition of the title and the author name
+	
+	\str_const:Nn \c_authorName_str {Cyprien~BLANC}
+	
+	\title{CV \str_use:N \c_authorName_str}
+	\author{\str_use:N \c_authorName_str}
+	
+	%%%%  Call to hyperref juste before to initialize the document.
+	\usepackage[unicode]{hyperref}
+%	\usepackage[unicode,pdftitle={CV \str_use:N \c_authorName_str},pdfauthor={\str_use:N \c_authorName_str},pdfcreator={\str_use:N \c_authorName_str}]{hyperref}
+
+	\AtBeginDocument{
+		\hypersetup{
+			pdftitle={CV \str_use:N \c_authorName_str},
+			pdfauthor={\str_use:N \c_authorName_str},
+			pdfcreator={\str_use:N \c_authorName_str}
+		}
+	}
+
 \ExplSyntaxOff
 
 %%%%% CONTENU
 \begin{document}
-	
-%%%% Bandeau haut
-\name{Cyprien BLANC}
+
+%%%%  CV Header
+\ExplSyntaxOn
+	\name{\str_use:N \c_authorName_str}
+\ExplSyntaxOff
+
 \tagline{Jeune diplômé ingénieur, spécialisé en automobile et transports - Dominante orientée informatique, énergétique et électronique}
 
 %% You can add multiple photos on the left or right
@@ -372,30 +384,6 @@
 %	\printinfo{\faGitlab}{}[] % Gitlab account
 %	\printinfo{\aiOrcid}{}[] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
 %	\printinfo{\faMapMarker}{}[]
-
-%	\birth{24/05/1995, 25 ans}
-%	\phone{(+33)6 98 13 97 81}
-%	\email{cyprien.blanc@zaclys.net}
-%	\mailaddress{19 allée George Sand 69330 Jonage}
-%%	\location{FRANCE}
-%	\drivingLicence{Permis A et B -- véhicule personnel}
-%	\linkedin{cyprienblanc}
-%	\github{CypBLA}
-%	\homepage{www.alanshawn.com/}
-%	\homepage{www.alanshawn.com}
-	% \homepage{<url>} % Espace Scenari à remplir : https://cyprienblanc.scenari-community.org/
-	% \twitter{<twitterName>}
-	%% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
-	% \orcid{0000-0000-0000-0000}
-	%
-	%% You can add your own arbtrary detail with
-	%% \printinfo{symbol}{detail}[optional hyperlink prefix]
-	% \printinfo{\faPaw}{Hey ho!}[https://example.com/]
-	%
-	%% Or you can declare your own field with
-	%% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-	% \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-	% \gitlab{your_id}
 }
 
 \makecvheader
@@ -475,7 +463,7 @@
 	%\item
 	%\end{itemize}
 	
-	\cvevent{Professeur des écoles stagiaire}{Education nationale}{2019 -- 2020}{Soucieux-en-Jarrest, Rhône}
+	\cvevent{Professeur des écoles stagiaire}{Education nationale}{2019 -- 2020}{Soucieu-en-Jarrest, Rhône}
 	\begin{itemize}
 		\item En charge les lundi et mardi d'une classe de CP à l'école élémentaire "Les Chadrillons" de Soucieu-en-Jarrest
 		\item En formation en parallèle à mi-temps à l'Institut National Supérieur du Professorat et de l'Education de Lyon
@@ -532,7 +520,8 @@
 %	\end{itemize}
 	
 	\cveventTitle{Projets d'ingénierie ISAT}\par
-	\cveventCalendarBox{2015 {\textasciitilde{}} 2017} \cveventMapBox{Nevers, Nièvre}\par
+	\cveventCalendarBox{2015 {\textasciitilde{}} 2017}
+	\cveventMapBox{Nevers, Nièvre}\par
 	\cveventPlacePar{ISAT Hydrogen Project}\par
 	Modélisation et simulation d'un véhicule hybride série à pile à combustible sous Matlab/Simulink.
 	
@@ -559,7 +548,8 @@
 	\end{itemize}
 	
 	\cveventTitle{Associations ISAT}\par
-	\cveventCalendarBox{2015 {\textasciitilde{}} 2018} \cveventMapBox{Nevers, Nièvre}\par
+	\cveventCalendarBox{2015 {\textasciitilde{}} 2018}
+	\cveventMapBox{Nevers, Nièvre}\par
 	\cveventPlacePar{Association ISATevent}\par
 	Organisation du gala de l'ISAT : gestion de billetterie, définitions des plans de table, recherche et démarchage de groupes de musique, etc.
 	
@@ -643,7 +633,7 @@
 	
 	%% Pratiques sportives
 	\cvsubsection{Pratiques sportives}
-	\cveventPlacePar{\faAngleDoubleUp \hspace{1ex} Escalade en club}
+	\cveventPlacePar{\faAngleDoubleUp \hspace{0.5ex} Escalade en club}
 	\begin{quote}
 		Me dépasser et affronter des obstacles toujours plus difficiles en sachant pouvoir toujours compter sur mon binôme pour m'assurer et me prodiguer des conseils.
 	\end{quote}
