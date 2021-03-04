@@ -152,9 +152,11 @@
 % multicol – Intermix single and multiple columns
 % https://www.ctan.org/pkg/multicol
 
-\usepackage{array}
+\RequirePackage{array}
 % array – Extending the array and tabular environments
 % https://ctan.org/pkg/array
+
+\RequirePackage[newcommands]{ragged2e}
 
 %\RequirePackage{paracol}
 %% paracol – Multiple columns with texts “in parallel”
@@ -179,31 +181,15 @@
 %
 % More information : https://tex.stackexchange.com/questions/27803/when-to-use-in-an-if-statement?newreg=b481381bef3c45178808e2d340ef623a
 
-%% Optionally load academicons
-\newif\if@academicons
-\DeclareOption{academicons}{\@academiconstrue}
-% Regarde si l'option "academicons" a été passé lors de l'appel à la classe
-
-%% v1.1.3: Choice of round/square photo
+%% Choice of round/square photo
 \newif\if@normalphoto
 \DeclareOption{normalphoto}{\@normalphototrue}
-
-%% Choice to call or not the package "ragged2e".
-% The package essentially defines new commands \Centering, \RaggedLeft, and \RaggedRight and new environments Center, FlushLeft, and FlushRight.
-\newif\if@raggedtwoe
-\DeclareOption{ragged2e}{\@raggedtwoetrue}
-
-%% v1.3: load hyperref for clickable hyperlinks
-\newif\if@withhyper
-\DeclareOption{withhyper}{\@withhypertrue}
 
 %% Les options non explicitement déclarées sont passée à la classe "extarticle".
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
 % Toute option supplémentaire inconnue car non déclarée par un élément \DeclareOption est passé à la classe "article" pour être géré par cette dernière.
-
-% OLD : > \DeclareOption*{\PassOptionsToClass{\CurrentOption}{extarticle}}
-% La classe "extarticle" est-elle incluse par défaut dans LaTeX ?
-% Ne faut-il pas inclure à un moment donné le paquet "extsizes" ? :
+%
+% Exsizes package : 
 % https://www.ctan.org/pkg/extsizes
 
 \ProcessOptions\relax
@@ -222,108 +208,31 @@
 
 %%%%% DECLARATIONS DEPENDING ON SELECTED OPTIONS
 
-%% v1.1.5: added for convenience
-\newif\ifxetexorluatex
-\ifxetex
-	\xetexorluatextrue
-\else
-	\ifluatex
-		\xetexorluatextrue
-	\else
-		\xetexorluatexfalse
-	\fi
-\fi
+\AtBeginDocument{
+	\RequirePackage{hyperref}
+	
+	\hypersetup{debug}
+}
 
-\ifxetexorluatex
-	\RequirePackage{fontspec}
-	% fontspec – Advanced font selection in XeLaTeX and LuaLaTeX : https://www.ctan.org/pkg/fontspec
-\else
-	%% v1.3.2 attempts to make ligatures
-	%% copy-paste as normal characters
-	\RequirePackage{cmap}
-	\RequirePackage[utf8]{inputenc}
-	\RequirePackage[T1]{fontenc}
-	\input{glyphtounicode}
-	\pdfglyphtounicode{f_f}{FB00}
-	\pdfglyphtounicode{f_f_i}{FB03}
-	\pdfglyphtounicode{f_f_l}{FB04}
-	\pdfglyphtounicode{f_i}{FB01}
-	\pdfgentounicode=1
-\fi
-
-%% v1.1: Optionally load academicons
-%% v1.1.5: Handle different versions of academicons
-\if@academicons
-	\ifxetexorluatex
-	    \RequirePackage{fontspec}
-	    %% academicons in TL2018 doesn't require
-	    %% Academicons to be installed in OS fonts
-	    %% so can be loaded directly
-	    
-	    % D'où vient la command \@ifl@t@r ? Est-elle liée à un paquet spécifique ?
-	    % Est-elle dans les commandes par défaut de LaTex ?
-	    % LaTeX core macro \@ifl@ter to check the file date
-	    \@ifl@t@r\fmtversion{2018/04/01}
-	    { % True case
-	      \RequirePackage{academicons}
-	    }
-    	{ % False case
-			% TL2017
-			% TL = TexLive ??
-			\@ifl@t@r\fmtversion{2017/04/01}
-			{ % True case
-	 			\@ifpackagelater{academicons}{2018/03/01}
-	 			{ % True case
-				   \RequirePackage{academicons}
-		 		}
-	 			{ % False case
-				   \let\ori@newfontfamily\newfontfamily%
-				   \renewcommand{\newfontfamily}[2]{}
-				   \RequirePackage{academicons}
-				   \let\newfontfamily\ori@newfontfamily
-				   \newfontfamily{\AI}{academicons.ttf}
-		 		}
-			}
-			{ % False case
-				% TL2016 requires the package to be loaded before
-				% the version can be checked. Only added because
-				% Overleaf v1 still runs TL2016; will be removed
-				% when v1 is completely retired.
-				\let\ori@newfontfamily\newfontfamily%
-				\renewcommand{\newfontfamily}[2]{}
-				\RequirePackage{academicons}
-				\let\newfontfamily\ori@newfontfamily
-				\newfontfamily{\AI}{academicons.ttf}
-			}
-    	}
-  \else
-    \ClassError{AltaCV}{academicons unsupported by latex or pdflatex. Please compile with xelatex or lualatex}{Please compile with xelatex or lualatex to use the academicons option}
-  \fi
-\fi
-
-\if@raggedtwoe
-  	\RequirePackage[newcommands]{ragged2e}
-\fi
-
-% Macro \AtBeginDocument has its content expanded right after \begin{document}
-\if@withhyper
-  	\AtBeginDocument{%
-    	\RequirePackage{hyperref}
-%		General options : 
-%    	* draft : all hypertext options are turned off
-% 		* final : all hypertext options are turned on
-%		* debug : extra diagnostic messages are printed in the log file
-%    final boolean true all hypertext options are turned on
-%    debug boolean false extra diagnostic messages are printed in
-%    the log file
-    % \hypersetup{hidelinks}
-    	\hypersetup{debug}
-    % CypBLA : Commented to see where a links in the PDF.
-    
-    % \urlstyle{same}
-    % CypBLA : Comment because don't know what it does.
-  }
-\fi
+%% Macro \AtBeginDocument has its content expanded right after \begin{document}
+%\if@withhyper
+%  	\AtBeginDocument{%
+%    	\RequirePackage{hyperref}
+%%		General options : 
+%%    	* draft : all hypertext options are turned off
+%% 		* final : all hypertext options are turned on
+%%		* debug : extra diagnostic messages are printed in the log file
+%%    final boolean true all hypertext options are turned on
+%%    debug boolean false extra diagnostic messages are printed in
+%%    the log file
+%    % \hypersetup{hidelinks}
+%    	\hypersetup{debug}
+%    % CypBLA : Commented to see where a links in the PDF.
+%    
+%    % \urlstyle{same}
+%    % CypBLA : Comment because don't know what it does.
+%  }
+%\fi
 
 %%%%% CONFIGURATIONS AND NEW COMMANDS DECLARATION
 
@@ -475,16 +384,9 @@
 			}
 		}
 		{ % False case
-			\if@withhyper
-				\makebox{
-					\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsHSpace
-				}
-			\else
-				\ClassWarning{Please specify [withhyper] option to enable hyperlinks. Printing out full hyperlink prefix #1 for now.}
-				\makebox{
-					\infoIconFont{#1}~{\utffriendlydetokenize{#3#2}}\interIconsHSpace
-				}
-			\fi
+			\makebox{
+				\infoIconFont{#1}~\href{#3}{\utffriendlydetokenize{#2}}\interIconsHSpace
+			}
 	  	}
 	}
 	
@@ -510,32 +412,32 @@
 	% > \csdef
 	% Part of the "etoolbox" package.
 	
-	\NewDocumentCommand{\NewInfoField}{m m o}{
-		% Arguments :
-		% #1 : <fieldname>
-		% #2 : <symbol>
-		% #3 : <hyperlink> - optional
-		\IfNoValueF{#3}{
-			\csdef{#1 hyperprefix}{#3}% Create command > \<fieldname>hyperprefix{<hyperlink>}
-		}
-	  	\csdef{#1 symbol}{#2}% Create command > \<fieldname>symbol{<symbol>}
-	  	\csdef{#1}##1{% Create command > \<fieldname>{<text>} 
-			\if@withhyper
-	   			\IfNoValueTF{#3}
-				{% True case
-					\printinfo{\csuse{#1 symbol}}{##1}% Call : \printinfo{<symbol>}{<fieldname>}
-					% Note : 
-					% #1 : <fieldname>, is replaced right now by its value
-					% ##1 : <text>, will be filled when the command > \<fieldname>{<text>} < will be used.
-				}
-	      		{% False case
-	      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
-	      		}
-	    	\else
-				\printinfo{\csuse{#1 symbol}}{##1}
-	    	\fi
-	  	}
-	}
+%	\NewDocumentCommand{\NewInfoField}{m m o}{
+%		% Arguments :
+%		% #1 : <fieldname>
+%		% #2 : <symbol>
+%		% #3 : <hyperlink> - optional
+%		\IfNoValueF{#3}{
+%			\csdef{#1 hyperprefix}{#3}% Create command > \<fieldname>hyperprefix{<hyperlink>}
+%		}
+%	  	\csdef{#1 symbol}{#2}% Create command > \<fieldname>symbol{<symbol>}
+%	  	\csdef{#1}##1{% Create command > \<fieldname>{<text>} 
+%			\if@withhyper
+%	   			\IfNoValueTF{#3}
+%				{% True case
+%					\printinfo{\csuse{#1 symbol}}{##1}% Call : \printinfo{<symbol>}{<fieldname>}
+%					% Note : 
+%					% #1 : <fieldname>, is replaced right now by its value
+%					% ##1 : <text>, will be filled when the command > \<fieldname>{<text>} < will be used.
+%				}
+%	      		{% False case
+%	      			\printinfo{\csuse{#1 symbol}}{##1}[\csuse{#1 hyperprefix}##1]% Call : \printinfo{<symbol>}{<text>}[<hyperlink><text>]
+%	      		}
+%	    	\else
+%				\printinfo{\csuse{#1 symbol}}{##1}
+%	    	\fi
+%	  	}
+%	}
 	
 	%% Définition de 3 champs d'information.
 	\newcommand{\name}[1]{\def\@name{#1}} % > \name{<nom>}
@@ -543,17 +445,17 @@
 	\newcommand{\personalinfo}[1]{\def\@personalinfo{#1}} % > \personalinfo{<personalinfo>}
 	
 	%% Champs d'information à symbole.
-	\NewInfoField{email}{\faAt}[mailto:] % Adresse mail
-	\NewInfoField{mailaddress}{\faEnvelope} % Adresse postale
-	\NewInfoField{phone}{\faPhone} % Numéro de téléphone
-	\NewInfoField{homepage}{\faGlobe}[https://] % Site internet
-	\NewInfoField{twitter}{\faTwitter}[https://twitter.com/] % Twitter
-	\NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/] % LinkedIn
-	\NewInfoField{github}{\faGithub}[https://github.com/] % Github
-	\NewInfoField{orcid}{\aiOrcid}[https://orcid.org/] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
-	\NewInfoField{location}{\faMapMarker} % Emplacement (Pas forcément utile si la même que l'adresse déclarée...)
-	\NewInfoField{birth}{\faBaby} % Birthday and age field
-	\NewInfoField{drivingLicence}{\faCar} % Birthday and age field
+%	\NewInfoField{email}{\faAt}[mailto:] % Adresse mail
+%	\NewInfoField{mailaddress}{\faEnvelope} % Adresse postale
+%	\NewInfoField{phone}{\faPhone} % Numéro de téléphone
+%	\NewInfoField{homepage}{\faGlobe}[https://] % Site internet
+%	\NewInfoField{twitter}{\faTwitter}[https://twitter.com/] % Twitter
+%	\NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/] % LinkedIn
+%	\NewInfoField{github}{\faGithub}[https://github.com/] % Github
+%	\NewInfoField{orcid}{\aiOrcid}[https://orcid.org/] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
+%	\NewInfoField{location}{\faMapMarker} % Emplacement (Pas forcément utile si la même que l'adresse déclarée...)
+%	\NewInfoField{birth}{\faBaby} % Birthday and age field
+%	\NewInfoField{drivingLicence}{\faCar} % Birthday and age field
 	
 	%% Create length fields. Act as global variables.
 	% v1.2: Support for multiple photos
