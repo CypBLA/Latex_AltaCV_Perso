@@ -43,12 +43,29 @@
 % scrlfile – Installation control for koma-script packages : https://www.ctan.org/pkg/scrlfile
 % The package provides hooks for the execution of commands before or after loading files, classes or packages.
 
-%\RequirePackage{l3kernel}
+%% l3kernel bundle
+% CTAN : https://ctan.org/pkg/l3kernel
+% 
+% Note that we can't write :
+% \RequirePackage{l3kernel}
+%
+% If we browse the files of the package there : https://miktex.org/packages/l3kernel
+% There's no "l3kernel.sty" but "expl3.sty".
+%
+% So we call it specifically.
+% I don't know how miktex knows it has to pass through the l3kernel bundle to find the expl3 package.
 \RequirePackage{expl3}
-% l3kernel – LaTeX3 programming conventions : https://ctan.org/pkg/l3kernel
 
-\RequirePackage{l3packages}
+%% l3packages bundle
 % l3packages – High-level LaTeX3 concepts : https://www.ctan.org/pkg/l3packages
+%
+% Same thing, it contains the following packages : 
+% 
+\RequirePackage{xparse}
+\RequirePackage{xfp}
+\RequirePackage{xtemplate}
+\RequirePackage{l3keys2e}
+\RequirePackage{xfrac}
 
 % CypBLA : Commented to be replaced by the meta-package "l3packages"
 %\RequirePackage{xparse}
