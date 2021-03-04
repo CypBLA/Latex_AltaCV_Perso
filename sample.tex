@@ -360,16 +360,29 @@
 
 \personalinfo{%
 	% Not all of these are required!
-	\birth{24/05/1995, 25 ans}
-	\phone{(+33)6 98 13 97 81}
-	\email{cyprien.blanc@zaclys.net}
-	\mailaddress{19 allée George Sand 69330 Jonage}
-%	\location{FRANCE}
-	\drivingLicence{Permis A et B -- véhicule personnel}
-	\linkedin{cyprienblanc}
-	\github{CypBLA}
-	\homepage{www.alanshawn.com/}
-	\homepage{www.alanshawn.com}
+	\printinfo{\faBaby}{24/05/1995, 25 ans} % Birthday and age
+	\printinfo{\faPhone}{(+33)6 98 13 97 81} % Phone number
+	\printinfo{\faAt}{cyprien.blanc@zaclys.net}[mailto:cyprien.blanc@zaclys.net] % Mail
+	\printinfo{\faEnvelope}{19 allée George Sand 69330 Jonage} % Mail adress
+	\printinfo{\faCar}{Permis A et B -- véhicule personnel} % Driving license
+	\printinfo{\faLinkedin}{cyprienblanc}[https://linkedin.com/in/cyprienblanc] % LinkedIn account
+	\printinfo{\faGithub}{CypBLA}[https://github.com/CypBLA] % Github account
+%	\printinfo{\faGlobe}{}[] % Personal website
+%	\printinfo{\faTwitter{}[] % Twitter account
+%	\printinfo{\faGitlab}{}[] % Gitlab account
+%	\printinfo{\aiOrcid}{}[] % Open Researcher and Contributor ID : https://fr.wikipedia.org/wiki/ORCID
+%	\printinfo{\faMapMarker}{}[]
+
+%	\birth{24/05/1995, 25 ans}
+%	\phone{(+33)6 98 13 97 81}
+%	\email{cyprien.blanc@zaclys.net}
+%	\mailaddress{19 allée George Sand 69330 Jonage}
+%%	\location{FRANCE}
+%	\drivingLicence{Permis A et B -- véhicule personnel}
+%	\linkedin{cyprienblanc}
+%	\github{CypBLA}
+%	\homepage{www.alanshawn.com/}
+%	\homepage{www.alanshawn.com}
 	% \homepage{<url>} % Espace Scenari à remplir : https://cyprienblanc.scenari-community.org/
 	% \twitter{<twitterName>}
 	%% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
@@ -389,12 +402,14 @@
 
 \csdef{truc hyperprefix}{https://linkedin.com/in/}
 
+
 \printinfo{\faBaby}{Hey !}[https://linkedin.com/in/cyprienblanc] \par
 \href{https://linkedin.com/in/cyprienblanc}{Mon lien bidon} \par
 \printinfo{\faBaby}{Deuxième essai}[\csuse{truc hyperprefix}cyprienblanc] \par
 \printinfo{\faBaby}{Troisième essai}[www.alanshawn.com/] \par
 \printinfo{\faBaby}{Quatrième essai}[https://] \par
 \printinfo{\faBaby}{Cinquieme essai}[www.alanshawn.com] \par
+\printinfo{\faBaby}{Sixième essai}[www.alanshawn.com] \par
 
 \ExplSyntaxOn
 \cs_meaning:N \linkedin \par
