@@ -308,7 +308,7 @@
 % Macro \AtBeginDocument has its content expanded right after \begin{document}
 \if@withhyper
   	\AtBeginDocument{%
-    	\RequirePackage[hypertexnames=false, debug=true, breaklinks= true]{hyperref}
+    	\RequirePackage[debug, hypertexnames=false, breaklinks= true]{hyperref}
 %		General options : 
 %    	* draft : all hypertext options are turned off
 % 		* final : all hypertext options are turned on
