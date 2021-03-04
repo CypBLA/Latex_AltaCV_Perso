@@ -203,7 +203,7 @@
 %%%%% DECLARATIONS DEPENDING ON SELECTED OPTIONS
 
 \AtBeginDocument{
-	\RequirePackage{hyperref}
+	\RequirePackage[unicode]{hyperref}
 	
 %	\hypersetup{final,unicode}
 }
