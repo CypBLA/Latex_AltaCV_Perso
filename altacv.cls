@@ -148,6 +148,8 @@
 % array – Extending the array and tabular environments
 % https://ctan.org/pkg/array
 
+\RequirePackage{silence}
+
 %\RequirePackage[newcommands]{ragged2e}
 
 %\RequirePackage{paracol}
