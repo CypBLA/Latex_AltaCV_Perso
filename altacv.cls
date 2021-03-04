@@ -203,7 +203,7 @@
 \AtBeginDocument{
 	\RequirePackage{hyperref}
 	
-	\hypersetup{final,unicode}
+%	\hypersetup{final,unicode}
 }
 
 %% Macro \AtBeginDocument has its content expanded right after \begin{document}
