@@ -116,19 +116,11 @@
 % tabularx – Tabulars with adjustable-width columns
 % https://www.ctan.org/pkg/tabularx
 
-\RequirePackage{changepage}
-% changepage – Margin adjustment and detection of odd/even pages
-% https://www.ctan.org/pkg/changepage
-
 % \RequirePackage{marginfix}
 
 \RequirePackage[backend=biber,style=authoryear,sorting=ydnt]{biblatex}
 % BibLaTeX – Sophisticated Bibliographies in LaTeX
 % https://www.ctan.org/pkg/biblatex
-
-\RequirePackage{afterpage}
-% afterpage – Execute command after the next page break
-% https://www.ctan.org/pkg/afterpage
 
 \RequirePackage{iftex}
 % iftex – Am I running under pdfTeX, XeTeX or LuaTeX?
@@ -156,7 +148,7 @@
 % array – Extending the array and tabular environments
 % https://ctan.org/pkg/array
 
-\RequirePackage[newcommands]{ragged2e}
+%\RequirePackage[newcommands]{ragged2e}
 
 %\RequirePackage{paracol}
 %% paracol – Multiple columns with texts “in parallel”
