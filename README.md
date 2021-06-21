@@ -17,6 +17,6 @@ Among all the things done :
 
 What could yet still done : 
 * Create a command shortcut to have a similar presentation that the one found in the language section.
-* Find a way to act of the created pdf metadata to integrate title, author, etc.
-* Invent new original types of sections to illustrate other curriculum aspects ?
+* Find a way to act on the created pdf metadata to integrate title, author, etc.
+* Design new original types of sections to illustrate other curriculum aspects ?
 * etc.
